@@ -90,9 +90,20 @@ Ja, wir sprechen über deinen Lernstil! Jeder von uns hat seine eigene Art zu le
   </div>
 </div>	  
 	  
-	  
-	  
-	  
+<h6> Wenn du auf dieser Seite gelandet bist, brauchst du bestimmt noch zusätzliche Informationen wofür wir diese Lerntypen. </h6>	  
+	 <p> Willkommen zu unserem [THEMA]-Guide! In dieser umfassenden Anleitung erfährst du alles, was du wissen musst, um [DEIN THEMA] zu beherrschen und deine Produktivität auf das nächste Level zu bringen.
+
+Warum [DEIN THEMA] wichtig ist:
+
+[Hier eine kurze Erläuterung, warum es wichtig ist, sich mit dem Thema auseinanderzusetzen. Welchen Nutzen hat es für die Zielgruppe?]
+
+Die Grundlagen von [DEINEM THEMA]:
+
+In den kommenden Abschnitten werden wir die grundlegenden Konzepte von [DEINEM THEMA] erkunden. Von den einfachen Grundlagen bis zu fortgeschrittenen Techniken – wir haben alles für dich abgedeckt.
+
+Praktische Tipps für [DEIN THEMA]:
+
+Entdecke nützliche Tipps und Tricks, um [DEIN THEMA] effektiv anzuwenden. Hier erfährst du, wie du [BESTIMMTE AKTION] durchführst und [BESTIMMTE ERGEBNISSE] erzielst.</p>
 	  
 	  
 
