@@ -29,7 +29,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lerntypen</a></li>
+      <li><a class="dropdown-item" href="Informationsseite/index.php">Lerntypen</a></li>
+		
       <li><a class="dropdown-item" href="#">Info 2</a></li>
       <li><a class="dropdown-item" href="#">Info 3</a></li>
 		  </ul>     
