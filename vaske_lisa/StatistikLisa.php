@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <h2>Willkommen auf Statistik-Seite</h2>
+        <h2>Willkommen auf der Statistik-Seite</h2>
         <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
@@ -31,7 +31,10 @@
 	
 	
     <footer>
-		<p>In Kooperation mit der Jade Hochschule</p>
-    </footer>
+        <h3>Created by Lisa Vaske</h3>
+        <p>Adresse: Wilhelmshaven</p>
+        <p>Email: lisa.vaske@student.jade-hs.de</p>
+	   <section> <p>In Koooperation mit der Jade Hochschule</p></section>
+   </footer>
 </body>
 </html>
