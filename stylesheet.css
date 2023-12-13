@@ -1,0 +1,38 @@
+
+body {
+    background-color: #F4EFE7; /* Cremefarbener Hintergrund */
+}
+
+h1 {
+    color: #4E443C; /* Dunkelbraune Schriftfarbe */
+    text-align: center; /* Text zentriert */
+    padding: 20px; /* Innenabstand für die H1-Überschrift */
+}
+
+
+/* Bildergröße!! */
+.carousel-item img {
+    height: 300px; /* Passe die Höhe nach Bedarf an */
+    object-fit: cover; /* Dadurch wird sichergestellt, dass das Bild sein Seitenverhältnis beibehält */
+}
+
+/* styles.css */
+
+/* Gemeinsame Stile für Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Gemeinsame Stile für Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Gemeinsame Stile für Container (falls erforderlich) */
+.container {
+    /* ... */
+}

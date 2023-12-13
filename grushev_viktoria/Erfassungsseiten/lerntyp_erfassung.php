@@ -61,58 +61,80 @@
         <div class="col-md-4">
 			
             <!-- Formular -->
-			<!-- ich brauche noch eine php erfassungsseite  -->
-			<!-- Da kommen die Formulare hin -->
-            <form action="" method="POST">
-           <div class="form-group">
-             
-	
-	
-                </div>
-<br>
+			 <!-- Formular -->
+			<form action="" method="post">
 				
-                <div class="form-group">
-                    <label for="aktuellesModul">Wähle, welches Modul du gerade lernst:</label>
-                    <input type="text" class="form-control" name="aktuellesModul" placeholder="Modulname eingeben" required>
-                </div>
+			<!-- PHP-Code zur Verarbeitung der Formulardaten -->
+			<?php
+			// Überprüfen, ob das Formular abgeschickt wurde
+			if(isset($_POST["gesendet"])) {
+				echo("Formular wurde gesendet");
+				include 'include/dbconnect.inc.php'; // Zugangsdaten zur Datenbank einbinden
+				
+				// Formulardaten extrahieren
+				$benutzername = $_POST["benutzername"];
+				$modul = $_POST["modul"];
+				$semester = $_POST["semester"];
+				$lerntyp = $_POST["lerntyp"];
+				$beschreibung = $_POST["beschreibung"];
+				
+				// Daten in die Datenbank einfügen
+				$sql = "INSERT INTO deine_tabelle (benutzername, modul, semester, lerntyp, beschreibung) 
+						VALUES ('$benutzername', '$modul', '$semester', '$lerntyp', '$beschreibung');";
+				
+				mysqli_query($con, $sql); // Die Abfrage ausführen
+			} else {
+				echo("Formular wurde über URL aufgerufen");
+			}
+			?>
 			
-	<br>
-				     <label for="aktuellesModul">Wähle, welches Semester du gerade besuchst:</label>
-                   
-	                    <select class="form-control" name="lerntyp">
-                        <option value="" disabled selected>- Semester auswählen -</option>
-                        <option value="semestereins">Semester 1</option>
-                        <option value="semesterzwei">Semester 2</option>
-                        <option value="semesterdrei">Semester 3</option>
-                        <option value="semestervier">Semester 4</option>
-						<option value="semesterfuenf">Semester 5</option>
-                        <option value="semestersechs">Semester 6</option>
-                        <option value="semestersieben">Semester 7</option>
-						<option value="semesterdrueber"> Höher als Semester 7</option>
-                    </select>
+			<!-- Formularfelder -->
+			<div class="form-group">
+                <label for="benutzername">Gib dir einen Benutzernamen:</label>
+                <input type="text" class="form-control" name="benutzername" placeholder="Dein Benutzername" required>
+            </div>
+			
+			<div class="form-group">
+                <label for="modul">Wähle, welches Modul du gerade lernst:</label>
+                <input type="text" class="form-control" name="modul" placeholder="Modulname eingeben" required>
+            </div>
 	
-  <br>
-				 <div class="form-group">
-                    <label for="lerntyp">Wähle deinen Lerntyp:</label>
-                    <select class="form-control" name="lerntyp">
-                        <option value="" disabled selected>- Bitte wähle deinen Lerntyp aus -</option>
-                        <option value="auditiv">Auditiv</option>
-                        <option value="visuell">Visuell</option>
-                        <option value="kommunikativ">Kommunikativ</option>
-                        <option value="motorisch">Motorisch</option>
-                    </select>
-                </div>
-				
-<br>
-                <div class="form-group">
-                    <label for="studienort">Beschreibe wie du mit deinem Lerntypen lernst:</label>
-                    <input type="text" class="form-control" name="studienort" placeholder="Inspiriere andere" required>
-                </div>
-<br>
-				
-                <!-- Blaues Sendefeld / Primary steht für blau -->
-                <button type="submit" class="btn btn-primary">Senden</button>
-            </form>
+			<div class="form-group">
+                <label for="semester">Wähle, welches Semester du gerade besuchst:</label>
+                <select class="form-control" name="semester">
+                    <option value="" disabled selected>- Semester auswählen -</option>
+                    <option value="semestereins">Semester 1</option>
+                    <option value="semesterzwei">Semester 2</option>
+                    <option value="semesterdrei">Semester 3</option>
+                    <option value="semestervier">Semester 4</option>
+                    <option value="semesterfuenf">Semester 5</option>
+                    <option value="semestersechs">Semester 6</option>
+                    <option value="semestersieben">Semester 7</option>
+                    <option value="semesterdrueber"> Höher als Semester 7</option>
+                </select>
+            </div>
+			
+			<div class="form-group">
+                <label for="lerntyp">Wähle deinen Lerntyp:</label>
+                <select class="form-control" name="lerntyp">
+                    <option value="" disabled selected>- Bitte wähle deinen Lerntyp aus -</option>
+                    <option value="auditiv">Auditiv</option>
+                    <option value="visuell">Visuell</option>
+                    <option value="kommunikativ">Kommunikativ</option>
+                    <option value="motorisch">Motorisch</option>
+                </select>
+            </div>
+			
+			<div class="form-group">
+                <label for="beschreibung">Beschreibe wie du mit deinem Lerntypen lernst:</label>
+                <input type="text" class="form-control" name="beschreibung" placeholder="Inspiriere andere" required>
+            </div>
+			
+			<!-- Absende-Button -->
+			<button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
+		</form>
+			
+			
         </div>
         <div class="col-md-4">
         </div>
@@ -134,3 +156,4 @@
 	 
   </body>
 </html>
+
