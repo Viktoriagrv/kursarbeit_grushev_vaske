@@ -24,7 +24,7 @@
     </li>
     <!-- Link zu Vikas Seite -->
     <li class="nav-item">
-        <a class="nav-link" href="grushev_viktoria/index.php">Lerntypen und Modulaufwand</a>
+        <a class="nav-link" href="grushev_viktoria/lerntyp_erfassung.php">Lerntypen und Modulaufwand</a>
     </li>
 </ul>
 <!-- Hier ist die Navigationsleiste zuende -->

@@ -61,58 +61,34 @@
         <div class="col-md-4">
 			
             <!-- Formular -->
-			 <!-- Formular -->
-			<form action="" method="post">
+		
+			<form action="verarbeitung.php" method="POST">
 				
-			<!-- PHP-Code zur Verarbeitung der Formulardaten -->
-			<?php
-			// Überprüfen, ob das Formular abgeschickt wurde
-			if(isset($_POST["gesendet"])) {
-				echo("Formular wurde gesendet");
-				include 'include/dbconnect.inc.php'; // Zugangsdaten zur Datenbank einbinden
-				
-				// Formulardaten extrahieren
-				$benutzername = $_POST["benutzername"];
-				$modul = $_POST["modul"];
-				$semester = $_POST["semester"];
-				$lerntyp = $_POST["lerntyp"];
-				$beschreibung = $_POST["beschreibung"];
-				
-				// Daten in die Datenbank einfügen
-				$sql = "INSERT INTO deine_tabelle (benutzername, modul, semester, lerntyp, beschreibung) 
-						VALUES ('$benutzername', '$modul', '$semester', '$lerntyp', '$beschreibung');";
-				
-				mysqli_query($con, $sql); // Die Abfrage ausführen
-			} else {
-				echo("Formular wurde über URL aufgerufen");
-			}
-			?>
+			<!-- PHP-Code zur Verarbeitung der Formulardaten ist in der verarbeitungs.php-->
 			
 			<!-- Formularfelder -->
 			<div class="form-group">
-                <label for="benutzername">Gib dir einen Benutzernamen:</label>
-                <input type="text" class="form-control" name="benutzername" placeholder="Dein Benutzername" required>
+                <label for="benutzer"> Gib dir einen Benutzernamen:</label>
+                <input type="text" class="form-control" name="benutzer" placeholder="Dein Benutzername" required>
             </div>
 			
+		
 			<div class="form-group">
-                <label for="modul">Wähle, welches Modul du gerade lernst:</label>
-                <input type="text" class="form-control" name="modul" placeholder="Modulname eingeben" required>
+                <label for="modul">Wähle dein Modul:</label>
+                <select class="form-control" name="modul">
+                    <option value="" disabled selected>- Bitte wähle dein Modul aus -</option>
+                    <option value="visuellekommunikation">Visuelle Kommunikation 1</option>
+                    <option value="iteins">IT1</option>
+                    <option value="itzwei">IT2</option>
+                    <option value="speziellerjournalismus">Spezieller Journalismus</option>
+                    <option value="mathematik">Mathematik</option>
+                    <option value="medienundkommunikation">Medien und Kommunikation</option>
+                    <option value="statistik">Statistik</option>
+                    <option value="medienwirtschaftundmarketing">Medienwirtschaft und Marketing</option>
+				
+				</select>
             </div>
 	
-			<div class="form-group">
-                <label for="semester">Wähle, welches Semester du gerade besuchst:</label>
-                <select class="form-control" name="semester">
-                    <option value="" disabled selected>- Semester auswählen -</option>
-                    <option value="semestereins">Semester 1</option>
-                    <option value="semesterzwei">Semester 2</option>
-                    <option value="semesterdrei">Semester 3</option>
-                    <option value="semestervier">Semester 4</option>
-                    <option value="semesterfuenf">Semester 5</option>
-                    <option value="semestersechs">Semester 6</option>
-                    <option value="semestersieben">Semester 7</option>
-                    <option value="semesterdrueber"> Höher als Semester 7</option>
-                </select>
-            </div>
 			
 			<div class="form-group">
                 <label for="lerntyp">Wähle deinen Lerntyp:</label>
@@ -126,12 +102,14 @@
             </div>
 			
 			<div class="form-group">
-                <label for="beschreibung">Beschreibe wie du mit deinem Lerntypen lernst:</label>
-                <input type="text" class="form-control" name="beschreibung" placeholder="Inspiriere andere" required>
+                <label for="inspiration">Beschreibe wie du mit deinem Lerntypen lernst:</label>
+                <input type="text" class="form-control" name="inspiration" placeholder="Inspiriere andere" required>
             </div>
 			
-			<!-- Absende-Button -->
-			<button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
+			  <!-- Absende-Button -->
+    <button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
+</form>
+
 		</form>
 			
 			
@@ -141,11 +119,6 @@
     </div>
 </div>
 
-
-				
-
-				
-				
 				
    <!-- Bootstrap Footer -->
     <footer class="fixed-bottom bg-primary text-center p-2">
