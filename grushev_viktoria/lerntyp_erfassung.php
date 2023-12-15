@@ -111,7 +111,66 @@
 </form>
 
 		</form>
+			<!-- Tabelle zur Anzeige der Formulardaten -->
+<!-- Tabelle zur Anzeige der Formulardaten -->
+<div class="container mt-5">
+    <h2>Die Einträge</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Benutzername</th>
+                <th scope="col">Modul</th>
+                <th scope="col">Lerntyp</th>
+                <th scope="col">Inspiration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            // Verbindung zur Datenbank herstellen (ersetze die Platzhalter durch deine Zugangsdaten)
+            $servername = "localhost";
+            $username = "m12241-09";
+            $password = "l97tJZA8W";
+            $dbname = "m12241_09";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde
+            if ($conn->connect_error) {
+                die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+            }
+
+            // SQL-Abfrage, um alle Einträge aus der Datenbank abzurufen
+            $sql = "SELECT benutzer, modul, lerntyp, inspiration FROM benutzer";
+            $result = $conn->query($sql);
+
+            // Tabelle mit Daten aus der Datenbank füllen
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>" . $row['benutzer'] . "</td>
+                            <td>" . $row['modul'] . "</td>
+                            <td>" . $row['lerntyp'] . "</td>
+                            <td>" . $row['inspiration'] . "</td>
+                        </tr>";
+                }
+            } else {
+                echo "<tr><td colspan='4'>Keine Daten gefunden</td></tr>";
+            }
+
+            $conn->close();
+            ?>
+        </tbody>
+    </table>
+</div>
+           
 			
+			
+			
+			
+        </tbody>
+    </table>
+</div>
+
 			
         </div>
         <div class="col-md-4">
