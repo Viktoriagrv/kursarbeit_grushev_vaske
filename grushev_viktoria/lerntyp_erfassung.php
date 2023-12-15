@@ -35,10 +35,10 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
 		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="#">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="#"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="#"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="#"> Lerntyp Kommunikativ</a></li>
+      <li><a class="dropdown-item" href="Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		  </ul>     
 		  
       <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
@@ -79,13 +79,15 @@
 		    <!-- PHP-Code zur Verarbeitung der Formulardaten ist in der verarbeitungs.php-->
 			<form action="verarbeitung.php" method="POST">
 
-				<!-- Formularfelder -->
+				<!-- Formular Benutzername -->
+				<!-- Form-Group wird für Bootstrap verwendet -->
 			<div class="form-group">
+				<!-- For verbindet mit "Benutzer" -->
                 <label for="benutzer"> Gib dir einen Benutzernamen:</label>
                 <input type="text" class="form-control" name="benutzer" placeholder="Dein Benutzername" required>
             </div>
 			
-		    
+		    <!-- Formular Modul -->
 			<div class="form-group">
                 <label for="modul">Wähle dein Modul:</label>
                 <select class="form-control" name="modul">
@@ -102,7 +104,7 @@
 				</select>
             </div>
 	
-			
+			<!-- Formular Lerntyp -->
 			<div class="form-group">
                 <label for="lerntyp">Wähle deinen Lerntyp:</label>
                 <select class="form-control" name="lerntyp">
@@ -114,6 +116,7 @@
                 </select>
             </div>
 			
+				<!-- Formular Inspiration -->
 			<div class="form-group">
                 <label for="inspiration">Beschreibe wie du mit deinem Lerntypen lernst:</label>
                 <input type="text" class="form-control" name="inspiration" placeholder="Inspiriere andere" required>
@@ -122,68 +125,7 @@
 			  <!-- Absende-Button -->
     <button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
 </form>
-
-		</form>
-			<!-- Tabelle zur Anzeige der Formulardaten -->
-<!-- Tabelle zur Anzeige der Formulardaten -->
-<div class="container mt-5">
-    <h2>Die Einträge</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Benutzername</th>
-                <th scope="col">Modul</th>
-                <th scope="col">Lerntyp</th>
-                <th scope="col">Inspiration</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $servername = "localhost";
-            $username = "m12241-09";
-            $password = "l97tJZA8W";
-            $dbname = "m12241_09";
-
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde
-            if ($conn->connect_error) {
-                die("Verbindung fehlgeschlagen: " . $conn->connect_error);
-            }
-
-            // SQL-Abfrage, um alle Einträge aus der Datenbank abzurufen
-            $sql = "SELECT benutzer, modul, lerntyp, inspiration FROM benutzer";
-            $result = $conn->query($sql);
-
-            // Tabelle mit Daten aus der Datenbank füllen
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>
-                            <td>" . $row['benutzer'] . "</td>
-                            <td>" . $row['modul'] . "</td>
-                            <td>" . $row['lerntyp'] . "</td>
-                            <td>" . $row['inspiration'] . "</td>
-                        </tr>";
-                }
-            } else {
-                echo "<tr><td colspan='4'>Keine Daten gefunden</td></tr>";
-            }
-
-            $conn->close();
-            ?>
-        </tbody>
-    </table>
-</div>
-           
-			
-			
-			
-			
-        </tbody>
-    </table>
-</div>
-
-			
+				
         </div>
         <div class="col-md-4">
         </div>
