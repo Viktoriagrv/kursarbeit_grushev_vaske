@@ -1,78 +1,91 @@
+<!-- Definition vom Dokumententypen-->
 <!doctype html>
+<!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
+	
+	<!-- Meta-Daten sind im Headbereich anzutreffen-->
   <head>
+	  
+	  <!-- Zeichensatz UTF-8 -->
     <meta charset="utf-8">
+	  
+	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Viktorias Seite</title>
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	  
+    <title> Erfassung der Lerntypen </title>
+	
+	<!-- Bootstrap-Einbindung -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
+	
+	
   <body>
-
+    <!-- Überschrift -->
 	<h1> Erfassung deines Lerntypen </h1>
 	  
-	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
+	  <!-- Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Home</a>
   </li>
 		  
-  <!-- Dropdownlink 1 -->
+  <!-- Dropdownlink für die Informationen mit Bootstrap -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Info 2</a></li>
-      <li><a class="dropdown-item" href="#">Info 3</a></li>
+		  <!-- Verlinkung für die einzelnen Seiten -->
+      <li><a class="dropdown-item" href="#">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="#"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="#"> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="#"> Lerntyp Kommunikativ</a></li>
 		  </ul>     
 		  
-      <!-- Dropdownlink 2 -->
+      <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Lertyp Datenerfassung</a></li>
     </ul> 
 	  
-	  <!-- Dropdown Link 3 --> 
+	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Modulauwand</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen/Lernerfolg</a></li>
-    </ul> 
+	    <!-- Verlinkung Statistik -->
+                <li><a class="dropdown-item" href="#">Statistik Lerntypen </a></li>
+                         <li><a class="dropdown-item" href="#">Statistik Modul </a></li>
+                                                                                     </ul> 
 	  
-		  <!-- Link zue Startseite -->
-		   <li class="nav-item">
-    <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+	   <!-- Link zur Startseite -->
+		                       <li class="nav-item">
+                                          <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
- 
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
 	  
 	  
-<!-- Beginn Formular-Sektion -->
-	  
+  <!-- Beginn Formular-Sektion -->
+	  <!-- Erzeugt Container von Bootstrap  -->
 <div class="container-fluid">
     <div class="mt-5 row">
         <div class="col-md-4">
         </div>
-		<!-- Mittiger Teil -->
+		
+		<!-- Mittiger Teil nimmt vier Spalten ein, dort spielt sich mein Inhalt ab! -->
         <div class="col-md-4">
 			
-            <!-- Formular -->
-		
+            <!-- erstellt ein Formular, das bei der Absendung die eingegebenen Daten an die "verarbeitung.php" mit POST-Methode sendet -->
+		    <!-- PHP-Code zur Verarbeitung der Formulardaten ist in der verarbeitungs.php-->
 			<form action="verarbeitung.php" method="POST">
-				
-			<!-- PHP-Code zur Verarbeitung der Formulardaten ist in der verarbeitungs.php-->
-			
-			<!-- Formularfelder -->
+
+				<!-- Formularfelder -->
 			<div class="form-group">
                 <label for="benutzer"> Gib dir einen Benutzernamen:</label>
                 <input type="text" class="form-control" name="benutzer" placeholder="Dein Benutzername" required>
             </div>
 			
-		
+		    
 			<div class="form-group">
                 <label for="modul">Wähle dein Modul:</label>
                 <select class="form-control" name="modul">
@@ -126,7 +139,6 @@
         </thead>
         <tbody>
             <?php
-            // Verbindung zur Datenbank herstellen (ersetze die Platzhalter durch deine Zugangsdaten)
             $servername = "localhost";
             $username = "m12241-09";
             $password = "l97tJZA8W";
