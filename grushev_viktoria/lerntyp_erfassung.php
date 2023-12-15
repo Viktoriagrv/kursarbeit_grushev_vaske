@@ -100,7 +100,6 @@
                     <option value="medienundkommunikation">Medien und Kommunikation</option>
                     <option value="statistik">Statistik</option>
                     <option value="medienwirtschaftundmarketing">Medienwirtschaft und Marketing</option>
-				
 				</select>
             </div>
 	
@@ -121,7 +120,7 @@
                 <label for="inspiration">Beschreibe wie du mit deinem Lerntypen lernst:</label>
                 <input type="text" class="form-control" name="inspiration" placeholder="Inspiriere andere" required>
             </div>
-			
+			<br>
 			  <!-- Absende-Button -->
     <button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
 </form>

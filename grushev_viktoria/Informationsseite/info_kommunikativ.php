@@ -56,7 +56,7 @@
 		
 	   <!-- Link zur Startseite -->
 		                       <li class="nav-item">
-                                          <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+                                          <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
