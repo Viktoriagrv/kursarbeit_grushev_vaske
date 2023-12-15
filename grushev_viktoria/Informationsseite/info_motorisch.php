@@ -35,10 +35,10 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
 		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="#">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="#"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="#"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="#"> Lerntyp Kommunikativ</a></li>
+      <li><a class="dropdown-item" href="info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="info_motorisch.php"> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		  </ul>     
 		  
 
