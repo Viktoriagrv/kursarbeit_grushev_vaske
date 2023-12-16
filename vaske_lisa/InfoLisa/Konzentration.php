@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
-<!doctype html>
+
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
@@ -17,7 +17,7 @@
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-    <title> Erfassung der Lerntypen </title>
+
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -48,11 +48,11 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
      
-	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
+	  <a class="nav-link" href="Lernstartegien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
 		
-	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
+	  <a class="nav-link" href="Motivation.php"> Motivation</a></li>
 		
 	
 	
@@ -66,18 +66,18 @@
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
    
-  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+  <a class="nav-link" href="../ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
     
-		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
-	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
@@ -86,7 +86,7 @@
 	
 	
 	
-    <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+    <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
  
 </ul>
@@ -106,6 +106,53 @@
     </main>
 
 	
+<p>In einer Zeit, die immer schneller wird und in der wir von einer Flut an Informationen überschwemmt werden, klagen immer mehr Leute über Schwierigkeiten, sich zu konzentrieren. Kennst du nicht auch dieses befriedigende Gefühl, wenn du nicht nur ein Buch liest, sondern es auch verstehst? Das gelingt nur durch Konzentration. Allein das Wort "Konzentration" macht vielen Menschen Unbehagen. Vielleicht hast auch du während deiner Studienzeit Erfahrungen mit Schwierigkeiten beim Konzentrieren gemacht. Wir möchten dir zeigen, wie du effektiver lernen und deine Konzentration verbessern kannst.
+
+<section><b>Was bedeutet Konzentration?</b></section>
+
+Konzentration ist eine wichtige geistige Fähigkeit, die in jedem Lebensbereich, sei es Arbeit, Studium oder Freizeit, unerlässlich ist. Ein Mangel an Konzentration kann in vielen Situationen zu Problemen führen. Konzentration bedeutet, seine Aufmerksamkeit bewusst zu fokussieren. Doch wie kann man diesem Problem entgegentreten und es positiv beeinflussen? Und ist das überhaupt möglich? Ja, es ist möglich!
+
+<section><b>Warum leidet unsere Konzentration?</b></section>
+
+Immer mehr Menschen haben heutzutage Schwierigkeiten mit der Konzentration. Es liegt nicht an der Person selbst, sondern betrifft jeden, sei es im Studium oder Beruf. Es gibt viele Gründe dafür:
+
+<section>- Schlafmangel</section>
+<sectionY>- Stress</section>
+<section>- Traumatische Erlebnisse</section>
+<section>- Umgebung und äußere Einflüsse</section>
+<section>- Ernährung</section>
+<section>- Eigene emotionale Verfassung</section>
+<br>
+<section>Unsere Konzentration wird stark von unseren Gefühlen und unserer emotionalen Verfassung beeinflusst.</section>
+</br>
+
+<section><b>Wie verbessern wir unsere Konzentration?</b></section>
+
+<br>Was ist also der Schlüssel zu einer guten Konzentrationsfähigkeit? Bist du immer noch konzentriert und bereit, den Weg zu einer verbesserten Konzentration einzuschlagen? Es gibt viele kleine Dinge, die helfen können, Geist und Körper auf dem Weg zu einer besseren Konzentration zu unterstützen.
+Zuerst müssen wir Geist und Körper in Einklang bringen, um einen großen Fortschritt zu machen.
+Dann geht es darum, negative äußere Einflüsse zu minimieren und unserem Körper Folgendes anzubieten:</br>
+
+<section>- "Brainfood" in Form von OMEGA-3-Fettsäuren und vielen Vitaminen, insbesondere Vitamin B.</section>
+<section>- Sport für die Ausdauer</section>
+<section>- Gesunden Schlaf für Regeneration, auch kurze Schläfchen tagsüber
+Entspannung durch Meditation, Yoga oder autogenes Training</section>
+<section>- Außerdem helfen im Alltag gelegentliche Konzentrationsübungen und -aufgaben.</section>
+<br>Es gibt zahlreiche Möglichkeiten, unsere Konzentrationsfähigkeit zu verbessern und zu steigern!
+	Und genau darauf wollen wir nun genauer eingehen.</section></p></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	

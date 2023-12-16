@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lernstrategien/Start by Lisa Vaske</title>
 	
-	 <!-- Bootstrap Verlinkung -->
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<!-- Definition vom Dokumententypen-->
+
 	
-	  <link rel="stylesheet" type="text/css" href="../style.css">
+<!-- Definition der Sprache "de" = deutsch -->
+<html lang="de">
 	
+	<!-- Meta-Daten sind im Headbereich anzutreffen-->
+  <head>
+	  
+	  <!-- Zeichensatz UTF-8 -->
+    <meta charset="utf-8">
+	  
+	  <!-- Anzeigeeingenschaften für Geräte -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+  
+	
+	<!-- Bootstrap-Einbindung -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+	
+	<!-- Verknüpfung zur CSS-Datei -->
+    <link rel="stylesheet" href="styles.css"> 
+	
+	
+	
+	 
 </head>
 <body>
 
@@ -28,45 +50,53 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
+    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Info 2</a></li>
-      <li><a class="dropdown-item" href="#">Info 3</a></li>
-		  </ul>     
+     
+	  <a class="nav-link" href="Lernstartegien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
+		
+	  <a class="nav-link" href="Motivation.php"> Motivation</a></li>
+		
+	
+	  
+	  </ul>     
 		  
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="Erfassungsseiten/lerntyp_erfassung.php">Lerntyp-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/lernzeit_erfassung.php">Lernzeit-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/student_erfassung.php">Student-Erfassung</a></li>
-    </ul> 
+   
+  <a class="nav-link" href="../ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Modulauwand</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen/Lernerfolg</a></li>
+    
+		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
+	
+	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
-		  <!-- Link zue Startseite -->
+		  <!-- Link zur Startseite -->
 		   <li class="nav-item">
-    <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+	
+	
+	
+	
+    <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
  
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
-	
-	
+	  
+		
 <!-- Einbindung von Bootstrap Java Script -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	

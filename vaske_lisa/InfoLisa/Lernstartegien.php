@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>LernenVerstehen</title>
+    <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
 <!doctype html>
 <!-- Definition der Sprache "de" = deutsch -->
@@ -17,7 +17,7 @@
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-    <title> Erfassung der Lerntypen </title>
+
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -48,11 +48,11 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
      
-	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
+	  <a class="nav-link" href="Lernstartegien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
 		
-	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
+	  <a class="nav-link" href="Motivation.php"> Motivation</a></li>
 		
 	
 	  
@@ -61,18 +61,18 @@
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
    
-  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+  <a class="nav-link" href="../ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
     
-		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
-	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
