@@ -26,7 +26,8 @@ if (isset($_POST["gesendet"])) {
     $inspiration = $_POST['inspiration'];
 
     // Query
-    $insert_query = "INSERT INTO benutzer (benutzer, modul, lerntyp, inspiration) VALUES ('$benutzer', '$modul', '$lerntyp', '$inspiration')";
+    $insert_query = "INSERT INTO lerndaten (benutzer_id, modul_id, lerntyp_id, inspiration_id) VALUES ('$benutzer', '$modul', '$lerntyp', '$inspiration')";
+
 
     if (mysqli_query($conn, $insert_query)) {
         echo "Erfolgreich in Datenbank hinzugefügt";

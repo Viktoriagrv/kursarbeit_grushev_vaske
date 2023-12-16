@@ -63,30 +63,25 @@
 	  
 	  
   <!-- Beginn Formular-Sektion -->
-	  <!-- Erzeugt Container von Bootstrap  -->
-<div class="container-fluid">
-    <div class="mt-5 row">
-        <div class="col-md-4">
-        </div>
-		
-		<!-- Mittiger Teil nimmt vier Spalten ein, dort spielt sich mein Inhalt ab! -->
-        <div class="col-md-4">
-			
-            
-			<h1> Der auditive Lerntyp </h1>
-			
-			
-			
-        </tbody>
-    </table>
-</div>
+	<!-- Beginn Formular-Sektion -->
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center"> <!-- Zentrierung der Überschrift -->
+                <h1 class="mb-4">Der auditive Lerntyp</h1>
 
-			
-        </div>
-        <div class="col-md-4">
+                <!-- Bild  -->
+                <img src="../Bilder/Auditiv.png" alt="Bildbeschreibung" class="img-fluid mb-4">
+
+                <!-- Text einfügen -->
+                <p>Hier kommt noch Text hin! Dieser Text ist super toll und einfach spannend! </p>
+				<br>
+				<p> Einfach noch spannender!</p>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
-</div>
+
 
 				
    <!-- Bootstrap Footer -->
