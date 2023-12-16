@@ -30,27 +30,23 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Info 2</a></li>
-      <li><a class="dropdown-item" href="#">Info 3</a></li>
+      <li><a class="dropdown-item" href="#">Lernstrategien</a></li>
+      <li><a class="dropdown-item" href="#">Konzentration</a></li>
+      <li><a class="dropdown-item" href="#">Motivation</a></li>
 		  </ul>     
 		  
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="Erfassungsseiten/lerntyp_erfassung.php">Lerntyp-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/lernzeit_erfassung.php">Lernzeit-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/student_erfassung.php">Student-Erfassung</a></li>
-    </ul> 
+  
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Modulauwand</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen/Lernerfolg</a></li>
+      <li><a class="dropdown-item" href="#">Lernstrategien</a></li>
+      <li><a class="dropdown-item" href="#">Konzentration </a></li>
+      <li><a class="dropdown-item" href="#">Motivation</a></li>
     </ul> 
 	  
 		  <!-- Link zue Startseite -->
