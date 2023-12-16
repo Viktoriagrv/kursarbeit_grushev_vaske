@@ -75,6 +75,64 @@
                         // Verbindung schließen
                         mysqli_close($con);
                     ?>
+	
+					
+					
+<br></br>
+<h3> Lernstrategien</h3>
+<h5> Hier siehst du die letzten Einträge von Student_innen</h5>
+			
+			
+			
+			<!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
+<div class="container">
+    <!-- Bootstrap Grid-System: Zentrierte Reihe -->
+    <div class="row justify-content-center mt-5">
+        <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
+        <div class="col-md-8">
+            <!-- Bootstrap-Tabelle -->
+            <table class="table">
+                <!-- Tabellenkopf mit dunklem Hintergrund -->
+                <thead class="thead-dark">
+                <tr>
+                    <!-- Spaltenüberschriften -->
+                    <th>Studierende/r</th>
+                    <th>Semester</th>
+                    <th>Lernerfolg</th>
+					<th>Lernstrategie</th>
+					<th>Zeitpunkt</th>
+         
+                </tr>
+                </thead>
+                <!-- Tabellenkörper für Daten -->
+                <tbody>
+					
+					
+					
+					 <!-- Hier PHP-Datenbank Verbindung 2 -->
+                    <?php
+                        // Verbindung zur Datenbank
+                        include 'dbconnect.inc.php';
+
+                        // Abfrage für die Daten
+                        $query = "SELECT studierende, semester, lernstrategie, lernerfolg,  zeitpunkt FROM lerndaten ORDER BY id DESC LIMIT 5"; 
+					
+                        $result = mysqli_query($con, $query);
+
+                        // Daten aus der Abfrage in die Tabelle einfügen
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<tr>";
+                            echo "<td>{$row['vorname']}</td>";
+                            echo "<td>{$row['semester']}</td>";
+							echo "<td>{$row['lernerfolg']}</td>";
+                            echo "<td>{$row['lernstrategie']}</td>";
+							echo "<td>{$row['zeitpunkt']}</td>";
+                            echo "</tr>";
+                        }
+
+                        // Verbindung schließen
+                        mysqli_close($con);
+                    ?>
                 </tbody>
             </table>
         </div>
