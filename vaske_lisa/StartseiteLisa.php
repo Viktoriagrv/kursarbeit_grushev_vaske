@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <h1>Lernstrategien-Übersicht: die besten Startegien für die Uni!</h1>
+        <h1>Lernstrategien-Übersicht: die besten Strategien für die Uni!</h1>
 		
     </header>
 
@@ -47,8 +47,8 @@
 		  
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-  
+   
+  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
