@@ -20,7 +20,7 @@
 
     <!-- Link zu Lisas Seite -->
     <li class="nav-item">
-        <a class="nav-link" href="vaske_lisa/index.php">Lernstrategien</a>
+        <a class="nav-link" href="vaske_lisa/StartseiteLisa.php">Lernstrategien</a>
     </li>
     <!-- Link zu Vikas Seite -->
     <li class="nav-item">
@@ -104,7 +104,9 @@
          
                 </tr>
                 </thead>
+				
                 <!-- Tabellenkörper für Daten -->
+				
                 <tbody>
 					
 					
