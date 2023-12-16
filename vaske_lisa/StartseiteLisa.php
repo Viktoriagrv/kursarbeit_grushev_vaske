@@ -30,10 +30,23 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lernstrategien</a></li>
-      <li><a class="dropdown-item" href="#">Konzentration</a></li>
-      <li><a class="dropdown-item" href="#">Motivation</a></li>
-		  </ul>     
+      <li><a class="dropdown-item" href="#">Lernstrategien</a>
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Zu den Lernstrategien</a></li>
+		
+      <li><a class="dropdown-item" href="#">Konzentration</a>
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Zu der Konzentration</a></li>
+		
+      <li><a class="dropdown-item" href="#">Motivation</a>
+	  <a class="nav-link" href="InfoLisa/Motivation.php">Zu der Motivation</a></li>
+		
+	
+	
+	  
+	  
+	  
+	  
+	  
+	  </ul>     
 		  
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
@@ -44,13 +57,22 @@
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lernstrategien</a></li>
-      <li><a class="dropdown-item" href="#">Konzentration </a></li>
-      <li><a class="dropdown-item" href="#">Motivation</a></li>
+      <li><a class="dropdown-item" href="#">Lernstrategien</a>
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Zu den Lernstrategien</a></li>
+		
+      <li><a class="dropdown-item" href="#">Konzentration </a>
+	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Zu der Konzentration</a></li>
+		
+      <li><a class="dropdown-item" href="#">Motivation</a>
+	  <a class="nav-link" href="StatistikLisa/Motivation.php">Zu der Motivation</a></li>
     </ul> 
 	  
-		  <!-- Link zue Startseite -->
+		  <!-- Link zur Startseite -->
 		   <li class="nav-item">
+	
+	
+	
+	
     <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
  
