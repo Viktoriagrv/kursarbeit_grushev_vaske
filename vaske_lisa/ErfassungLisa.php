@@ -57,11 +57,11 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
      
-	  <a class="nav-link" href="Lernstartegien.php">Lernstrategien</a></li>
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
 		
-	  <a class="nav-link" href="Motivation.php"> Motivation</a></li>
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
 		
 	
 	  
@@ -77,11 +77,11 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
     
-		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
-	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
+	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
