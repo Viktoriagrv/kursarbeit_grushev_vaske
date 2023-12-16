@@ -111,7 +111,7 @@
 	<section>2. metakognitive Strategien</section>
 	<section>3. ressourcenbezogene Startegien</section>
 	
-<p> <a href="InfoLisa.php">Klicke hier, um mehr über die Lernstartegien zu erfahren:</a></p>
+<p> <a href="InfoLisa/Lernstartegien.php">Klicke hier, um mehr über die Lernstartegien zu erfahren:</a></p>
 
 <!-- Button aus bootstrap-->
 	<button type="button" class="btn">Info Lernstrategien</button>
