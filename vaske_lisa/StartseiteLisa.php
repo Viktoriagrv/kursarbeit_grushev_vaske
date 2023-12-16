@@ -23,21 +23,18 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
+    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
      
-	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Zu den Lernstrategien</a></li>
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
 		
-      <li><a class="dropdown-item" href="#">Konzentration</a>
-	  <a class="nav-link" href="InfoLisa/Konzentration.php">Zu der Konzentration</a></li>
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
 		
-      <li><a class="dropdown-item" href="#">Motivation</a>
-	  <a class="nav-link" href="InfoLisa/Motivation.php">Zu der Motivation</a></li>
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
 		
 	
 	
@@ -57,14 +54,12 @@
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lernstrategien</a>
-		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Zu den Lernstrategien</a></li>
+    
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-      <li><a class="dropdown-item" href="#">Konzentration </a>
-	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Zu der Konzentration</a></li>
-		
-      <li><a class="dropdown-item" href="#">Motivation</a>
-	  <a class="nav-link" href="StatistikLisa/Motivation.php">Zu der Motivation</a></li>
+	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
+	
+	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
