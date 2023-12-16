@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>LernenVerstehen</title>
-	
-	<!-- Verknüpfung zur CSS-Datei -->
-    <link rel="stylesheet" href="styles.css"> 
-	
-</head>
-	
-	
-	
-	
-<body>
-    <header>
-        <h1>Lernstartegie</h1>
-  
-    </header>
+<?php
 
-    <main>
-        <h2>Willkommen auf der Statistik-Seite</h2>
-        <!-- Hier kommt der Hauptinhalt deiner Seite -->
-    </main>
+//Datenbank: meine Daten
 
+$servername="m12241-32.kurs.jade-hs.de";
+$username="m12241-32";
+$passwort="bZlvguhrx";
+$dbname="m12241-32";
+
+//Verbindung erstellen
+$conn=new mysqli($servername, $username, $passwort, $dbname);
+
+	if (isset ($_POST["gesendet"])) {
+		//wurde das Formular gesendet
+		$studierende=$_POST['studierende'];
+		$semester=$_POST['semester'];
+		$lernerfolg=$_POST['lernerfolg'];
+		$lernstrategie=$_POST['lerstrategie'];
+		$zeitpunkt=$_POST['zeitpunkt'];
+		
+		//Query
+		$insert_query="INSERT INTO studierende (studierende,lernstrategie,semester,lernerfolg,zeitpunkt) VALUES ('$studierende','$semester','$lernerfolg','$lernstrategie','$zeitpunkt')";
+		
+		if (mysqli_query($conn, $insert_query)) {
+			echo "Erfolgreich in Datenbank hinzugefügt";
+		} else{
+			echo "Fehler beim Einfügen" . $insert_query . "<br>" . mysqli_error($conn);
+		}
+	}
+?>
 	
 	
 	
 	
 	
-	
-	
-    <footer>
-        <h3>Created by Lisa Vaske</h3>
-        <p>Adresse: Wilhelmshaven</p>
-        <p>Email: lisa.vaske@student.jade-hs.de</p>
-	   <section> <p>In Koooperation mit der Jade Hochschule</p></section>
-   </footer>
-</body>
-</html>
+   
