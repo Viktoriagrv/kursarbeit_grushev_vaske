@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <h1>Lernstrategien-Übersicht: die besten Startegien für die Uni!</h1>
+        <h1>Lernstrategien-Übersicht: die besten Strategien für die Uni!</h1>
 		
     </header>
 
@@ -23,38 +23,51 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
+    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Info 2</a></li>
-      <li><a class="dropdown-item" href="#">Info 3</a></li>
-		  </ul>     
+     
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
+		
+	
+	
+	  
+	  
+	  
+	  
+	  
+	  </ul>     
 		  
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="Erfassungsseiten/lerntyp_erfassung.php">Lerntyp-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/lernzeit_erfassung.php">Lernzeit-Erfassung</a></li>
-      <li><a class="dropdown-item" href="Erfassungsseiten/student_erfassung.php">Student-Erfassung</a></li>
-    </ul> 
+   
+  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Modulauwand</a></li>
-      <li><a class="dropdown-item" href="#">Statistik Lerntypen/Lernerfolg</a></li>
+    
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
+	
+	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
     </ul> 
 	  
-		  <!-- Link zue Startseite -->
+		  <!-- Link zur Startseite -->
 		   <li class="nav-item">
+	
+	
+	
+	
     <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
  
