@@ -77,12 +77,7 @@
                 <!-- Lernziel -->
                 <div class="form-group">
                     <label for="lernziel">Lernziel</label>
-                    <select class="form-control" id="lernziel" name="lernziel">
-                        <option value='1'>Verstehen</option>
-                        <option value='2'>Auswendig lernen</option>
-                        <option value='3'>Gestalten</option>
-                        <option value='4'>Produzieren</option>
-                    </select>
+                    <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
                 </div>
 
                 <!-- Aufgabe -->
