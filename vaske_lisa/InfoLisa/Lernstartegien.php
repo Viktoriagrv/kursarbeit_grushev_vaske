@@ -8,8 +8,46 @@
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
+<!--farbige Blöcke-->	
+	<style>
+	.farbiger-textblock1 {
+  background-color: #DBFAFF; /
+  color: black; 
+  padding: 20px; 
+}
+		
+	</style>
+
+	
+	<style>
+	.textblock2 {
+  background-color: #FFFCBA; 
+  color: black; 
+  padding: 20px; 
+		
+	</style>
+	
+	
+	<style>
+	.textblock3 {
+  background-color: #FADEFC; 
+  color: black; 
+  padding: 20px; 
+		
+	</style>
+	
+	
+	
+	
+	
 	<!-- Meta-Daten sind im Headbereich anzutreffen-->
   <head>
+	  
+	  
+	  
+	  
+	  
+	  
 	  
 	  <!-- Zeichensatz UTF-8 -->
     <meta charset="utf-8">
@@ -41,7 +79,11 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+   <a class="nav-link" href="StartseiteLisa.php">Home</a></li>	
+		
+		  
+		  
+		  
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
@@ -95,20 +137,15 @@
 	
     <main>
         <h2>Willkommen auf der Info-Seite</h2>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+      
         <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
-	
-	
-	
-	              <div class="row justify-content-end">
-                        <div class="col-11 col-md-10 col-lg-6">
-                            <div class="cc-box block-color-blue">
-                                <div class="brabo-content">
-                                    class="color-initial"
-									<h3>Kognitive Lernstartegien</h3>
+
+<div class="farbiger-textblock1">
+  <p>
+	  
+	<h3>Kognitive Lernstartegien</h3>
 	<p>Kognitive Lernstrategien umfassen die essenziellen Prozesse des Lernens: das Begreifen, das Auswendiglernen, das Üben, das Erinnern und das Anwenden des Gelernten. In manchen Fächern ist reines Auswendiglernen unumgänglich, während in anderen die Anwendung des Gelernten von größerer Bedeutung ist. Alles kann mithilfe passender Methoden erlernt werden. Hier sind einige der bedeutendsten kognitiven Lernstrategien:
 
 	<section><b>Auswendig lernen:</b></section>
@@ -123,9 +160,15 @@ Die Herausforderung liegt im Verstehen. Je abstrakter eine Theorie ist, desto ko
 
 Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei ist Übung der Schlüssel zum Erfolg. Wer die Begriffe kennt und das Thema verstanden hat, muss intensiv üben – am besten mit einer Vielzahl unterschiedlicher Beispiele.</p>
 	
-	<img scr="bilder/kognitiv.jpg" alt="kognitive Lernstrategie">
+	<img src="../bilder/kognitiv.jpg" alt="kognitive Lernstrategie">
 	
-	
+	</p>
+</div>
+
+
+<div class="textblock2">
+  <p>
+
 	<h4>Metakognitive Lernstartegien</h4>
 <p><br>Metakognitive Lernstrategien konzentrieren sich auf die Planung und effiziente Nutzung deiner Lernzeit. Eine der bekanntesten Strategien ist:</br>
 
@@ -139,10 +182,16 @@ Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei is
 
 <br><b>Pomodoro-Technik:</b></br>
 
-<br>Eine weitere beliebte Methode ist die Pomodoro-Technik, bei der du deine Lernzeit mit einer Eieruhr oder Timer festlegst. Produktives Lernen wird durch regelmäßige Pausen abgewechselt, was die Konzentration und Effektivität steigern kann.</p></br>
+<br>Eine weitere beliebte Methode ist die Pomodoro-Technik, bei der du deine Lernzeit mit einer Eieruhr oder Timer festlegst. Produktives Lernen wird durch regelmäßige Pausen abgewechselt, was die Konzentration und Effektivität steigern kann.</p></p></br></div>
 	
-<img scr="bilder/metakognitiv.jpg" alt="Metakognitive Lernstrategie">	
+<img src="../bilder/metakognitiv.jpg" alt="Metakognitive Lernstrategie">	
 
+
+
+
+<div class="textblock3">
+
+<p>
 
 <p><b>Ressourcenbezogene Lernstrategien</b></p>
 <br>Ressourcenbezogene Lernstrategien zielen darauf ab, das Lernen angenehmer zu gestalten. Dies steigert die Motivation, was sich wiederum positiv auf die Ergebnisse auswirkt. Allerdings erfordern diese Strategien oft Ressourcen wie Geld oder Zeit.</br>
@@ -157,9 +206,9 @@ Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei is
 
 <br><b>Ein ausgewogenes Leben:</b></br>
 
-<br>Ausreichend Schlaf, eine gesunde Ernährung und ein ausgeglichenes Privatleben sind entscheidend für erfolgreiches Lernen. Um in der Schule oder Universität erfolgreich zu sein, ist es wichtig, für das eigene Wohlbefinden zu sorgen. Es mag vielleicht spirituell klingen, aber ohne Pausen oder Ausgleich kann das Gehirn Gelerntes nicht verarbeiten. Daher ist es wichtig, auf ausreichenden Schlaf zu achten und entspannende Hobbys zu finden.</br>
+<br>Ausreichend Schlaf, eine gesunde Ernährung und ein ausgeglichenes Privatleben sind entscheidend für erfolgreiches Lernen. Um in der Schule oder Universität erfolgreich zu sein, ist es wichtig, für das eigene Wohlbefinden zu sorgen. Es mag vielleicht spirituell klingen, aber ohne Pausen oder Ausgleich kann das Gehirn Gelerntes nicht verarbeiten. Daher ist es wichtig, auf ausreichenden Schlaf zu achten und entspannende Hobbys zu finden.</br></p></div>
 
-<img scr="bilder/ressourcenbezogen.jpg" alt="Ressourcenbezogene Lernstartegie">
+<img src="../bilder/ressourcenbezogen.jpg" alt="Ressourcenbezogene Lernstartegie">
 
 
 
