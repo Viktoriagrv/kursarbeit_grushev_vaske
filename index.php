@@ -54,32 +54,43 @@
 	
 <br></br>
 <h3 class="text-center">Lerntypen</h3>
+	
 <h5 class="text-center">Hier siehst du die letzten Einträge von Student_innen</h5>
 
 <!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
+	
     <!-- Bootstrap Grid-System: Zentrierte Reihe -->
     <div class="row justify-content-center mt-5">
+		
         <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
         <div class="col-md-8">
+			
             <!-- Bootstrap-Tabelle mit blauem Hintergrund -->
             <table class="table table-bordered table-striped table-primary">
+				
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
-                    <tr>
+                   
+					<tr>
                         <!-- Spaltenüberschriften -->
                         <th>Lerntyp</th>
-                             <th>Lernziel</th>
-                                  <th>Aufgabe</th>
-						             <th>Lerntyp-Inspiration</th>
-						                              <th>Modul</th>
+                        <th>Lernziel</th>
+                        <th>Aufgabe</th>
+                        <th>Lerntyp-Inspiration</th>
+                        <th>Modul</th>
                     </tr>
+					
                 </thead>
+				
                 <!-- Tabellenkörper für Daten -->
                 <tbody>
-                    <!-- Hier PHP-Datenbank Verbindung -->
-                    <?php
-                     
+
+	<?php
+
+// Fehlermeldung
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 // Verbindung zur Datenbank herstellen mit meinen Daten
 $servername = "localhost";
@@ -94,34 +105,59 @@ $con = new mysqli($servername, $username, $password, $dbname);
 if ($con->connect_error) {
     die("Verbindung fehlgeschlagen: " . $con->connect_error);
 }
-// Abfrage für die Daten
-$query = "SELECT lerntyp_id, lernziel, aufgabe, inspiration, modul_id FROM lerndaten ORDER BY id DESC LIMIT 10"; 
 
-$result = mysqli_query($con, $query);
+// SQL-Abfrage, um die letzten zehn Einträge abzurufen
+$sql = "SELECT lerntyp AS Lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS Modul
+        FROM lerndaten
+        JOIN lerntyp ON lerndaten.lerntyp_id = lerntyp.lerntyp_id
+        JOIN modul ON lerndaten.modul_id = modul.modul_id
+        ORDER BY lerndaten.id DESC
+        LIMIT 10";
 
-// Daten aus der Abfrage in die Tabelle einfügen
-while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr>";
-    echo "<td>{$row['lerntyp_id']}</td>";
-    echo "<td>{$row['lernziel']}</td>";
-    echo "<td>{$row['aufgabe']}</td>";
-    echo "<td>{$row['inspiration']}</td>";
-    echo "<td>{$row['modul_id']}</td>"; // Corrected column name
-    echo "</tr>";
+// Ausführen der SQL-Abfrage
+$result = mysqli_query($con, $sql);
+
+// Überprüfen, ob die Abfrage erfolgreich war
+if ($result) {
+    // Durchlaufen der Ergebnisdaten und Ausgabe in der Tabelle
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>";
+        echo "<td>{$row['lerntyp']}</td>";
+        echo "<td>{$row['lernziel']}</td>";
+        echo "<td>{$row['aufgabe']}</td>";
+        echo "<td>{$row['inspiration']}</td>";
+        echo "<td>{$row['modulname']}</td>";
+        echo "</tr>";
+    }
+
+    // Freigeben des Ergebnisses
+    mysqli_free_result($result);
+} else {
+    // Fehler bei der Abfrage
+    echo "Fehler bei der Abfrage: " . mysqli_error($con);
 }
 
-
-// schließen
+// Schließen der Verbindung zur Datenbank
 mysqli_close($con);
 ?>
-                       
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
 					
+					
+					
+					
+					
+					
+					
+	
+	
+	
+	
+	
+	
+					
+					
+					
+	
 					
 <br></br>
 <h3> Lernstrategien</h3>
@@ -159,7 +195,7 @@ mysqli_close($con);
 					 <!-- Hier PHP-Datenbank Verbindung 2 -->
                     <?php
                         // Verbindung zur Datenbank
-                        include 'dbconnect.inc.php';
+                     
 
                         // Abfrage für die Daten
                         $query = "SELECT studierende, semester, lernstrategie, lernerfolg,  zeitpunkt FROM lerndaten ORDER BY id DESC LIMIT 5"; 
@@ -180,6 +216,7 @@ mysqli_close($con);
                         // Verbindung schließen
                         mysqli_close($con);
                     ?>
+					
                 </tbody>
             </table>
         </div>
