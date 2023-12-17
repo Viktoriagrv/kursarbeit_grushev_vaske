@@ -72,7 +72,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <!-- Formular -->
-            <form action="modulerfassung/modul.erfassung.php" method="post">
+            <form action="modul.erfassung.php" method="post">
             <h3> Erfasse ein neues Modul!</h3>
                
        	<p><input name = "modulname"> Modulname</input></p>
