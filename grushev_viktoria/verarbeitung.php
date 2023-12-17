@@ -20,13 +20,15 @@ if ($con->connect_error) {
 
 if (isset($_POST["gesendet"])) {
     // Wurde das Formular gesendet
-    $benutzer = $_POST['benutzer'];
-    $modul = $_POST['modul'];    $lerntyp = $_POST['lerntyp'];
+    $lernziel = $_POST['lernziel'];
+    $aufgabe = $_POST['aufgabe'];
     $inspiration = $_POST['inspiration'];
+    $lerntyp_id = $_POST['lerntyp_id'];
+    $modul_id = $_POST['modul_id'];
 
     // Query
-    $insert_query = "INSERT INTO lerndaten (benutzer_id, modul_id, lerntyp_id, inspiration_id) VALUES ('$benutzer', '$modul', '$lerntyp', '$inspiration')";
-
+    $insert_query = "INSERT INTO lerndaten (lernziel, aufgabe, inspiration, lerntyp_id, modul_id) 
+                     VALUES ('$lernziel', '$aufgabe', '$inspiration', '$lerntyp_id', '$modul_id')";
 
     if (mysqli_query($con, $insert_query)) {
         echo "Erfolgreich in Datenbank hinzugefügt";
