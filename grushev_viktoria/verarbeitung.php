@@ -25,10 +25,12 @@ if (isset($_POST["gesendet"])) {
     $inspiration = $_POST['inspiration'];
     $lerntyp_id = $_POST['lerntyp_id'];
     $modul_id = $_POST['modul_id'];
+	$aufwand_id = $_POST['aufwand_id'];
+	$semester_id = $_POST['semester_id'];
 
     // Query
-    $insert_query = "INSERT INTO lerndaten (lernziel, aufgabe, inspiration, lerntyp_id, modul_id) 
-                     VALUES ('$lernziel', '$aufgabe', '$inspiration', '$lerntyp_id', '$modul_id')";
+    $insert_query = "INSERT INTO lerndaten (lernziel, aufgabe, inspiration, lerntyp_id, modul_id, aufwand_id, semester_id) 
+                     VALUES ('$lernziel', '$aufgabe', '$inspiration', '$lerntyp_id', '$modul_id', '$aufwand_id', '$semester_id')";
 
     if (mysqli_query($con, $insert_query)) {
         echo "Erfolgreich in Datenbank hinzugefügt";

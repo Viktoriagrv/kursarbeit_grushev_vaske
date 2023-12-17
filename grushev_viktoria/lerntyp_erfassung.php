@@ -116,6 +116,35 @@
                         <option value='7'>Rechnungswesen und Controlling</option>
                     </select>
                 </div>
+				
+				  <!-- Semester -->
+                <div class="form-group">
+                    <label for="semester_id">Semester auswählen</label>
+                    <select class="form-control" id="semester_id" name="semester_id">
+                        <option value='1'>Semester 1</option>
+                        <option value='2'>Semester 2</option>
+                        <option value='3'>Semester 3</option>
+                        <option value='4'>Semester 4</option>
+                        <option value='5'>Semester 5</option>
+                        <option value='6'>Semester 6</option>
+                        <option value='7'>Semester 7</option>
+						<option value='8'>Höheres Semester</option>
+                    </select>
+                </div>
+				
+				<!-- Aufwand -->
+                <div class="form-group">
+                    <label for="aufwand_id">Dein Zeitaufwand</label>
+                    <select class="form-control" id="aufwand_id" name="aufwand_id">
+                        <option value='1'>weniger als 1 Stunde</option>
+                        <option value='2'>1 - 2 Stunden</option>
+                        <option value='3'>3 - 4 Stunden</option>
+                        <option value='4'>5 - 6 Stunden</option>
+                        <option value='5'>Mehr als 6 Stunden</option>
+                    </select>
+                </div>
+
+
 
                 <!-- Absenden -->
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
