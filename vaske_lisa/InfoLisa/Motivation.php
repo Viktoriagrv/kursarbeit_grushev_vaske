@@ -42,7 +42,7 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-		<a class="nav-link" href="StartseiteLisa.php">Home</a></li>	  
+		<a class="nav-link" href="../StartseiteLisa.php">Home</a></li>	  
 		  
 		  
 		  
@@ -51,11 +51,11 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
      
-	  <a class="nav-link" href="Lernstartegien.php">Lernstrategien</a></li>
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
 		
-	  <a class="nav-link" href="Motivation.php"> Motivation</a></li>
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
 		
 	
 	
@@ -69,7 +69,7 @@
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
    
-  <a class="nav-link" href="../ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+  <a class="nav-link" href="vaske_lisa/ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">

@@ -100,7 +100,8 @@
 	 
 	
 	
-	<br><h2>Von Zeitmanagement bis hin zu Lernmethoden: diese Lernstrategien führen dich zum Erfolg.</h2></br>
+	<br>
+	<h2>Von Motivation bis hin zu Lernmethoden: diese Lernstrategien führen dich zum Erfolg.</h2></br>
 	
 	<p><b>Lernen muss gelernt sein. Richtig zu lernen, ist gar nicht so einfach. Häufig fehlen die richtigen Ansätze und Methoden. Dazu macht es auch keinen Spaß. Oder? Mit den für Dich passenden Stategien und weiteren Tipps rund um Zeitmanagement, Motivation und Konzentration helfen wir <i>Dir</i> beim Durchstarten!</b>
 	
@@ -118,7 +119,7 @@
 
 
 <!--ab hier inhaltlich Zeitmanagement-->
-<br><p> Auch dein Zeitmanagement ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
+<br><p> Auch deine Konzentration ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
 
 			<!-- bootstrap Karusell, noch anpassen!-->
@@ -271,8 +272,13 @@
 
 <p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
 
-	
-	
+
+
+<br>
+<p>Noch nicht genug? Dann schau dir das Video von <i>The Simple Club</i> an:</p>
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p6gINFikWhE?si=oZPWkUp1dWDWwIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
 	
 	
 	
