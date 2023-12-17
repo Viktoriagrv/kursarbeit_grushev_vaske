@@ -42,7 +42,9 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+		<a class="nav-link" href="StartseiteLisa.php">Home</a></li>	  
+		  
+		  
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
@@ -109,7 +111,7 @@
 <p><h3>Tipps und Tricks für ein motivierendes Studium</h3>
 
 	
-      <img src="../bilder/kindmitfluegeln.jpg" alt="Motivation"
+      <img src="../bilder/kindmitfluegeln.jpg" alt="Motivation">
 
 
 <section><b>Das Studentenleben ist voller Höhen und Tiefen. Manchmal taucht bei Studierenden ein kleiner Motivationsknick auf. Doch wie lässt sich dieser Tiefpunkt überwinden? MLP hat einige hilfreiche Tipps zusammengestellt, die dir schnell wieder Freude am Studium verschaffen können!</b></section>

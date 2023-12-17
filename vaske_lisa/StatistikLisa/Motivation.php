@@ -44,7 +44,10 @@
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+    <a class="nav-link" href="StartseiteLisa.php">Home</a></li>	
+		  
+		  
+		  
 		  
   <!-- Dropdownlink 1 -->
   <li class="nav-item dropdown">
