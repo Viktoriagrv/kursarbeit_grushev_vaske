@@ -152,7 +152,7 @@
 				<br>
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Nicht dein Modul dabei? Erfasse ein neues Modulprofil</a>
+<a href="Erfassungsseite/modul.erfassung.php" class="btn btn-secondary mb-5">Nicht dein Modul dabei? Erfasse ein neues Modulprofil</a>
 			
 			</form>
         </div>
@@ -170,5 +170,4 @@
 	 
   </body>
 </html>
-
 

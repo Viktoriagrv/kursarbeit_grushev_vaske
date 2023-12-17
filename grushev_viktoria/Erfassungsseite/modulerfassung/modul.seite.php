@@ -72,79 +72,12 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <!-- Formular -->
-            <form action="verarbeitung.php" method="post">
-
-                <!-- Lernziel -->
-                <div class="form-group">
-                    <label for="lernziel">Lernziel</label>
-                    <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
-                </div>
-
-                <!-- Aufgabe -->
-                <div class="form-group">
-                    <label for="aufgabe">Aufgabe</label>
-                    <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
-                </div>
-
-                <!-- Inspiration -->
-                <div class="form-group">
-                    <label for="inspiration">Inspiration</label>
-                    <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
-                </div>
-
-                <!-- Lerntyp -->
-                <div class="form-group">
-                    <label for="lerntyp_id">Was ist dein Lerntyp?</label>
-                    <select class="form-control" id="lerntyp_id" name="lerntyp_id">
-                        <option value='1'>Auditiv</option>
-                        <option value='2'>Kommunikativ</option>
-                        <option value='3'>Visuell</option>
-                        <option value='4'>Motorisch</option>
-                    </select>
-                </div>
-
-                <!-- Modul -->
-                <div class="form-group">
-                    <label for="modul_id">Modul</label>
-                    <select class="form-control" id="modul_id" name="modul_id">
-                        <option value='1'>Psychologie</option>
-                        <option value='2'>Grundlagen der Ökonomie</option>
-                        <option value='3'>Grundlagen der Gestaltung</option>
-                        <option value='4'>Informatik</option>
-                        <option value='5'>Mathematik</option>
-                        <option value='6'>Englisch</option>
-                        <option value='7'>Rechnungswesen und Controlling</option>
-                    </select>
-                </div>
-				
-				  <!-- Semester -->
-                <div class="form-group">
-                    <label for="semester_id">Semester auswählen</label>
-                    <select class="form-control" id="semester_id" name="semester_id">
-                        <option value='1'>Semester 1</option>
-                        <option value='2'>Semester 2</option>
-                        <option value='3'>Semester 3</option>
-                        <option value='4'>Semester 4</option>
-                        <option value='5'>Semester 5</option>
-                        <option value='6'>Semester 6</option>
-                        <option value='7'>Semester 7</option>
-						<option value='8'>Höheres Semester</option>
-                    </select>
-                </div>
-				
-				<!-- Aufwand -->
-                <div class="form-group">
-                    <label for="aufwand_id">Dein Zeitaufwand</label>
-                    <select class="form-control" id="aufwand_id" name="aufwand_id">
-                        <option value='1'>weniger als 1 Stunde</option>
-                        <option value='2'>1 - 2 Stunden</option>
-                        <option value='3'>3 - 4 Stunden</option>
-                        <option value='4'>5 - 6 Stunden</option>
-                        <option value='5'>Mehr als 6 Stunden</option>
-                    </select>
-                </div>
-
-
+            <form action="modulerfassung/modul.erfassung.php" method="post">
+            <h3> Erfasse ein neues Modul!</h3>
+               
+       	<p><input name = "modulname"> Modulname</input></p>
+		<p><input name = "modulbeschreibung"> Modulbeschreibung </input></p>
+		<p><input name = "modulbewertung"> Modulbewertung</input></p>
 
                 <!-- Absenden -->
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
@@ -152,7 +85,10 @@
 				<br>
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Nicht dein Modul dabei? Erfasse ein neues Modulprofil</a>
+<a href="../lerntyp_erfassung.php" class="btn btn-secondary mb-5">Fertig? Dann zurück zur Erfassungsseite!</a>
+<!-- Link zu Lerntyp -->
+
+			
 			
 			</form>
         </div>
@@ -170,5 +106,4 @@
 	 
   </body>
 </html>
-
 
