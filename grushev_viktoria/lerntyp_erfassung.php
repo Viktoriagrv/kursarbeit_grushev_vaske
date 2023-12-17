@@ -1,7 +1,7 @@
 <!-- Definition vom Dokumententypen-->
 <!doctype html>
 <!-- Definition der Sprache "de" = deutsch -->
-<html lang="de" data-bs-theme="dark">
+<html lang="de">
 	
 	<!-- Meta-Daten sind im Headbereich anzutreffen-->
   <head>
