@@ -152,7 +152,11 @@
 				<br>
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Nicht dein Modul dabei? Erfasse ein neues Modulprofil</a>
+<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Dein Modul ist noch nicht dabei? Erfasse ein neues Modulprofil!</a>
+							<!-- Link zu Lerntyp -->
+<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Dein ganz spezieller Lerntyp ist noch nicht dabei? Erfasse ein neues Lerntypprofil!</a>
+			
+			
 			
 			</form>
         </div>
