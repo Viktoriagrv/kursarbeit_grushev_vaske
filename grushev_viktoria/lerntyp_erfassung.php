@@ -63,76 +63,72 @@
                                           <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
 </ul>
-  <!-- Hier ist die Navigationsleiste zuende -->
 	  
-	  
-  <!-- Beginn Formular-Sektion -->
-	  <!-- Erzeugt Container von Bootstrap  -->
-<div class="container-fluid">
-    <div class="mt-5 row">
-        <div class="col-md-4">
-        </div>
-		
-		<!-- Mittiger Teil nimmt vier Spalten ein, dort spielt sich mein Inhalt ab! -->
-        <div class="col-md-4">
-			
-            <!-- erstellt ein Formular, das bei der Absendung die eingegebenen Daten an die "verarbeitung.php" mit POST-Methode sendet -->
-		    <!-- PHP-Code zur Verarbeitung der Formulardaten ist in der verarbeitungs.php-->
-			<form action="verarbeitung.php" method="POST">
 
-				<!-- Formular Benutzername -->
-				<!-- Form-Group wird für Bootstrap verwendet -->
-			<div class="form-group">
-				<!-- For verbindet mit "Benutzer" -->
-                <label for="benutzer"> Gib dir einen Benutzernamen:</label>
-                <input type="text" class="form-control" name="benutzer" placeholder="Dein Benutzername" required>
-            </div>
-			
-		    <!-- Formular Modul -->
-			<div class="form-group">
-                <label for="modul">Wähle dein Modul:</label>
-                <select class="form-control" name="modul">
-                    <option value="" disabled selected>- Bitte wähle dein Modul aus -</option>
-                    <option value="visuellekommunikation">Visuelle Kommunikation 1</option>
-                    <option value="iteins">IT1</option>
-                    <option value="itzwei">IT2</option>
-                    <option value="speziellerjournalismus">Spezieller Journalismus</option>
-                    <option value="mathematik">Mathematik</option>
-                    <option value="medienundkommunikation">Medien und Kommunikation</option>
-                    <option value="statistik">Statistik</option>
-                    <option value="medienwirtschaftundmarketing">Medienwirtschaft und Marketing</option>
-				</select>
-            </div>
-	
-			<!-- Formular Lerntyp -->
-			<div class="form-group">
-                <label for="lerntyp">Wähle deinen Lerntyp:</label>
-                <select class="form-control" name="lerntyp">
-                    <option value="" disabled selected>- Bitte wähle deinen Lerntyp aus -</option>
-                    <option value="auditiv">Auditiv</option>
-                    <option value="visuell">Visuell</option>
-                    <option value="kommunikativ">Kommunikativ</option>
-                    <option value="motorisch">Motorisch</option>
-                </select>
-            </div>
-			
-				<!-- Formular Inspiration -->
-			<div class="form-group">
-                <label for="inspiration">Beschreibe wie du mit deinem Lerntypen lernst:</label>
-                <input type="text" class="form-control" name="inspiration" placeholder="Inspiriere andere" required>
-            </div>
-			<br>
-			  <!-- Absende-Button -->
-    <button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
-</form>
-				
-        </div>
+</div>
+<!-- Beginn von Formular -->
+<div class="container-fluid">
+    <div class="mt-5 mb-5 row">
+        <div class="col-md-4"></div>
         <div class="col-md-4">
+            <!-- Formular -->
+            <form action="verarbeitung.php" method="post">
+
+                <!-- Lernziel -->
+                <div class="form-group">
+                    <label for="lernziel">Lernziel</label>
+                    <select class="form-control" id="lernziel" name="lernziel">
+                        <option value='1'>Verstehen</option>
+                        <option value='2'>Auswendig lernen</option>
+                        <option value='3'>Gestalten</option>
+                        <option value='4'>Produzieren</option>
+                    </select>
+                </div>
+
+                <!-- Aufgabe -->
+                <div class="form-group">
+                    <label for="aufgabe">Aufgabe</label>
+                    <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
+                </div>
+
+                <!-- Inspiration -->
+                <div class="form-group">
+                    <label for="inspiration">Inspiration</label>
+                    <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
+                </div>
+
+                <!-- Lerntyp -->
+                <div class="form-group">
+                    <label for="lerntyp_id">Was ist dein Lerntyp?</label>
+                    <select class="form-control" id="lerntyp_id" name="lerntyp_id">
+                        <option value='1'>Auditiv</option>
+                        <option value='2'>Kommunikativ</option>
+                        <option value='3'>Visuell</option>
+                        <option value='4'>Motorisch</option>
+                    </select>
+                </div>
+
+                <!-- Modul -->
+                <div class="form-group">
+                    <label for="modul_id">Modul</label>
+                    <select class="form-control" id="modul_id" name="modul_id">
+                        <option value='1'>Psychologie</option>
+                        <option value='2'>Grundlagen der Ökonomie</option>
+                        <option value='3'>Grundlagen der Gestaltung</option>
+                        <option value='4'>Informatik</option>
+                        <option value='5'>Mathematik</option>
+                        <option value='6'>Englisch</option>
+                        <option value='7'>Rechnungswesen und Controlling</option>
+                    </select>
+                </div>
+
+                <!-- Absenden -->
+                <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
+            </form>
         </div>
     </div>
 </div>
-
-				
+	  			
    <!-- Bootstrap Footer -->
     <footer class="fixed-bottom bg-primary text-center p-2">
       <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
@@ -142,4 +138,5 @@
 	 
   </body>
 </html>
+
 

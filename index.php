@@ -30,8 +30,8 @@
 <!-- Hier ist die Navigationsleiste zuende -->
 
 <br></br>
-<h3> Lerntypen</h3>
-<h5> Hier siehst du die letzten Einträge von Student_innen</h5>
+<h3 class="text-center">Lerntypen</h3>
+<h5 class="text-center">Hier siehst du die letzten Einträge von Student_innen</h5>
 
 <!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
@@ -39,43 +39,65 @@
     <div class="row justify-content-center mt-5">
         <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
         <div class="col-md-8">
-            <!-- Bootstrap-Tabelle -->
-            <table class="table">
+            <!-- Bootstrap-Tabelle mit blauem Hintergrund -->
+            <table class="table table-bordered table-striped table-primary">
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
-                <tr>
-                    <!-- Spaltenüberschriften -->
-                    <th>Benutzername</th>
-                    <th>Gelerntes Modul</th>
-                    <th>Lerntyp</th>
-         
-                </tr>
+                    <tr>
+                        <!-- Spaltenüberschriften -->
+                        <th>Lerntyp</th>
+                             <th>Lernziel</th>
+                                  <th>Aufgabe</th>
+						             <th>Lerntyp-Inspiration</th>
+						                              <th>Modul</th>
+                    </tr>
                 </thead>
                 <!-- Tabellenkörper für Daten -->
                 <tbody>
                     <!-- Hier PHP-Datenbank Verbindung -->
                     <?php
-                        // Verbindung zur Datenbank
-                        include 'dbconnect.inc.php';
+                     
 
-                        // Abfrage für die Daten
-                        $query = "SELECT benutzername, modul, lerntyp FROM lerndaten ORDER BY id DESC LIMIT 5"; 
-					
-                        $result = mysqli_query($con, $query);
+// Verbindung zur Datenbank herstellen mit meinen Daten
+$servername = "localhost";
+$username = "m12241-09";
+$password = "l97tJZA8W";
+$dbname = "m12241_09";
 
-                        // Daten aus der Abfrage in die Tabelle einfügen
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<tr>";
-                            echo "<td>{$row['benutzername']}</td>";
-                            echo "<td>{$row['modul']}</td>";
-                            echo "<td>{$row['lerntyp']}</td>";
-                            echo "</tr>";
-                        }
+// Verbindung wird erstellt
+$con = new mysqli($servername, $username, $password, $dbname);
 
-                        // Verbindung schließen
-                        mysqli_close($con);
-                    ?>
-	
+// Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
+if ($con->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $con->connect_error);
+}
+// Abfrage für die Daten
+$query = "SELECT lerntyp_id, lernziel, aufgabe, inspiration, modul_id FROM lerndaten ORDER BY id DESC LIMIT 10"; 
+
+$result = mysqli_query($con, $query);
+
+// Daten aus der Abfrage in die Tabelle einfügen
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>{$row['lerntyp_id']}</td>";
+    echo "<td>{$row['lernziel']}</td>";
+    echo "<td>{$row['aufgabe']}</td>";
+    echo "<td>{$row['inspiration']}</td>";
+    echo "<td>{$row['modul_id']}</td>"; // Corrected column name
+    echo "</tr>";
+}
+
+
+// schließen
+mysqli_close($con);
+?>
+                       
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 					
 					
 <br></br>
