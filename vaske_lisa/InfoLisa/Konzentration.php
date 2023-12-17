@@ -100,19 +100,21 @@
 	
     <main>
         <h2>Willkommen auf der Info-Seite</h2>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+   
         <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
-	
-<p>In einer Zeit, die immer schneller wird und in der wir von einer Flut an Informationen überschwemmt werden, klagen immer mehr Leute über Schwierigkeiten, sich zu konzentrieren. Kennst du nicht auch dieses befriedigende Gefühl, wenn du nicht nur ein Buch liest, sondern es auch verstehst? Das gelingt nur durch Konzentration. Allein das Wort "Konzentration" macht vielen Menschen Unbehagen. Vielleicht hast auch du während deiner Studienzeit Erfahrungen mit Schwierigkeiten beim Konzentrieren gemacht. Wir möchten dir zeigen, wie du effektiver lernen und deine Konzentration verbessern kannst.
 
-<section><b>Was bedeutet Konzentration?</b></section>
+
+<img src="../bilder/Konzentrationistock.jpg" alt="konzentration">
+	
+<p><b>In einer Zeit, die immer schneller wird und in der wir von einer Flut an Informationen überschwemmt werden, klagen immer mehr Leute über Schwierigkeiten, sich zu konzentrieren. Kennst du nicht auch dieses befriedigende Gefühl, wenn du nicht nur ein Buch liest, sondern es auch verstehst? Das gelingt nur durch Konzentration. Allein das Wort "Konzentration" macht vielen Menschen Unbehagen. Vielleicht hast auch du während deiner Studienzeit Erfahrungen mit Schwierigkeiten beim Konzentrieren gemacht. Wir möchten dir zeigen, wie du effektiver lernen und deine Konzentration verbessern kannst.</b>
+
+<section><b><br>Was bedeutet Konzentration?</br></b></section>
 
 Konzentration ist eine wichtige geistige Fähigkeit, die in jedem Lebensbereich, sei es Arbeit, Studium oder Freizeit, unerlässlich ist. Ein Mangel an Konzentration kann in vielen Situationen zu Problemen führen. Konzentration bedeutet, seine Aufmerksamkeit bewusst zu fokussieren. Doch wie kann man diesem Problem entgegentreten und es positiv beeinflussen? Und ist das überhaupt möglich? Ja, es ist möglich!
 
-<section><b>Warum leidet unsere Konzentration?</b></section>
+<section><br><b>Warum leidet unsere Konzentration?</br></b></section>
 
 Immer mehr Menschen haben heutzutage Schwierigkeiten mit der Konzentration. Es liegt nicht an der Person selbst, sondern betrifft jeden, sei es im Studium oder Beruf. Es gibt viele Gründe dafür:
 
