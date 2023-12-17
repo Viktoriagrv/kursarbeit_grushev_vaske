@@ -64,7 +64,9 @@
   </li>
 </ul>
 	  
-	 <!-- Beginn von Formular -->
+
+</div>
+<!-- Beginn von Formular -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
@@ -73,38 +75,43 @@
             <form action="verarbeitung.php" method="post">
 
                 <!-- Lernziel -->
-                <p>Lernziel<br/>
-                    <select name="lernziel" id="lernziel"> 
+                <div class="form-group">
+                    <label for="lernziel">Lernziel</label>
+                    <select class="form-control" id="lernziel" name="lernziel">
                         <option value='1'>Verstehen</option>
                         <option value='2'>Auswendig lernen</option>
                         <option value='3'>Gestalten</option>
                         <option value='4'>Produzieren</option>
                     </select>
-                </p>
+                </div>
 
                 <!-- Aufgabe -->
-                <p>Aufgabe<br/>
-                    <textarea name="aufgabe" cols="45" rows="5"></textarea>
-                </p>
+                <div class="form-group">
+                    <label for="aufgabe">Aufgabe</label>
+                    <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
+                </div>
 
-                <!-- Textarea für die Inspiration -->
-                <p>Inspiration<br/>
-                    <textarea name="inspiration" cols="45" rows="5"></textarea>
-                </p>
+                <!-- Inspiration -->
+                <div class="form-group">
+                    <label for="inspiration">Inspiration</label>
+                    <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
+                </div>
 
-                <!-- Drop-down für den Lerntyp -->
-                <p>Was ist dein Lerntyp?<br/>
-                    <select name="lerntyp_id" id="lerntyp_id"> 
+                <!-- Lerntyp -->
+                <div class="form-group">
+                    <label for="lerntyp_id">Was ist dein Lerntyp?</label>
+                    <select class="form-control" id="lerntyp_id" name="lerntyp_id">
                         <option value='1'>Auditiv</option>
                         <option value='2'>Kommunikativ</option>
                         <option value='3'>Visuell</option>
                         <option value='4'>Motorisch</option>
                     </select>
-                </p>
+                </div>
 
                 <!-- Modul -->
-                <p>Modul<br/>
-                    <select name="modul_id" id="modul_id"> 
+                <div class="form-group">
+                    <label for="modul_id">Modul</label>
+                    <select class="form-control" id="modul_id" name="modul_id">
                         <option value='1'>Psychologie</option>
                         <option value='2'>Grundlagen der Ökonomie</option>
                         <option value='3'>Grundlagen der Gestaltung</option>
@@ -113,13 +120,23 @@
                         <option value='6'>Englisch</option>
                         <option value='7'>Rechnungswesen und Controlling</option>
                     </select>
-                </p>
+                </div>
 
                 <!-- Absenden -->
-                <button type="submit" class="mb-5 btn btn-outline-primary" name="gesendet">Senden</button>
-
-            </form> <!-- Formular-Tag schließen -->
+                <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
+            </form>
         </div>
     </div>
 </div>
+	  			
+   <!-- Bootstrap Footer -->
+    <footer class="fixed-bottom bg-primary text-center p-2">
+      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+    </footer>
+<!-- Einbindung von Bootstrap Java Script -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	 
+  </body>
+</html>
+
 
