@@ -79,6 +79,8 @@
                         <th>Aufgabe</th>
                         <th>Lerntyp-Inspiration</th>
                         <th>Modul</th>
+						<th>Semester</th>
+						<th>Stundenaufwand</th>
                     </tr>
 					
                 </thead>
