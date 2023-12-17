@@ -107,7 +107,7 @@ if ($con->connect_error) {
 }
 
 // SQL-Abfrage, um die letzten zehn Einträge abzurufen
-$sql = "SELECT lerntyp AS Lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS Modul
+$sql = "SELECT lerntyp AS lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS modul
         FROM lerndaten
         JOIN lerntyp ON lerndaten.lerntyp_id = lerntyp.lerntyp_id
         JOIN modul ON lerndaten.modul_id = modul.modul_id
@@ -126,7 +126,7 @@ if ($result) {
         echo "<td>{$row['lernziel']}</td>";
         echo "<td>{$row['aufgabe']}</td>";
         echo "<td>{$row['inspiration']}</td>";
-        echo "<td>{$row['modulname']}</td>";
+        echo "<td>{$row['modul']}</td>";
         echo "</tr>";
     }
 
@@ -155,14 +155,6 @@ mysqli_close($con);
 	
 	
 					
-					
-					
-	
-					
-<br></br>
-<h3> Lernstrategien</h3>
-<h5> Hier siehst du die letzten Einträge von Student_innen</h5>
-			
 			
 			
 			<!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
