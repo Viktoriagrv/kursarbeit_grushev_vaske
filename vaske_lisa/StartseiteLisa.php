@@ -111,7 +111,7 @@
 	<section>2. metakognitive Strategien</section>
 	<section>3. ressourcenbezogene Startegien</section>
 	
-<p> <a href="InfoLisa/Lernstartegien.php">Klicke hier, um mehr über die Lernstartegien zu erfahren:</a></p>
+<p> <a href="InfoLisa/Lernstartegien.php">Klicke hier, um mehr über Lernstartegien zu erfahren</a></p>
 
 <!-- Button aus bootstrap-->
 	<button type="button" class="btn">Info Lernstrategien</button>
@@ -123,90 +123,154 @@
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
 
 			<!-- bootstrap Karusell, noch anpassen!-->
-<div id="carouselExampleCaptions" class="carousel slide">
+<div id="konzentration" class="folie">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
+    <button type="button" data-bs-target="konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
+
+	
+		
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+	<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+		  
+        <h5>Konzentration</h5>
+        <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+		  
+	<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+		  
+        <h5>Was schwächt die Konzentration?</h5>
+        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+		  
+	<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+		  
+        <h5>Was verbessert meine Konzentration?</h5>
+        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="visually-hidden">zurück</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden">vor</span>
   </button>
 </div>
+
+<p> <a href="InfoLisa/Konzentration.php">Klicke hier, um mehr über Konzentration zu erfahren</a></p>
+
+
+
 
 <!-- ab hier inhaltlich Motivation-->
 <br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
 
 
 <!-- Bootstrap Karusell, noch anpassen!-->
-<div id="carouselExampleCaptions" class="carousel slide">
+<div id="motivation" class="folie">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Motivation</h5>
+        <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Das Wichtigste zuerst</h5>
+        <p>Was du über Motivation wissen solltest.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Fazit zur Motivation</h5>
+        <p>Hier eine kleine Zusammenfassung.</p>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="visually-hidden">zurück</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden">vor</span>
   </button>
 </div>
 
-
+<p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
 
 	
 	
