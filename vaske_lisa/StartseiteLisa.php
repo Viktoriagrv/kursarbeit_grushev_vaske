@@ -139,7 +139,7 @@
 
 
 
-<!--ab hier inhaltlich Zeitmanagement-->
+<!--ab hier inhaltlich Konzentration-->
 <br><p> Auch deine Konzentration ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
 
@@ -147,14 +147,23 @@
 <div id="konzentration" class="folie">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
-    <button type="button" data-bs-target="konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
+    <button type="button" data-bs-target="konzentration2" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#konzentration3" data-bs-slide-to="2" aria-label="Folie 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
 
 	
+
+		  
+		
+		
+		
+		
+		
+		
+		
 		
       <div class="carousel-caption d-none d-md-block">
 	<!--Hier Block farbig per style-->	
@@ -301,6 +310,116 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p6gINFikWhE?si=oZPWkUp1dWDWwIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- anfang karussell-->
+	<div id="meinkarussell" class="folie"
+		 data-ride="karussell">
+		<ol class="carousel-indicators">
+		<li data-target="meinkarussell"
+			data-slide-to="0" class="active"></li>
+		<li data-target="meinkarussell" 
+		data-slide-to="1"></li>
+		<li data-target="meinkarussell" 
+		data-slide-to="2"></li>
+				
+		<!-- Folie 1-->	
+	</ol>
+		<div class="carousel-inner">
+		<div class="carousel-item active">
+		<div class="container">
+		<h3>Konzentration</h3>
+			<p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
+			<a href="#" class="btn btn-lg btn-primary">
+		<div class="carousel-item">
+      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild2">
+      <div class="carousel-caption d-none d-md-block">
+		  
+		  
+			</a>
+			</div>
+		</div>
+	</div>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-prev" role="button"
+		data-slide="prev">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-prev-icon"
+			  aria-hidden="true"></span>
+		</a>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-next" role="button"
+		data-slide="next">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-next-icon"
+			  aria-hidden="true"></span>
+		</a>
+		
+
+<!-- Folie 2-->	
+	</ol>
+		<div class="carousel-inner">
+		<div class="carousel-item active">
+		<div class="container">
+		<h4>Was schwächt die Konzentration?</h4>
+        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
+			<a href="#" class="btn btn-lg btn-primary">
+		<div class="carousel-item">
+      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
+      <div class="carousel-caption d-none d-md-block">
+		  
+		  
+			</a>
+			</div>
+		</div>
+	</div>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-prev" role="button"
+		data-slide="prev">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-prev-icon"
+			  aria-hidden="true"></span>
+		</a>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-next" role="button"
+		data-slide="next">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-next-icon"
+			  aria-hidden="true"></span>
+		</a>
+				
+	<!-- Folie 3-->	
+	</ol>
+		<div class="carousel-inner">
+		<div class="carousel-item active">
+		<div class="container">
+		<h5>Was verbessert meine Konzentration?</h5>
+        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
+			<a href="#" class="btn btn-lg btn-primary">
+		<div class="carousel-item">
+      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild2">
+      <div class="carousel-caption d-none d-md-block">
+
+
+
 	
 	
 	
