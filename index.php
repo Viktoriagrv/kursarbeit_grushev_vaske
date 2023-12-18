@@ -72,15 +72,13 @@
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
                    
-					<tr>
+							<tr>
                         <!-- Spaltenüberschriften -->
                         <th>Lerntyp</th>
                         <th>Lernziel</th>
                         <th>Aufgabe</th>
                         <th>Lerntyp-Inspiration</th>
                         <th>Modul</th>
-						<th>Semester</th>
-						<th>Stundenaufwand</th>
                     </tr>
 					
                 </thead>
@@ -89,76 +87,62 @@
                 <tbody>
 
 	<?php
-
 // Fehlermeldung
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-// Verbindung zur Datenbank herstellen mit meinen Daten
-$servername = "localhost";
-$username = "m12241-09";
-$password = "l97tJZA8W";
-$dbname = "m12241_09";
+// Verbindung zur Datenbank herstellen für die erste Datenbank
+$servername1 = "localhost";
+$username1 = "m12241-09";
+$password1 = "l97tJZA8W";
+$dbname1 = "m12241_09";
 
-// Verbindung wird erstellt
-$con = new mysqli($servername, $username, $password, $dbname);
+// Verbindung wird erstellt für die erste Datenbank
+$con1 = new mysqli($servername1, $username1, $password1, $dbname1);
 
 // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
-if ($con->connect_error) {
-    die("Verbindung fehlgeschlagen: " . $con->connect_error);
+if ($con1->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $con1->connect_error);
 }
 
-// SQL-Abfrage, um die letzten zehn Einträge abzurufen
-$sql = "SELECT lernid AS lernid, vorname, nachname, strategieid AS strategieid, semesterid AS semesterid
-        FROM studierendestrategie
-        JOIN lernerfolg ON studierendestrategie.lernid = lernerfolg.lernid
-        JOIN strategie ON studierendestrategie.strategieid = strategie.strategieid
-		JOIN semester ON studierendestrategie.semesterid = semester.semesterid
-        ORDER BY studierendestrategie.id DESC
+// SQL-Abfrage, um die letzten zehn Einträge abzurufen für die erste Datenbank
+$sql1 = "SELECT lerntyp AS lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS modul
+        FROM lerndaten
+        JOIN lerntyp ON lerndaten.lerntyp_id = lerntyp.lerntyp_id
+        JOIN modul ON lerndaten.modul_id = modul.modul_id
+        ORDER BY lerndaten.id DESC
         LIMIT 10";
 
-// Ausführen der SQL-Abfrage
-$result = mysqli_query($con, $sql);
+// Ausführen der SQL-Abfrage für die erste Datenbank
+$result1 = mysqli_query($con1, $sql1);
 
-// Überprüfen, ob die Abfrage erfolgreich war
-if ($result) {
-    // Durchlaufen der Ergebnisdaten und Ausgabe in der Tabelle
-    while ($row = mysqli_fetch_assoc($result)) {
+// Überprüfen, ob die Abfrage erfolgreich war für die erste Datenbank
+if ($result1) {
+    // Durchlaufen der Ergebnisdaten und Ausgabe in der Tabelle für die erste Datenbank
+    while ($row = mysqli_fetch_assoc($result1)) {
         echo "<tr>";
         echo "<td>{$row['lerntyp']}</td>";
         echo "<td>{$row['lernziel']}</td>";
         echo "<td>{$row['aufgabe']}</td>";
         echo "<td>{$row['inspiration']}</td>";
         echo "<td>{$row['modul']}</td>";
-		echo "<td>{$row['semester']}</td>";
-		echo "<td>{$row['aufwand']}</td>";
         echo "</tr>";
     }
 
-    // Freigeben des Ergebnisses
-    mysqli_free_result($result);
+    // Freigeben des Ergebnisses für die erste Datenbank
+    mysqli_free_result($result1);
 } else {
-    // Fehler bei der Abfrage
-    echo "Fehler bei der Abfrage: " . mysqli_error($con);
+    // Fehler bei der Abfrage für die erste Datenbank
+    echo "Fehler bei der Abfrage: " . mysqli_error($con1);
 }
 
-// Schließen der Verbindung zur Datenbank
-mysqli_close($con);
+// Schließen der Verbindung zur ersten Datenbank
+mysqli_close($con1);
 ?>
 
 					
 					
 					
-					
-					
-					
-					
-	
-	
-	
-	
-	
-	
 					
 			
 			
@@ -178,7 +162,7 @@ mysqli_close($con);
                     <th>Semester</th>
                     <th>Lernerfolg</th>
 					<th>Lernstrategie</th>
-					<th>Zeitpunkt</th>
+					<th>Semester</th>
          
                 </tr>
                 </thead>
@@ -188,41 +172,56 @@ mysqli_close($con);
                 <tbody>
 					
 					
-					
 					 <!-- Hier PHP-Datenbank Verbindung 2 -->
+                     <!-- Hier PHP-Datenbank Verbindung 2 -->
                     <?php
-                        // Verbindung zur Datenbank
-                     // Datenbank: meine Daten
-					$servername = "localhost";
-					$username = "m12241-32";
-					$passwort = "bZlvguhrx";
-					$dbname = "m12241_32";
 
-                        // Abfrage für die Daten
-                        $query = "SELECT vorname, nachname, lernerfolg, startegie, semester FROM studierendestartegie ORDER BY studierendestrategie.id DESC LIMIT 10"; 
-					
-                        $result = mysqli_query($con, $query);
+                    // Verbindungsparameter definieren für die zweite Datenbank
+                    $servername2 = "localhost";
+                    $username2 = "m12241-32";
+                    $passwort2 = "bZlvguhrx";
+                    $dbname2 = "m12241_32";
 
-                        // Daten aus der Abfrage in die Tabelle einfügen
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<tr>";
-                            echo "<td>{$row['vorname']}</td>";
-                            echo "<td>{$row['nachname']}</td>";
-							echo "<td>{$row['lernerfolg']}</td>";
-                            echo "<td>{$row['strategie']}</td>";
-							echo "<td>{$row['semester']}</td>";
-                            echo "</tr>";
-                        }
+                    // Verbindung zur zweiten Datenbank herstellen
+                    $con2 = new mysqli($servername2, $username2, $passwort2, $dbname2);
 
-                        // Freigeben des Ergebnisses
-					mysqli_free_result($result);
-					
-				
-				
+                    // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
+                    if ($con2->connect_error) {
+                        die("Verbindung fehlgeschlagen: " . $con2->connect_error);
+                    }
 
-					// Schließen der Verbindung zur Datenbank
-					mysqli_close($con);
-					?>
+                    // Abfrage für die Daten für die zweite Datenbank
+                    $query = "SELECT vorname, nachname, lernerfolg, startegie, semester FROM studierendestrategie ORDER BY studierendestrategie.id DESC LIMIT 10";
+
+                    // SQL für die zweite Datenbank
+                    $sql2 = "SELECT vorname, nachname, lernerfolg.lernerfolg AS lernerfolg, strategie.strategie AS strategie, semester.semester AS semester
+                            FROM studierendestrategie
+                            JOIN lernerfolg ON studierendestrategie.lernid = lernerfolg.lernid
+                            JOIN strategie ON studierendestrategie.strategieid = strategie.strategieid
+                            JOIN semester ON studierendestrategie.semesterid = semester.semesterid
+                            ORDER BY studierendestrategie.id DESC
+                            LIMIT 10";
+
+                    $result2 = mysqli_query($con2, $sql2);
+
+                    // Daten aus der Abfrage in die Tabelle einfügen für die zweite Datenbank
+                    while ($row = mysqli_fetch_assoc($result2)) {
+
+                        echo "<tr>";
+                        echo "<td>{$row['vorname']}</td>";
+                        echo "<td>{$row['nachname']}</td>";
+                        echo "<td>{$row['lernerfolg']}</td>";
+                        echo "<td>{$row['strategie']}</td>";
+                        echo "<td>{$row['semester']}</td>";
+                        echo "</tr>";
+                    }
+
+                    // Freigeben des Ergebnisses für die zweite Datenbank
+                    mysqli_free_result($result2);
+
+                    // Schließen der Verbindung zur zweiten Datenbank
+                    mysqli_close($con2);
+                    ?>
 					
 					
 					
