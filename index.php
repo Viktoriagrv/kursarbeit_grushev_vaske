@@ -143,15 +143,15 @@ mysqli_close($con1);
 					
 					
 					
-					
-			
-			
+
 			<!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
     <!-- Bootstrap Grid-System: Zentrierte Reihe -->
     <div class="row justify-content-center mt-5">
         <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
         <div class="col-md-8">
+			
+			
             <!-- Bootstrap-Tabelle -->
             <table class="table">
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
@@ -159,7 +159,7 @@ mysqli_close($con1);
                 <tr>
                     <!-- Spaltenüberschriften -->
                     <th>Studierende/r</th>
-                    <th>Semester</th>
+                    <th>Nachname</th>
                     <th>Lernerfolg</th>
 					<th>Lernstrategie</th>
 					<th>Semester</th>
