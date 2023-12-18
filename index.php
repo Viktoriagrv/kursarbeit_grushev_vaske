@@ -57,9 +57,9 @@
 	</br>
 	
 <br></br>
-<h3 class="text-center">Lerntypen</h3>
-	
-<h5 class="text-center">Hier siehst du die letzten Einträge von Student_innen</h5>
+<h3 class="text-center bg-light p-2">Lerntypen</h3>
+
+<h5 class="text-center bg- p-2">Hier siehst du die letzten Einträge von Student_innen</h5>
 
 <!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
@@ -147,17 +147,16 @@ mysqli_close($con1);
 					
 					
 					
-
-			<!-- Hier beginnt die Tabelle 1 - Container für mittige Ausrichtung der Tabelle -->
+			<!-- Hier beginnt die Tabelle 2 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
     <!-- Bootstrap Grid-System: Zentrierte Reihe -->
     <div class="row justify-content-center mt-5">
         <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
         <div class="col-md-8">
 			
-			
             <!-- Bootstrap-Tabelle -->
             <table class="table">
+				
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
                 <tr>
