@@ -54,8 +54,8 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
 	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="#">Statistik Lerntypen </a></li>
-                         <li><a class="dropdown-item" href="#">Statistik Modul </a></li>
+                <li><a class="dropdown-item" href="Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+                        
                                                                                      </ul> 
 	  
 	   <!-- Link zur Startseite -->
@@ -152,7 +152,12 @@
 				<br>
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="Erfassungsseite/modul.erfassung.php" class="btn btn-secondary mb-5">Nicht dein Modul dabei? Erfasse ein neues Modulprofil</a>
+<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Dein Modul ist noch nicht dabei? Erfasse ein neues Modulprofil!</a>
+				
+							<!-- Link zu Lerntyp -->
+<a href="Erfassungsseite/lerntyperfassung/lerntyp.seite.php" class="btn btn-secondary mb-5">Dein ganz spezieller Lerntyp ist noch nicht dabei? Erfasse ein neues Lerntypprofil!</a>
+			
+			
 			
 			</form>
         </div>
