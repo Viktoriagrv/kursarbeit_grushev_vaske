@@ -50,7 +50,7 @@
     <h1>EduLearn</h1>
 </header>
     
-	  <!-- Navigationsleiste mit Bootstrap -->
+	 	  <!-- Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -62,17 +62,19 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
     <ul class="dropdown-menu">
 		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
+      <li><a class="dropdown-item" href="../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="../Informationsseite/info_motorisch.php"Informationsseite/info_motorisch.php""> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		  </ul>     
 		  
       <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lertyp Datenerfassung</a></li>
+      <li><a class="dropdown-item" href="../lerntyp_erfassung.php">Allgemeine Datenerfassung</a></li>
+		<li><a class="dropdown-item" href="../lerntyp_erfassung.php">Modulprofil erfassen </a></li>
+		<li><a class="dropdown-item" href="../lerntyp_erfassung.php">Lerntypprofil erfassen</a></li>
     </ul> 
 	  
 	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
@@ -80,14 +82,14 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
 	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
-		<li><a class="dropdown-item" href="Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+                <li><a class="dropdown-item" href="statistiklerntyp.php">Statistik Lerntypen </a></li>
+		<li><a class="dropdown-item" href="modulstatistik/statistikmodul.php">Statistik Modul </a></li>
                         
                                                                                      </ul> 
 	  
 	   <!-- Link zur Startseite -->
 		                       <li class="nav-item">
-                                          <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+                                          <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
 </ul>
 	  
