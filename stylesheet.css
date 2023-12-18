@@ -32,3 +32,9 @@ footer {
 footer p {
     font-style: italic; /* Kursiver Text für den Footer */
 }
+
+
+/* Z-Index des Footers, um sicherzustellen, dass er über anderen Elementen liegt */
+footer {
+    z-index: 1000;
+}

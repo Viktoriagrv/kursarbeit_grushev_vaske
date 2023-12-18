@@ -1,7 +1,7 @@
 <!-- Definition vom Dokumententypen-->
 <!doctype html>
 <!-- Definition der Sprache "de" = deutsch -->
-<html lang="de" data-bs-theme="dark">
+<html lang="de">
 	
 	<!-- Meta-Daten sind im Headbereich anzutreffen-->
   <head>
@@ -11,7 +11,7 @@
 	  
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
+	   <link rel="stylesheet" href="../../stylesheet.css"> 
     <title> Erfassung der Lerntypen </title>
 	
 	<!-- Bootstrap-Einbindung -->
@@ -20,8 +20,10 @@
 	
 	
   <body>
-    <!-- Überschrift -->
-	<h1> Erfassung deines Lerntypen </h1>
+      <header>
+    <h1>EduLearn</h1>
+</header>
+    
 	  
 	  <!-- Navigationsleiste mit Bootstrap -->
 	  

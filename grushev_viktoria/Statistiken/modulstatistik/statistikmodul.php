@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<link rel="stylesheet" href="../../../stylesheet.css"> 
     <title>Statistik Modul</title>
     	
 	<!-- Bootstrap-Einbindung -->
@@ -46,8 +46,9 @@
     </script>
 </head>
 <body>
-	 <!-- Überschrift -->
-	<h1> Statistik Modul </h1>
+     <header>
+    <h1>EduLearn</h1>
+</header>
 	  
 	  <!-- Navigationsleiste mit Bootstrap -->
 	  
@@ -98,6 +99,11 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
     <div id="chart_div"></div>
+			
+			 <footer class="fixed-bottom bg-primary text-center p-2">
+      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+    </footer>
+			
 </body>
 </html>
 

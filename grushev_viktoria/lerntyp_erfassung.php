@@ -11,7 +11,7 @@
 	  
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="stylesheet.css">
+	  <link rel="stylesheet" href="../stylesheet.css">
 	  
     <title> Erfassung der Lerntypen </title>
 	
