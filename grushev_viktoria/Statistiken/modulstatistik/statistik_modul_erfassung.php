@@ -18,11 +18,12 @@ if ($conn->connect_error) {
     die("Verbindung fehlgeschlagen: " . $conn->connect_error);
 }
 
-// SQL-Abfrage, um Lerntyp-Daten zu erhalten
-$sql = "SELECT lerntyp.lerntyp, COUNT(lerndaten.lerntyp_id) as anzahl 
-        FROM lerntyp
-        LEFT JOIN lerndaten ON lerntyp.lerntyp_id = lerndaten.lerntyp_id
-        GROUP BY lerntyp.lerntyp_id";
+// SQL-Abfrage, um Modul-Daten zu erhalten
+$sql = "SELECT modul.modul_id, modul.modulname, COUNT(lerndaten.modul_id) as anzahl 
+FROM modul
+LEFT JOIN lerndaten ON modul.modul_id = lerndaten.modul_id
+GROUP BY modul.modul_id
+";
 
 $result = $conn->query($sql);
 

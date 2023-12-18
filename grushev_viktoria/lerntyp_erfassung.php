@@ -11,6 +11,7 @@
 	  
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="stylesheet.css">
 	  
     <title> Erfassung der Lerntypen </title>
 	
@@ -20,10 +21,10 @@
 
 	
   <body>
-	  
-    <!-- Überschrift -->
-	<h1> Erfassung deines Lerntypen </h1>
-	  
+	<header>
+    <h1>EduLearn</h1>
+</header>
+
 	  <!-- Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
@@ -55,6 +56,7 @@
     <ul class="dropdown-menu">
 	    <!-- Verlinkung Statistik -->
                 <li><a class="dropdown-item" href="Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+		<li><a class="dropdown-item" href="Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
                         
                                                                                      </ul> 
 	  
@@ -165,7 +167,7 @@
 </div>
 	  			
 	
-<
+
    <!-- Bootstrap Footer -->
     <footer class="fixed-bottom bg-primary text-center p-2">
       <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
