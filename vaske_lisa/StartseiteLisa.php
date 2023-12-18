@@ -155,25 +155,18 @@
       <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
 
 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
-		  
-		
-		
-		
-		
-		
-		
-		
-		
-      <div class="carousel-caption d-none d-md-block">
-	<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
+				
+	
 		  
         <h5>Konzentration</h5>
         <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
@@ -321,11 +314,6 @@
 
 
 
-
-
-
-
-
 <!-- anfang karussell-->
 	<div id="meinkarussell" class="folie"
 		 data-ride="karussell">
@@ -370,7 +358,7 @@
 		<span class="carousel-control-next-icon"
 			  aria-hidden="true"></span>
 		</a>
-		
+
 
 <!-- Folie 2-->	
 	</ol>
@@ -405,21 +393,56 @@
 		<span class="carousel-control-next-icon"
 			  aria-hidden="true"></span>
 		</a>
-				
-	<!-- Folie 3-->	
+			
+			
+			
+			
+<!-- Folie 3-->	
 	</ol>
 		<div class="carousel-inner">
 		<div class="carousel-item active">
 		<div class="container">
-		<h5>Was verbessert meine Konzentration?</h5>
+		<h5>Was verbessert meine Konzentration?</h4>
         <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
 			<a href="#" class="btn btn-lg btn-primary">
 		<div class="carousel-item">
       <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild2">
       <div class="carousel-caption d-none d-md-block">
+		  
+		  
+			</a>
+			</div>
+		</div>
+	</div>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-prev" role="button"
+		data-slide="prev">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-prev-icon"
+			  aria-hidden="true"></span>
+		</a>
+		
+		<a href="#meinkarussell"
+		class="carousel-control-next" role="button"
+		data-slide="next">
+		<span class="sr-only">Zurück</span>
+		<span class="carousel-control-next-icon"
+			  aria-hidden="true"></span>
+		</a>
+		
+      <div class="carousel-caption d-none d-md-block">
+		  
+		
+	<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
 
-
-
+		</style>
+		    
+		  
 	
 	
 	

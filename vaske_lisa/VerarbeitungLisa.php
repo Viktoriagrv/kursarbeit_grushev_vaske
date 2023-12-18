@@ -12,16 +12,16 @@ $conn=new mysqli($servername, $username, $passwort, $dbname);
 
 	if (isset ($_POST["gesendet"])) {
 		//wurde das Formular gesendet
-		$studierende=$_POST['studierende'];
-		$semester=$_POST['semester'];
+		$vorname=$_POST['vorname'];
+		$nachname=$_POST['nachname'];
 		$lernerfolg=$_POST['lernerfolg'];
-		$lernstrategie=$_POST['lerstrategie'];
-		$zeitpunkt=$_POST['zeitpunkt'];
+		$strategie=$_POST['strategie'];
+		$semester=$_POST['semester'];
 		
 		//Query
-		$insert_query="INSERT INTO studierende (studierende,lernstrategie,semester,lernerfolg,zeitpunkt) VALUES ('$studierende','$semester','$lernerfolg','$lernstrategie','$zeitpunkt')";
+		$insert_query="INSERT INTO studierendenstrategie (vorname,nachname,lernerfolg,strategie,semester) VALUES ('$vorname','$nachname','$lernerfolg','$strategie','semmester')";
 		
-		if (mysqli_query($conn, $insert_query)) {
+		if (mysqli_query($con, $insert_query)) {
 			echo "Erfolgreich in Datenbank hinzugefügt";
 		} else{
 			echo "Fehler beim Einfügen" . $insert_query . "<br>" . mysqli_error($conn);
