@@ -25,7 +25,7 @@
 </header>
     
 	  
-	  <!-- Navigationsleiste mit Bootstrap -->
+	  	  <!-- Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -43,25 +43,33 @@
 		             <li><a class="dropdown-item" href="info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		  </ul>     
 		  
-
+      <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="../lerntyp_erfassung.php"p>Generelle Datenerfassung</a></li>
+		<li><a class="dropdown-item" href="../Erfassungsseite/lerntyperfassung/lerntyp.seite.php">Lerntyp-Profil Datenerfassung</a></li>
+		<li><a class="dropdown-item" href="../Erfassungsseite/modulerfassung/modul.seite.php">Modul-Profil Datenerfassung</a></li>
+    </ul> 
+	  
 	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
 	  <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
 	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="#">Statistik Lerntypen </a></li>
-                         <li><a class="dropdown-item" href="#">Statistik Modul </a></li>
+                <li><a class="dropdown-item" href="../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+		<li><a class="dropdown-item" href="../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+                        
                                                                                      </ul> 
-	   <!-- Link zu Viktoria Startseite -->
-		                       <li class="nav-item">
-                          <a class="nav-link" href="../lerntyp_erfassung.php">Zurück zur Erfassung</a>
-		
+	  
 	   <!-- Link zur Startseite -->
 		                       <li class="nav-item">
                                           <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
 </ul>
-  <!-- Hier ist die Navigationsleiste zuende -->
+	  
+
+</div>
 	  
 	  
   <!-- Beginn Formular-Sektion -->
