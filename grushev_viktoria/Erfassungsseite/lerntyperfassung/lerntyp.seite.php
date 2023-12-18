@@ -54,8 +54,7 @@
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
     <ul class="dropdown-menu">
 	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="#">Statistik Lerntypen </a></li>
-                         <li><a class="dropdown-item" href="#">Statistik Modul </a></li>
+                <li><a class="dropdown-item" href="../../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
                                                                                      </ul> 
 	  
 	   <!-- Link zur Startseite -->
