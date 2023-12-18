@@ -109,13 +109,12 @@ if ($con->connect_error) {
 }
 
 // SQL-Abfrage, um die letzten zehn Einträge abzurufen
-$sql = "SELECT lerntyp AS lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS modul, semester AS semester, aufwand AS aufwand
-        FROM lerndaten
-        JOIN lerntyp ON lerndaten.lerntyp_id = lerntyp.lerntyp_id
-        JOIN modul ON lerndaten.modul_id = modul.modul_id
-		JOIN semester ON lerndaten.semester_id = semester.semester_id
-		JOIN aufwand ON lerndaten.aufwand_id = aufwand.aufwand_id
-        ORDER BY lerndaten.id DESC
+$sql = "SELECT lernid AS lernid, vorname, nachname, strategieid AS strategieid, semesterid AS semesterid
+        FROM studierendestrategie
+        JOIN lernerfolg ON studierendestrategie.lernid = lernerfolg.lernid
+        JOIN strategie ON studierendestrategie.strategieid = strategie.strategieid
+		JOIN semester ON studierendestrategie.semesterid = semester.semesterid
+        ORDER BY studierendestrategie.id DESC
         LIMIT 10";
 
 // Ausführen der SQL-Abfrage
@@ -193,10 +192,14 @@ mysqli_close($con);
 					 <!-- Hier PHP-Datenbank Verbindung 2 -->
                     <?php
                         // Verbindung zur Datenbank
-                     
+                     // Datenbank: meine Daten
+					$servername = "localhost";
+					$username = "m12241-32";
+					$passwort = "bZlvguhrx";
+					$dbname = "m12241_32";
 
                         // Abfrage für die Daten
-                        $query = "SELECT studierende, semester, lernstrategie, lernerfolg,  zeitpunkt FROM lerndaten ORDER BY id DESC LIMIT 5"; 
+                        $query = "SELECT vorname, nachname, lernerfolg, startegie, semester FROM studierendestartegie ORDER BY studierendestrategie.id DESC LIMIT 10"; 
 					
                         $result = mysqli_query($con, $query);
 
@@ -204,16 +207,24 @@ mysqli_close($con);
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo "<tr>";
                             echo "<td>{$row['vorname']}</td>";
-                            echo "<td>{$row['semester']}</td>";
+                            echo "<td>{$row['nachname']}</td>";
 							echo "<td>{$row['lernerfolg']}</td>";
-                            echo "<td>{$row['lernstrategie']}</td>";
-							echo "<td>{$row['zeitpunkt']}</td>";
+                            echo "<td>{$row['strategie']}</td>";
+							echo "<td>{$row['semester']}</td>";
                             echo "</tr>";
                         }
 
-                        // Verbindung schließen
-                        mysqli_close($con);
-                    ?>
+                        // Freigeben des Ergebnisses
+					mysqli_free_result($result);
+					
+				
+				
+
+					// Schließen der Verbindung zur Datenbank
+					mysqli_close($con);
+					?>
+					
+					
 					
                 </tbody>
             </table>

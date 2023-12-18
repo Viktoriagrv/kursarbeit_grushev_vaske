@@ -1,5 +1,11 @@
 <?php
 
+// Fehlermeldung
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+
+
 // Datenbank: meine Daten
 $servername = "localhost";
 $username = "m12241-32";
@@ -10,6 +16,14 @@ $dbname = "m12241_32";
 $con = new mysqli($servername, $username, $passwort, $dbname);
 
 if (isset($_POST["gesendet"])) {
+	
+	
+	
+	// Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
+if ($con->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $con->connect_error);
+}
+
     // wurde das Formular gesendet
     $vorname = $_POST['vorname'];
     $nachname = $_POST['nachname'];

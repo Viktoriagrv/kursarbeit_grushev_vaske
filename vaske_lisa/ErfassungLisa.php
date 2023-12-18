@@ -156,13 +156,13 @@
 	  <!-- Vorname -->
                 <div class="form-group">
                     <label for="Vorname">Vorname</label>
-                    <textarea class="form-control" id="vorname" name="vorname" cols="45" rows="5"></textarea>
+                    <textarea class="form-control" id="vorname" name="vorname" cols="3" rows="1"></textarea>
                 </div>
 
                 <!-- Nachname -->
                 <div class="form-group">
                     <label for="nachname">Nachname</label>
-                    <textarea class="form-control" id="nachname" name="nachname" cols="45" rows="5"></textarea>
+                    <textarea class="form-control" id="nachname" name="nachname" cols="3" rows="1"></textarea>
                 </div>
 
 
