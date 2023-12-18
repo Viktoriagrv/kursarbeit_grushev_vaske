@@ -153,48 +153,58 @@
 							  
 		<!-- For verbindet mit Studierende -->
 							  
-	 <label for="studierende">Gib deinen Vornamen ein:</label>									
-	<input type="text" class="form-control" name="studierende" placeholder="Dein Vorname" required>
-	</div>
-		
-		
-	<!-- Formular Semester-->
-	<div class="form-group">					  
-	 	<label for="semester">Gib dein Semester ein:</label>									
-		<input type="text" class="form-control" name="semester" placeholder="Dein Semester" required>
-	</div>	
+	  <!-- Vorname -->
+                <div class="form-group">
+                    <label for="Vorname">Vorname</label>
+                    <textarea class="form-control" id="vorname" name="vorname" cols="45" rows="5"></textarea>
+                </div>
+
+                <!-- Nachname -->
+                <div class="form-group">
+                    <label for="nachname">Nachname</label>
+                    <textarea class="form-control" id="nachname" name="nachname" cols="45" rows="5"></textarea>
+                </div>
+
+
 	
-	
-	<!-- Formular Lernerfolg-->
-	<div class="form-group">					  
-	 <label for="lernerfolg">Wähle deinen Lernerfolgsstatus:</label>									
-	 <select class="form-control" name="lernerfolg">
-		 <option value=""disabled selected>-Bitte wähle deinen Lernerfolgssstatus aus-</option>
-		  <option value="gelungen">gelungen</option>
-		  <option value="maessiggelungen">mäßig gelungen</option>
-		  <option value="nichtgelungen">nicht gelungen</option>
-		
-	</select>
-	</div>
+    <!-- Lernerfolg-->
+                <div class="form-group">
+                    <label for="lernid">Was ist dein Lernerfolg?</label>
+                    <select class="form-control" id="lernid" name="lernid">
+                        <option value='1'>nicht gelungen</option>
+                        <option value='2'>mäßig gelungen</option>
+                        <option value='3'>gelungen</option>
+        
+                    </select>
+                </div>
 		
 		
-	<!-- Formular Lernstartegie-->
-	<div class="form-group">					  
-	 <label for="lernstrategie">Wähle deine genutzte Lernstrategie:</label>									
-	 <select class="form-control" name="lernstrategie">
-		 <option value=""disabled selected>-Bitte wähle deine genutzte Lernstrategie aus-</option>
-		  <option value="kognitivelernstrategie">kognitive Lernstartegie</option>
-		  <option value="metakognitivelernstartegie">metakognitive Lernstrategie</option>
-		  <option value="ressourcenbezogenelernstrategie">ressourcenbezogene Lernstrategie</option>
-	</select>
-	</div>
+	    <!-- Strategie -->
+                <div class="form-group">
+                    <label for="strategieid">Was ist deine Strategie?</label>
+                    <select class="form-control" id="strategieid" name="strategieid">
+                        <option value='1'>kognitiv</option>
+                        <option value='2'>metakognitiv</option>
+                        <option value='3'>ressourcenbezogen</option>
+                   
+                    </select>
+                </div>
 		
-	<!-- Formular Zeitpunkt Beginn Nutzung Lernstrategie-->
-	<div class="form-group">						  
-	 <label for="zeitpunkt">Gib den Zeitpunkt ein, an dem du geonnen hast, die Lernstrategie zu nutzen:</label>						
-	<input type="text" class="form-control" name="zeitpunkt" placeholder="Dein Zeitpunkt" required>
-	</div>
-	</br>	
+		    <!-- Semester -->
+                <div class="form-group">
+                    <label for="semesterid">Was ist dein Semester?</label>
+                    <select class="form-control" id="semesterid" name="semesterid">
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+						<option value='5'>5</option>
+                        <option value='6'>6</option>
+					    <option value='7'>7</option>
+                        <option value='8'>8</option>
+                    </select>
+                </div>
+
 		
 	<!-- Absende-Button-->
 	<button type="submit" class="btn btn-primary" name="gesendet">Senden</button>
