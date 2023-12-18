@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <title>Statistik Lerntypen</title>
+    <title>Statistik Modul</title>
     	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,11 +20,11 @@
         function drawChart() {
             // Daten vom Server mit AJAX abrufen
             $.ajax({
-                url: 'statistik_erfassung.php', // Verlinkung PHP Datei
+                url: 'statistik_modul_erfassung.php', // Verlinkung PHP Datei
                 dataType: 'json',
                 success: function (data) {
                     var chartData = new google.visualization.DataTable();
-                    chartData.addColumn('string', 'Lerntyp');
+                    chartData.addColumn('string', 'Modul');
                     chartData.addColumn('number', 'Anzahl');
 
                     // Annahme: Deine Daten haben 'lerntyp' und 'lerntyp_id' Spalten
@@ -33,7 +33,7 @@
                     }
 
                     var options = {
-                        'title': 'Lerntypen Verteilung',
+                        'title': 'Modul Verteilung',
                         'width': 400,
                         'height': 300
                     };
@@ -47,7 +47,7 @@
 </head>
 <body>
 	 <!-- Überschrift -->
-	<h1> Statistik Lerntypen </h1>
+	<h1> Statistik Modul </h1>
 	  
 	  <!-- Navigationsleiste mit Bootstrap -->
 	  
@@ -100,3 +100,4 @@
     <div id="chart_div"></div>
 </body>
 </html>
+
