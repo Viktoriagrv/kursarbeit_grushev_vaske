@@ -22,17 +22,7 @@
 	
 	
 	
-<style>
-	/*CSS-Styling für die Kuchendiagramme, Abstände */
-	.chart-container {
-	display:flex;
-	}
-	.chart-item {
-	margin-right: 20px; 
-	
-</style>
-	
-	
+<
 	
   <head>
 	  

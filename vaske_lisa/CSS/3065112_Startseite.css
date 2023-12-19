@@ -43,7 +43,7 @@ footer {
 
 		
 
-    /* CSS-Styling für das Logo */
+	 /* CSS-Styling für das Logo */
     #logo {
       position: absolute;
       top: 1px; 
@@ -52,9 +52,11 @@ footer {
  
 	
 
-/*Hier Block farbig per style*/	
-	
-.carousel-caption {
-    background-color: #352525; 
-}
+
+
+
+
+
+
+
 	
