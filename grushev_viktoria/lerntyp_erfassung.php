@@ -77,52 +77,32 @@
                                    <!-- Formular -->
                                       <form action="verarbeitung.php" method="post">
 
-                                   <!-- Lernziel -->
-                                    <div class="form-group">
-                                      <label for="lernziel">Lernziel</label>
-                                          <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
-                                                    </div>
-
-                                                 <!-- Aufgabe -->
-                                                  <div class="form-group">
-                                                       <label for="aufgabe">Aufgabe</label>
-                                                           <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
-                                                                                              </div>
-
-                                                    <!-- Inspiration -->
-                                                    <div class="form-group">
-                                                        <label for="inspiration">Inspiration</label>
-                                                             <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
-                                                                     </div>
-
-                <!-- Lerntyp -->
-                <div class="form-group">
-                    <label for="lerntyp_id">Was ist dein Lerntyp?</label>
-                    <select class="form-control" id="lerntyp_id" name="lerntyp_id">
-                        <option value='1'>Auditiv</option>
-                        <option value='2'>Kommunikativ</option>
-                        <option value='3'>Visuell</option>
-                        <option value='4'>Motorisch</option>
-                    </select>
-                </div>
-
-                <!-- Modul -->
-                <div class="form-group">
-                    <label for="modul_id">Modul</label>
-                    <select class="form-control" id="modul_id" name="modul_id">
-                        <option value='1'>Psychologie</option>
-                        <option value='2'>Grundlagen der Ökonomie</option>
-                        <option value='3'>Grundlagen der Gestaltung</option>
-                        <option value='4'>Informatik</option>
-                        <option value='5'>Mathematik</option>
-                        <option value='6'>Englisch</option>
-                        <option value='7'>Rechnungswesen und Controlling</option>
-                    </select>
-                </div>
-				
+										 <img src="Bilder/Dein interaktives Erfassungsformular.png" class="img-fluid" alt="...">
+                    <!-- Lerntyp -->
+<div class="form-group">
+    <label for="lerntyp_id">Was für ein Lerntyp bist du?</label>
+    <select class="form-control" id="lerntyp_id" name="lerntyp_id">
+       <?php
+        // Einbinden der dynamischen Option
+        include('grunderfassung_lerntyp.php');
+        ?>
+    </select>
+</div>
+<br>
+										          <!-- Modul -->
+<div class="form-group">
+    <label for="modul_id">Für welches Modul musst du was machen?</label>
+    <select class="form-control" id="modul_id" name="modul_id">
+       <?php
+        // Einbinden der dynamischen Option
+        include('grunderfassung_modul.php');
+        ?>
+    </select>
+</div>
+				<br>
 				  <!-- Semester -->
                 <div class="form-group">
-                    <label for="semester_id">Semester auswählen</label>
+                    <label for="semester_id">In welchem Semester bist du?</label>
                     <select class="form-control" id="semester_id" name="semester_id">
                         <option value='1'>Semester 1</option>
                         <option value='2'>Semester 2</option>
@@ -135,9 +115,10 @@
                     </select>
                 </div>
 				
+										  <br>
 				<!-- Aufwand -->
                 <div class="form-group">
-                    <label for="aufwand_id">Dein Zeitaufwand</label>
+                    <label for="aufwand_id">Wie viel machst du aktuell für dieses Modul?</label>
                     <select class="form-control" id="aufwand_id" name="aufwand_id">
                         <option value='1'>weniger als 1 Stunde</option>
                         <option value='2'>1 - 2 Stunden</option>
@@ -146,19 +127,40 @@
                         <option value='5'>Mehr als 6 Stunden</option>
                     </select>
                 </div>
+										  <br>                                                 
+										  <!-- Aufgabe -->
+                                                  <div class="form-group">
+                                                       <label for="aufgabe">Erkläre kurz was deine genaue Aufgabe ist:</label>
+                                                           <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
+                                                                                              </div>
 
-
-
+										  <br>
+										  
+										              <!-- Lernziel -->
+                                                         <div class="form-group">
+                                                           <label for="lernziel">Was willst du heute als Meilenstein für diese Aufgabe erreichen?</label>
+                                                              <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
+                                                                 </div>
+										  <br>
+                                                    <!-- Inspiration -->
+                                                    <div class="form-group">
+                                                        <label for="inspiration">Inspiriere andere. Wie lernst du mit deinem Lerntypen für diese Aufgabe?</label>
+                                                             <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
+                                                                     </div>
+										  <br>
                 <!-- Absenden -->
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
    
 				<br>
+										 
+	<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+<p style="color: blue; text-align: justify; font-style: italic;">Diese Seite ist noch ganz neu! Das heißt: Manche deiner Module oder Lerntypen könnten nicht in der Auswahl angezeigt werden. Unterstütze uns gerne dabei, die Auswahl zu erweitern, und füge Lerntyp-Kombinationen und Module hinzu!</p>									  
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Dein Modul ist noch nicht dabei? Erfasse ein neues Modulprofil!</a>
+<a href="Erfassungsseite/modulerfassung/modul.seite.php" class="btn btn-secondary mb-5">Erfasse ein neues Modulprofil!</a>
 				
 							<!-- Link zu Lerntyp -->
-<a href="Erfassungsseite/lerntyperfassung/lerntyp.seite.php" class="btn btn-secondary mb-5">Dein ganz spezieller Lerntyp ist noch nicht dabei? Erfasse ein neues Lerntypprofil!</a>
+<a href="Erfassungsseite/lerntyperfassung/lerntyp.seite.php" class="btn btn-secondary mb-5">Erfasse ein neues Lerntypprofil!</a>
 			
 			
 			
