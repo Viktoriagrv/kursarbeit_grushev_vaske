@@ -130,7 +130,76 @@
     </main>
 
 	
-	
+	<!-- Bootstrap Karusell, noch anpassen!-->
+<div id="motivation" class="folie">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
+      <div class="carousel-caption d-none d-md-block">
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Motivation</h5>
+        <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
+      <div class="carousel-caption d-none d-md-block">
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Das Wichtigste zuerst</h5>
+        <p>Was du über Motivation wissen solltest.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
+      <div class="carousel-caption d-none d-md-block">
+		  
+<!--Hier Block farbig per style-->	
+		<style>
+.carousel-caption {
+    background-color: #352525; 
+}
+
+		</style>
+		  
+        <h5>Fazit zur Motivation</h5>
+        <p>Hier eine kleine Zusammenfassung.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">zurück</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">vor</span>
+  </button>
+</div>
+
+<p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
+
+
 	
 	
 	

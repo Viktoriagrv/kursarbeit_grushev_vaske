@@ -21,16 +21,7 @@
   </head>
 	
 	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
+
 	
 	
 	 

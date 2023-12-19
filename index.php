@@ -7,7 +7,13 @@
     <title>Startseite Kursarbeit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<<<<<<< HEAD
 	
+=======
+
+	
+
+>>>>>>> 08367223f0d4bd670aafad52de1c80ea297c386e
 	
 	</head>
 <body>

@@ -17,33 +17,12 @@
 	<!-- Meta-Daten sind im Headbereich anzutreffen-->
 	
 	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
 
 	
 	
 	
 	
-<style>
-	/*CSS-Styling für die Kuchendiagramme, Abstände */
-	.chart-container {
-	display:flex;
-	}
-	.chart-item {
-	margin-right: 20px; 
-	
-</style>
-	
-	
+<
 	
   <head>
 	  
@@ -62,7 +41,7 @@
 	
 <body>
     <header>
-        <h1>Lernstartegie</h1>
+        <h1>Lernstrategie</h1>
   
     </header>
 
@@ -233,6 +212,122 @@
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+<!-- ab hier eigentliche Tabelle-->
+
+
+				
+			<!-- Hier beginnt die Tabelle 2 - Container für mittige Ausrichtung der Tabelle -->
+<div class="container">
+    <!-- Bootstrap Grid-System: Zentrierte Reihe -->
+    <div class="row justify-content-center mt-5">
+        <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
+        <div class="col-md-8">
+			
+            <!-- Bootstrap-Tabelle -->
+            <table class="table">
+				
+                <!-- Tabellenkopf mit dunklem Hintergrund -->
+                <thead class="thead-dark">
+                <tr>
+                    <!-- Spaltenüberschriften -->
+                    <th>Anzahl insgesamt gelungenes Lernen</th>
+                    <th>Anzahl insgesamt mäßig gelungenes Lernen</th>
+                    <th>Anzahl insgesamt nicht gelungenes Lernen</th>
+					<th>Am häufigsten angewendete Lernstrategie</th>
+         
+                </tr>
+                </thead>
+				
+                <!-- Tabellenkörper für Daten -->
+				
+                <tbody>
+					
+					
+					 <!-- Hier PHP-Datenbank Verbindung 2 -->
+                     <!-- Hier PHP-Datenbank Verbindung 2 -->
+                    <?php
+
+                    // Verbindungsparameter definieren für die zweite Datenbank
+                    $servername2 = "localhost";
+                    $username2 = "m12241-32";
+                    $passwort2 = "bZlvguhrx";
+                    $dbname2 = "m12241_32";
+
+                    // Verbindung zur zweiten Datenbank herstellen
+                    $con2 = new mysqli($servername2, $username2, $passwort2, $dbname2);
+
+                    // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
+                    if ($con2->connect_error) {
+                        die("Verbindung fehlgeschlagen: " . $con2->connect_error);
+                    }
+
+                    // Abfrage für die Daten für die zweite Datenbank
+                    $query = "SELECT vorname, nachname, lernerfolg, startegie, semester FROM studierendestrategie ORDER BY studierendestrategie.id DESC LIMIT 10";
+
+                    // SQL für die zweite Datenbank
+                    $sql2 = "SELECT vorname, nachname, lernerfolg.lernerfolg AS lernerfolg, strategie.strategie AS strategie, semester.semester AS semester
+                            FROM studierendestrategie
+                            JOIN lernerfolg ON studierendestrategie.lernid = lernerfolg.lernid
+                            JOIN strategie ON studierendestrategie.strategieid = strategie.strategieid
+                            JOIN semester ON studierendestrategie.semesterid = semester.semesterid
+                            ORDER BY studierendestrategie.id DESC
+                            LIMIT 10";
+
+                    $result2 = mysqli_query($con2, $sql2);
+
+                    // Daten aus der Abfrage in die Tabelle einfügen für die zweite Datenbank
+                    while ($row = mysqli_fetch_assoc($result2)) {
+
+                        echo "<tr>";
+                        echo "<td>{$row['vorname']}</td>";
+                        echo "<td>{$row['nachname']}</td>";
+                        echo "<td>{$row['lernerfolg']}</td>";
+                        echo "<td>{$row['strategie']}</td>";
+                        echo "<td>{$row['semester']}</td>";
+                        echo "</tr>";
+                    }
+
+                    // Freigeben des Ergebnisses für die zweite Datenbank
+                    mysqli_free_result($result2);
+
+                    // Schließen der Verbindung zur zweiten Datenbank
+                    mysqli_close($con2);
+                    ?>
+					
+					
+					
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
