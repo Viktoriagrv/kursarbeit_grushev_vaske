@@ -17,13 +17,6 @@
 	<!-- Meta-Daten sind im Headbereich anzutreffen-->
 	
 	
-
-	
-	
-	
-	
-<
-	
   <head>
 	  
 	

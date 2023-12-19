@@ -17,20 +17,6 @@
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
-	<!-- Meta-Daten sind im Headbereich anzutreffen-->
-	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
-	
 	
 	
   <head>
@@ -129,75 +115,99 @@
         <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
+
+<p>Hier findest du zusätzliche Statistiken,die aber nicht mit unserer Erfassung zusammenhängen, sondern sich allgemein auf das Thema Motivation beziehen</p>
 	
-	<!-- Bootstrap Karusell, noch anpassen!-->
-<div id="motivation" class="folie">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawCharts);
 
-		</style>
+      function drawCharts() {
 		  
-        <h5>Motivation</h5>
-        <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
+		  
+		  
+        // Daten für das kognitive Diagramm
+        var data1 = new google.visualization.DataTable();
+        data1.addColumn('string', 'Topping');
+        data1.addColumn('number', 'Slices');
+        data1.addRows([
+          ['gelungen', 2],
+          ['mäßig gelungen', 2],
+          ['nicht gelungen', 1]
+        ]);
+        var options1 = {
+          'title':'Lernerfolg per kognitiver Lernstrategie',
+          'width':400,
+          'height':300
+        };
+        var chart1 = new google.visualization.BarChart(document.getElementById('chart_div_1'));
+        chart1.draw(data1, options1);
+
+		  
+		  
+		  
+        // Daten für das metakognitive Diagramm
+        var data2 = new google.visualization.DataTable();
+        data2.addColumn('string', 'Topping');
+        data2.addColumn('number', 'Slices');
+        data2.addRows([
+          ['gelungen', 1],
+          ['nicht gelungen', 4]
+        ]);
+        var options2 = {
+          'title':'Lernerfolg per metakognitiver Lernstrategie',
+          'width':400,
+          'height':300
+        };
+        var chart2 = new google.visualization.BarChart(document.getElementById('chart_div_2'));
+        chart2.draw(data2, options2);
+
+		  
+		  
+		  
+        // Daten für das ressourcenbezogene Diagramm
+        var data3 = new google.visualization.DataTable();
+        data3.addColumn('string', 'Topping');
+        data3.addColumn('number', 'Slices');
+        data3.addRows([
+          ['gelungen', 2],
+          ['mäßig gelungen', 1],
+          ['nicht gelungen', 1]
+        ]);
+        var options3 = {
+          'title':'Lernerfolg per ressourcenbezogener Lernstrategie',
+          'width':400,
+          'height':300
+        };
+        var chart3 = new google.visualization.BarChart(document.getElementById('chart_div_3'));
+        chart3.draw(data3, options3);
+      }
+    </script>
+
+   
+  </head>
+
+  <body>
+	  
+	  
+	  
+    <!-- Container für die Kuchendiagramme -->
+    <div class="chart-container">
+      <div class="chart-item">
+        <div id="chart_div_1"></div>
+      </div>
+      <div class="chart-item">
+        <div id="chart_div_2"></div>
+      </div>
+      <div class="chart-item">
+        <div id="chart_div_3"></div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-        <h5>Das Wichtigste zuerst</h5>
-        <p>Was du über Motivation wissen solltest.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-        <h5>Fazit zur Motivation</h5>
-        <p>Hier eine kleine Zusammenfassung.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
-</div>
-
-<p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
+  </body>
+</html>
 
 
 	
