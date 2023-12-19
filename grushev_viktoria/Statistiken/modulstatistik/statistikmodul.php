@@ -29,7 +29,7 @@
 
                     // Annahme: Deine Daten haben 'lerntyp' und 'lerntyp_id' Spalten
                     for (var i = 0; i < data.length; i++) {
-                        chartData.addRow([data[i].lerntyp, parseInt(data[i].anzahl)]);
+                    chartData.addRow([data[i].modulname, parseInt(data[i].anzahl)]);
                     }
 
                     var options = {

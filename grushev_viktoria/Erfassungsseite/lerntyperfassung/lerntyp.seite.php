@@ -71,11 +71,12 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <!-- Formular -->
-			
+			  <img src="../../Bilder/Lerntyp.png" class="img-fluid" alt="...">
             <form action="lerntyp.erfassung.php" method="post">
             <h3> Erfasse ein neues Lerntyp-Profil</h3>
-				<p> Natürlich probieren wir hier so viele Lerntypen wie möglich vorzustellen,
-				    manchmal hat man aber auch ganz bestimmte Kombinationen, füge sie hinzu!</p>
+				<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+<p style="color: blue; text-align: justify; font-style: italic;"> Natürlich probieren wir viele Lerntypen wie möglich vorzustellen,
+				    manchmal hat man aber auch ganz bestimmte Kombinationen, füge sie hinzu, vielleicht haben auch andere Student_innen diese Lerntyp-Kombi!</p>		
                
        	<p><input name = "lerntyp">Dein Lerntyp</input></p>
 	
