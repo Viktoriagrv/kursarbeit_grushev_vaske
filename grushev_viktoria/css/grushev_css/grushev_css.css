@@ -1,12 +1,47 @@
+/* Header-Stile */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #0077cc; /* Blaue Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
     padding: 10px 20px; /* Adjust padding as needed */
 }
 
 .logo {
     max-width: 100px; /* Adjust the maximum width as needed */
+}
+
+header h1 {
+    font-size: 36px; /* Schriftgröße für den Titel "EduLearn" */
+    text-align: center;
+}
+
+/* Blauer Text-Stil */
+.blue-text {
+    color: blue;
+    text-align: justify;
+    font-style: italic;
+}
+
+/* Footer-Stile */
+footer {
+    background-color: #0077cc; /* Blaue Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+    text-align: center; /* Text zentrieren */
+    padding: 10px; /* Innenabstand für den Footer */
+    z-index: 1000; /* Z-Index des Footers, um sicherzustellen, dass er über anderen Elementen liegt */
+}
+
+footer p {
+    font-style: italic; /* Kursiver Text für den Footer */
+}
+
+/* CSS-Styling für das Logo */
+#logo {
+    position: absolute;
+    top: 1px;
+    right: 10px;
 }
 
 /* Reset für die Standardeinstellungen der Seite */
@@ -20,91 +55,45 @@ body {
     font-family: Arial, sans-serif; /* Wähle eine geeignete Schriftart */
 }
 
-/* Header-Stile */
-header {
-    background-color: #0077cc; /* Blaue Hintergrundfarbe */
-    color: #fff; /* Weiße Textfarbe */
-    text-align: center; /* Text zentrieren */
-    padding: 20px; /* Innenabstand für den Header */
+/* Formular-Stile */
+/* Blauer Text-Stil */
+.blue-text {
+    color: blue;
+    text-align: justify;
+    font-style: italic;
 }
 
-header h1 {
-    font-size: 36px; /* Schriftgröße für den Titel "EduLearn" */
-	text-align: center
+.custom-form-group {
+    margin-bottom: 15px;
+    border: 1px solid #007bff; /* Blaue Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 10px; /* Innenabstand */
 }
 
-
-
-/* Footer-Stile */
-footer {
-    background-color: #0077cc; /* Blaue Hintergrundfarbe */
-    color: #fff; /* Weiße Textfarbe */
-    text-align: center; /* Text zentrieren */
-    padding: 10px; /* Innenabstand für den Footer */
+.custom-form-group label {
+    color: blue; /* Blaue Farbe für das Label */
 }
 
-footer p {
-    font-style: italic; /* Kursiver Text für den Footer */
+.custom-form-group select,
+.custom-form-group textarea {
+    width: 100%; /* Fülle die Breite des übergeordneten Containers aus */
+    padding: 8px; /* Innenabstand für Select und Textarea */
+    margin-top: 8px; /* Optional: Oben etwas Abstand */
+    color: grey; /* Blaue Farbe für die Schrift in Select und Textarea */
 }
 
-/*<<<<<<< HEAD*/
-
-/* Z-Index des Footers, um sicherzustellen, dass er über anderen Elementen liegt */
-footer {
-    z-index: 1000;
-}
-
-
-
-
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-
-/* =======
->>>>>>> e0b819862398e1edccc76a404b83fc8d9f8b0eca */
-
-
-
-
-/*farbige Blöcke*/
-	
-	.farbiger-textblock1 {
-  background-color: #DBFAFF; 
-  color: black; 
-  padding: 20px; 
-}
-		
-	.textblock2 {
-  background-color: #FFFCBA; 
-  color: black; 
-  padding: 20px; 
-		
-
-    .textblock1 {
-  background-color: #FADEFC; 
-  color: black; 
-  padding: 20px; 
-		
-		}
-
-
-/*Hier Block farbig per style*/	
-	
-.carousel-caption {
-    background-color: #352525; 
+.custom-form-group select:focus,
+.custom-form-group textarea:focus {
+    border-color: #0056b3; /* Dunklere blaue Farbe beim Fokus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Fokus-Schatten */
 }
 
 
-		
-		
-	/*CSS-Styling für die Kuchendiagramme, Abstände */
-	.chart-container {
-	display:flex;
-	}
-	.chart-item {
-	margin-right: 20px; 
-	
+.blue-form {
+    color: blue;
+    text-align: justify;
+    font-style: italic;
+}
+
+
+
