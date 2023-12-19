@@ -74,33 +74,44 @@
 	  
 	  
   <!-- Beginn Formular-Sektion -->
-	<!-- Beginn Formular-Sektion -->
-    <div class="container-fluid">
-        <div class="row mt-5">
+	<div class="container-fluid mt-5">
+        <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4 text-center"> <!-- Zentrierung der Überschrift -->
+            <div class="col-md-4 text-center">
                 <h1 class="mb-4">Der visuell Lerntyp</h1>
-
-                <!-- Bild  -->
                 <img src="../Bilder/Visuell.png" alt="Kommunikativer Lerntyp" class="img-fluid mb-4">
 
-                <!-- Text einfügen -->
-                <p>Hier kommt noch Text hin! Dieser Text ist super toll und einfach spannend! </p>
-				<br>
-				<p> Einfach noch spannender!</p>
+                <h3>Die Macht des Sehens: Warum visuelles Lernen mehr ist als nur bunte Bilder</h3>
+                <p>Stell dir vor, du sitzt in einem Ökonomie-Kurs, und der Dozent beginnt mit Angebot und Nachfrage zu jonglieren. Theorien fliegen durch den Raum, und du fragst dich, ob das überhaupt mit der Realität zu tun hat. Hier ist der Deal: Ökonomie besteht nicht nur aus abstrakten Theorien, sondern auch aus lebendigen, sich entwickelnden Prozessen. Und da kommt der visuelle Lerntyp ins Spiel.
+                    <!-- ... (rest of your content) ... -->
+                </p>
+                <br>
+
+                <!-- Bootstrap Accordion for Additional Information -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Weitere Informationen
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Hier können weitere Informationen zum visuellen Lerntyp eingefügt werden.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4"></div>
         </div>
     </div>
 
-
-				
-   <!-- Bootstrap Footer -->
-    <footer class="fixed-bottom bg-primary text-center p-2">
-      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+      <footer class="bg-primary text-center p-2">
+        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
-<!-- Einbindung von Bootstrap Java Script -->
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-	 
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
 </html>

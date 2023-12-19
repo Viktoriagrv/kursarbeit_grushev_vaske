@@ -44,55 +44,56 @@
 		  </ul>     
 		  
       <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="Erfassungsseite/lerntyperfassung/lerntyp.erfassung.php">Lertyp Datenerfassung</a></li>
-    </ul> 
+                      <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
+                                        <ul class="dropdown-menu">
+                                             <li><a class="dropdown-item" href="Erfassungsseite/lerntyperfassung/lerntyp.erfassung.php">Lertyp Datenerfassung</a></li>
+                                                                      </ul> 
 	  
 	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-    <ul class="dropdown-menu">
+                     	  <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+                                     <ul class="dropdown-menu">
+										 
 	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
-		<li><a class="dropdown-item" href="Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
-                        
-                                                                                     </ul> 
+                               <li> <a class="dropdown-item" href="Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+	                                 	<li><a class="dropdown-item" href="Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+										 <li><a class="dropdown-item" href="Statistiken/generalstatistik/generalstatistik.php">Generalstatistik </a></li>
+                                                                                                                                                    </ul> 
 	  
 	   <!-- Link zur Startseite -->
 		                       <li class="nav-item">
                                           <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
-</ul>
-	  
-
-</div>
+	    </ul>
+              </div>
+	
 <!-- Beginn von Formular -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <!-- Formular -->
-            <form action="verarbeitung.php" method="post">
+			
+                                   <!-- Formular -->
+                                      <form action="verarbeitung.php" method="post">
 
-                <!-- Lernziel -->
-                <div class="form-group">
-                    <label for="lernziel">Lernziel</label>
-                    <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
-                </div>
+                                   <!-- Lernziel -->
+                                    <div class="form-group">
+                                      <label for="lernziel">Lernziel</label>
+                                          <textarea class="form-control" id="lernziel" name="lernziel" cols="45" rows="5"></textarea>
+                                                    </div>
 
-                <!-- Aufgabe -->
-                <div class="form-group">
-                    <label for="aufgabe">Aufgabe</label>
-                    <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
-                </div>
+                                                 <!-- Aufgabe -->
+                                                  <div class="form-group">
+                                                       <label for="aufgabe">Aufgabe</label>
+                                                           <textarea class="form-control" id="aufgabe" name="aufgabe" cols="45" rows="5"></textarea>
+                                                                                              </div>
 
-                <!-- Inspiration -->
-                <div class="form-group">
-                    <label for="inspiration">Inspiration</label>
-                    <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
-                </div>
+                                                    <!-- Inspiration -->
+                                                    <div class="form-group">
+                                                        <label for="inspiration">Inspiration</label>
+                                                             <textarea class="form-control" id="inspiration" name="inspiration" cols="45" rows="5"></textarea>
+                                                                     </div>
 
                 <!-- Lerntyp -->
                 <div class="form-group">
@@ -169,8 +170,8 @@
 	
 
    <!-- Bootstrap Footer -->
-    <footer class="fixed-bottom bg-primary text-center p-2">
-      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+     <footer class="bg-primary text-center p-2">
+        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
 <!-- Einbindung von Bootstrap Java Script -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
