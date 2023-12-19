@@ -74,30 +74,37 @@
 	  
 	  
   <!-- Beginn Formular-Sektion -->
-	<div class="container-fluid mt-5">
+	
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
                 <h1 class="mb-4">Der visuell Lerntyp</h1>
                 <img src="../Bilder/Visuell.png" alt="Kommunikativer Lerntyp" class="img-fluid mb-4">
 
-                <h3>Die Macht des Sehens: Warum visuelles Lernen mehr ist als nur bunte Bilder</h3>
-                <p>Stell dir vor, du sitzt in einem Ökonomie-Kurs, und der Dozent beginnt mit Angebot und Nachfrage zu jonglieren. Theorien fliegen durch den Raum, und du fragst dich, ob das überhaupt mit der Realität zu tun hat. Hier ist der Deal: Ökonomie besteht nicht nur aus abstrakten Theorien, sondern auch aus lebendigen, sich entwickelnden Prozessen. Und da kommt der visuelle Lerntyp ins Spiel.
+                <h3 class="text-primary">Die Macht des Sehens: Warum visuelles Lernen mehr ist als nur bunte Bilder</h3>
+                <p class="lead">Stell dir vor, du sitzt in einem Ökonomie-Kurs, und der Dozent beginnt mit Angebot und Nachfrage zu jonglieren. Theorien fliegen durch den Raum, und du fragst dich, ob das überhaupt mit der Realität zu tun hat. Hier ist der Deal: Ökonomie besteht nicht nur aus abstrakten Theorien, sondern auch aus lebendigen, sich entwickelnden Prozessen. Und da kommt der visuelle Lerntyp ins Spiel.
                     <!-- ... (rest of your content) ... -->
                 </p>
-                <br>
 
                 <!-- Bootstrap Accordion for Additional Information -->
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Weitere Informationen
-                            </button>
+Tipps um mit dem visuellen Lerntypen zu lernen                            </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Hier können weitere Informationen zum visuellen Lerntyp eingefügt werden.
+                              Mind Maps verwenden: Erstelle Mind Maps, um Informationen visuell zu organisieren. Dies hilft dir, Beziehungen zwischen verschiedenen Konzepten zu erkennen.
+
+Farben verwenden: Verwende verschiedene Farben, um wichtige Punkte zu markieren. Farbcodierung kann dazu beitragen, Informationen zu kategorisieren und zu betonen.
+
+Diagramme und Grafiken: Nutze Diagramme, Grafiken, Infografiken und andere visuelle Hilfsmittel, um komplexe Informationen darzustellen. Dies erleichtert das Verständnis und die Merkfähigkeit.
+
+Visualisiere Geschichten: Wenn du etwas lernen möchtest, erstelle eine visuelle Geschichte oder eine Art Szenario, das die Informationen enthält. Dies kann das Verständnis fördern und das Erinnern erleichtern.
+
+Karteikarten mit Bildern: Erstelle Karteikarten mit Bildern oder Symbolen, um Konzepte zu repräsentieren. Dies fördert die Assoziation von Bildern mit Informationen.
                             </div>
                         </div>
                     </div>
@@ -107,7 +114,7 @@
         </div>
     </div>
 
-      <footer class="bg-primary text-center p-2">
+    <footer class="bg-primary text-center p-2">
         <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
 

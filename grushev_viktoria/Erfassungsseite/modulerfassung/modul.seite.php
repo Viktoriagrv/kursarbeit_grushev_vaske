@@ -20,7 +20,7 @@
 
 	
   <body>
-	  
+
     <!-- Überschrift -->
 	<h1> Erfassung deines Lerntypen </h1>
 	  
@@ -72,12 +72,14 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <!-- Formular -->
+			<img src="../../Bilder/Modul.png" class="img-fluid" alt="...">
             <form action="modul.erfassung.php" method="post">
             <h3> Erfasse ein neues Modul!</h3>
-               
+             <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+<p style="color: blue; text-align: justify; font-style: italic;">Du findest in der Drop-Down Liste nicht das Modul was du lernst oder du hast ein bestimmtes Wahlpflichtfach? Kein Problem: Erzähl uns ein wenig über das Modul, füg es hinzu und du findest es rack-zack in der Modulübersicht!</p>		  
        	<p><input name = "modulname"> Modulname</input></p>
-		<p><input name = "modulbeschreibung"> Modulbeschreibung </input></p>
-		<p><input name = "modulbewertung"> Modulbewertung</input></p>
+		<p><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
+		<p><input name = "modulbewertung"> Prüfungsart </input></p>
 
                 <!-- Absenden -->
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>

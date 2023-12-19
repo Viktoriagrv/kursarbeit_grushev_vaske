@@ -102,8 +102,12 @@
         <div class="col-md-4">
     <div id="chart_div"></div>
 			
-			 <footer class="fixed-bottom bg-primary text-center p-2">
-      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+
+			
+			 <!-- Bootstrap Footer -->
+     <footer class="bg-primary text-center p-2">
+        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
+			
 </body>
 </html>

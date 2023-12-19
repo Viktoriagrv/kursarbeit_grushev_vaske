@@ -81,8 +81,10 @@
                         <th>Lerntyp</th>
                         <th>Lernziel</th>
                         <th>Aufgabe</th>
-                        <th>Lerntyp-Inspiration</th>
+                        <th>Inspiration</th>
                         <th>Modul</th>
+						<th>Semester</th>
+						<th>Aufwand</th>
                     </tr>
 					
                 </thead>
@@ -110,10 +112,12 @@ if ($con1->connect_error) {
 }
 
 // SQL-Abfrage, um die letzten zehn Einträge abzurufen für die erste Datenbank
-$sql1 = "SELECT lerntyp AS lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS modul
+$sql1 = "SELECT lerntyp AS lerntyp, lernziel, aufgabe, inspiration, modul.modulname AS modul, semester AS semester, aufwand as aufwand
         FROM lerndaten
         JOIN lerntyp ON lerndaten.lerntyp_id = lerntyp.lerntyp_id
         JOIN modul ON lerndaten.modul_id = modul.modul_id
+		JOIN semester ON lerndaten.semester_id = semester.semester_id
+		JOIN aufwand ON lerndaten.aufwand_id = aufwand.aufwand_id
         ORDER BY lerndaten.id DESC
         LIMIT 10";
 
@@ -130,6 +134,8 @@ if ($result1) {
         echo "<td>{$row['aufgabe']}</td>";
         echo "<td>{$row['inspiration']}</td>";
         echo "<td>{$row['modul']}</td>";
+		echo "<td>{$row['semester']}</td>";
+		echo "<td>{$row['aufwand']}</td>";
         echo "</tr>";
     }
 
