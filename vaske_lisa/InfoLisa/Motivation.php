@@ -16,29 +16,14 @@
   <head>
 	  
 	
-
+	</head>
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 	
 	
-	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
 
-	
-	
-</head>
 	
 	
 	
@@ -128,7 +113,7 @@
 <p><h3>Tipps und Tricks für ein motivierendes Studium</h3>
 
 	
-      <img src="../bilder/kindmitfluegeln.jpg" alt="Motivation">
+      <img src="../bilder/kindmitfluegeln.jpg" height="500" width="700" alt="Motivation">
 
 
 <section><b>Das Studentenleben ist voller Höhen und Tiefen. Manchmal taucht bei Studierenden ein kleiner Motivationsknick auf. Doch wie lässt sich dieser Tiefpunkt überwinden? MLP hat einige hilfreiche Tipps zusammengestellt, die dir schnell wieder Freude am Studium verschaffen können!</b></section>

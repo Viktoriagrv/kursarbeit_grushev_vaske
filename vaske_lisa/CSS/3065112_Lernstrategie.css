@@ -41,6 +41,7 @@ footer {
 
 
 
+		
 
     /* CSS-Styling für das Logo */
     #logo {
@@ -48,3 +49,48 @@ footer {
       top: 1px; 
       right: 10px; 
     }
+ 
+	
+
+/*farbige Blöcke*/
+	
+	.farbiger-textblock1 {
+  background-color: #DBFAFF; 
+  color: black; 
+  padding: 20px; 
+}
+		
+	.textblock2 {
+  background-color: #FFFCBA; 
+  color: black; 
+  padding: 20px; 
+		
+
+    .textblock1 {
+  background-color: #FADEFC; 
+  color: black; 
+  padding: 20px; 
+		
+		}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../../stylesheet.css">
+	 <link rel="stylesheet" href="../CSS/3065112_Lernstrategie.css"
 	
     <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
@@ -11,49 +11,7 @@
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
-<!--farbige Blöcke-->	
-	<style>
-	.farbiger-textblock1 {
-  background-color: #DBFAFF; /
-  color: black; 
-  padding: 20px; 
-}
-		
-	</style>
 
-	
-	<style>
-	.textblock2 {
-  background-color: #FFFCBA; 
-  color: black; 
-  padding: 20px; 
-		
-	</style>
-	
-	
-	<style>
-	.textblock3 {
-  background-color: #FADEFC; 
-  color: black; 
-  padding: 20px; 
-		
-	</style>
-	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
-	
-	
-	
-	
 	
 
   <head>
@@ -106,7 +64,7 @@
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
    
-  <a class="nav-link" href="../ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+  <a class="nav-link" href="../ErfassungLisa.php">Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
@@ -174,7 +132,7 @@ Die Herausforderung liegt im Verstehen. Je abstrakter eine Theorie ist, desto ko
 
 Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei ist Übung der Schlüssel zum Erfolg. Wer die Begriffe kennt und das Thema verstanden hat, muss intensiv üben – am besten mit einer Vielzahl unterschiedlicher Beispiele.</p>
 	
-	<img src="../bilder/kognitiv.jpg" alt="kognitive Lernstrategie">
+	<img src="../bilder/kognitiv.jpg" height="564" width="564" alt="kognitive Lernstrategie">
 	
 	</p>
 </div>
@@ -198,7 +156,7 @@ Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei is
 
 <br>Eine weitere beliebte Methode ist die Pomodoro-Technik, bei der du deine Lernzeit mit einer Eieruhr oder Timer festlegst. Produktives Lernen wird durch regelmäßige Pausen abgewechselt, was die Konzentration und Effektivität steigern kann.</p></p></br></div>
 	
-<img src="../bilder/metakognitiv.jpg" alt="Metakognitive Lernstrategie">	
+<img src="../bilder/metakognitiv.jpg" height="564" width="564" alt="Metakognitive Lernstrategie">	
 
 
 
@@ -222,7 +180,7 @@ Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei is
 
 <br>Ausreichend Schlaf, eine gesunde Ernährung und ein ausgeglichenes Privatleben sind entscheidend für erfolgreiches Lernen. Um in der Schule oder Universität erfolgreich zu sein, ist es wichtig, für das eigene Wohlbefinden zu sorgen. Es mag vielleicht spirituell klingen, aber ohne Pausen oder Ausgleich kann das Gehirn Gelerntes nicht verarbeiten. Daher ist es wichtig, auf ausreichenden Schlaf zu achten und entspannende Hobbys zu finden.</br></p></div>
 
-<img src="../bilder/ressourcenbezogen.jpg" alt="Ressourcenbezogene Lernstartegie">
+<img src="../bilder/ressourcenbezogen.jpg" height="564" width="564" alt="Ressourcenbezogene Lernstartegie">
 
 
 

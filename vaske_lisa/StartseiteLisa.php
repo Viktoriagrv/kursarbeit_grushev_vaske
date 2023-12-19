@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../stylesheet.css">
+	 <link rel="stylesheet" href="3065112.css"
 	
     <title>Lernstrategien/Start by Lisa Vaske</title>
 	
@@ -23,20 +23,6 @@
   </head>
 	
 
-	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
-	
-	
 	
 	
 </head>
@@ -135,6 +121,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <!--ab hier inhaltlich Konzentration-->
 <br><p> Auch deine Konzentration ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
@@ -212,6 +207,62 @@
 <br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
 
 
+<!-- Bootstrap Karusell, noch anpassen!-->
+<div id="motivation" class="folie">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
+      <div class="carousel-caption d-none d-md-block">
+		  
+
+
+		</style>
+		  
+        <h5>Motivation</h5>
+        <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
+      <div class="carousel-caption d-none d-md-block">
+		  
+
+
+	
+		  
+        <h5>Das Wichtigste zuerst</h5>
+        <p>Was du über Motivation wissen solltest.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
+      <div class="carousel-caption d-none d-md-block">
+		  
+
+
+		  
+        <h5>Fazit zur Motivation</h5>
+        <p>Hier eine kleine Zusammenfassung.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">zurück</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">vor</span>
+  </button>
+</div>
+
+<p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
+
 
 
 <br>
@@ -223,42 +274,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-	
-	
-	
-	
 	
    
 

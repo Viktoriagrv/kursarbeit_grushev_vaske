@@ -11,18 +11,7 @@
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
-	
-	
-		
-<style>
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
-  </style>	
-	
+
 	
 	
   <head>
@@ -129,7 +118,7 @@
 
 
 
-<img src="../bilder/Konzentrationistock.jpg" alt="konzentration">
+<img src="../bilder/Konzentrationistock.jpg" height="500" width="800" alt="konzentration">
 	
 <p><b>In einer Zeit, die immer schneller wird und in der wir von einer Flut an Informationen überschwemmt werden, klagen immer mehr Leute über Schwierigkeiten, sich zu konzentrieren. Kennst du nicht auch dieses befriedigende Gefühl, wenn du nicht nur ein Buch liest, sondern es auch verstehst? Das gelingt nur durch Konzentration. Allein das Wort "Konzentration" macht vielen Menschen Unbehagen. Vielleicht hast auch du während deiner Studienzeit Erfahrungen mit Schwierigkeiten beim Konzentrieren gemacht. Wir möchten dir zeigen, wie du effektiver lernen und deine Konzentration verbessern kannst.</b>
 
