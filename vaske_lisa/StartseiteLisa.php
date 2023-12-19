@@ -141,372 +141,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-			<!-- bootstrap Karussell, noch anpassen!-->
-<div id="konzentration" class="folie">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
-    <button type="button" data-bs-target="konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
-
-	
-	
-		  
-        <h5>Konzentration</h5>
-        <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
-      <div class="carousel-caption d-none d-md-block">
-		  
-	<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-		  
-        <h5>Was schwächt die Konzentration?</h5>
-        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
-      <div class="carousel-caption d-none d-md-block">
-		  
-	<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-		  
-        <h5>Was verbessert meine Konzentration?</h5>
-        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
-</div>
-
-<p> <a href="InfoLisa/Konzentration.php">Klicke hier, um mehr über Konzentration zu erfahren</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ab hier inhaltlich Motivation-->
-<br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
-
-
-<!-- Bootstrap Karusell, noch anpassen!-->
-<div id="motivation" class="folie">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-        <h5>Motivation</h5>
-        <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-        <h5>Das Wichtigste zuerst</h5>
-        <p>Was du über Motivation wissen solltest.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
-      <div class="carousel-caption d-none d-md-block">
-		  
-<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		  
-        <h5>Fazit zur Motivation</h5>
-        <p>Hier eine kleine Zusammenfassung.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
-</div>
-
-<p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
-
-
-
-<br>
-<p>Noch nicht genug? Dann schau dir das Video von <i>The Simple Club</i> an:</p>
-</br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p6gINFikWhE?si=oZPWkUp1dWDWwIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
-	
-
-
-
-
-
-
-
-
-
-
-
-<!-- anfang karussell-->
-	<div id="meinkarussell" class="folie"
-		 data-ride="karussell">
-		<ol class="carousel-indicators">
-		<li data-target="meinkarussell"
-			data-slide-to="0" class="active"></li>
-		<li data-target="meinkarussell" 
-		data-slide-to="1"></li>
-		<li data-target="meinkarussell" 
-		data-slide-to="2"></li>
-				
-		<!-- Folie 1-->	
-	</ol>
-		<div class="carousel-inner">
-		<div class="carousel-item active">
-		<div class="container">
-		<h3>Konzentration</h3>
-			<p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
-			<a href="#" class="btn btn-lg btn-primary">
-		<div class="carousel-item">
-      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild2">
-      <div class="carousel-caption d-none d-md-block">
-		  
-		  
-			</a>
-			</div>
-		</div>
-	</div>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-prev" role="button"
-		data-slide="prev">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-prev-icon"
-			  aria-hidden="true"></span>
-		</a>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-next" role="button"
-		data-slide="next">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-next-icon"
-			  aria-hidden="true"></span>
-		</a>
-
-
-<!-- Folie 2-->	
-	</ol>
-		<div class="carousel-inner">
-		<div class="carousel-item active">
-		<div class="container">
-		<h4>Was schwächt die Konzentration?</h4>
-        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
-			<a href="#" class="btn btn-lg btn-primary">
-		<div class="carousel-item">
-      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
-      <div class="carousel-caption d-none d-md-block">
-		  
-		  
-			</a>
-			</div>
-		</div>
-	</div>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-prev" role="button"
-		data-slide="prev">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-prev-icon"
-			  aria-hidden="true"></span>
-		</a>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-next" role="button"
-		data-slide="next">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-next-icon"
-			  aria-hidden="true"></span>
-		</a>
-			
-			
-			
-			
-<!-- Folie 3-->	
-	</ol>
-		<div class="carousel-inner">
-		<div class="carousel-item active">
-		<div class="container">
-		<h5>Was verbessert meine Konzentration?</h4>
-        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
-			<a href="#" class="btn btn-lg btn-primary">
-		<div class="carousel-item">
-      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild2">
-      <div class="carousel-caption d-none d-md-block">
-		  
-		  
-			</a>
-			</div>
-		</div>
-	</div>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-prev" role="button"
-		data-slide="prev">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-prev-icon"
-			  aria-hidden="true"></span>
-		</a>
-		
-		<a href="#meinkarussell"
-		class="carousel-control-next" role="button"
-		data-slide="next">
-		<span class="sr-only">Zurück</span>
-		<span class="carousel-control-next-icon"
-			  aria-hidden="true"></span>
-		</a>
-		
-      <div class="carousel-caption d-none d-md-block">
-		  
-		
-	<!--Hier Block farbig per style-->	
-		<style>
-.carousel-caption {
-    background-color: #352525; 
-}
-
-		</style>
-		    
-
-		  
-		  
-		  
-<!--neu-->
-		  
-<div id="konzentration" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Konzentration</h5>
-        <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Was schwächt die Konzentration?</h5>
-        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Was verbessert meine Konzentration?</h5>
-        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
-</div>
-
-
-		  
-		  
-		  
-		  
-		  
-		<!-- bootstrap Karussell -->
+<!-- bootstrap Karussell -->
 <div id="konzentration" class="folie">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
@@ -555,9 +190,48 @@
 
 <!-- JavaScript für Bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  
-		  
-		  
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+<!-- ab hier inhaltlich Motivation-->
+<br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
+
+
+
+
+<br>
+<p>Noch nicht genug? Dann schau dir das Video von <i>The Simple Club</i> an:</p>
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p6gINFikWhE?si=oZPWkUp1dWDWwIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
+	
+
+
+
+
+
+
+
+
+
+
+
+
 		  
 		  
 		  
