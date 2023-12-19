@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="../stylesheet.css">
+	
     <title>Lernstrategien/Start by Lisa Vaske</title>
 	
 	<!-- Definition vom Dokumententypen-->
@@ -11,22 +13,16 @@
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
 	
-	<!-- Meta-Daten sind im Headbereich anzutreffen-->
+	
   <head>
 	  
-	  <!-- Zeichensatz UTF-8 -->
-    <meta charset="utf-8">
-	  
-	  <!-- Anzeigeeingenschaften für Geräte -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
+	
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 	
-	<!-- Verknüpfung zur CSS-Datei -->
-    <link rel="stylesheet" href="styles.css"> 
+
 	
 	
 		
@@ -143,29 +139,30 @@
 <br><p> Auch deine Konzentration ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
 
-			<!-- bootstrap Karusell, noch anpassen!-->
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- bootstrap Karussell, noch anpassen!-->
 <div id="konzentration" class="folie">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
-    <button type="button" data-bs-target="konzentration2" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#konzentration3" data-bs-slide-to="2" aria-label="Folie 3"></button>
+    <button type="button" data-bs-target="konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
 
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-				
 	
 		  
         <h5>Konzentration</h5>
@@ -218,6 +215,22 @@
 </div>
 
 <p> <a href="InfoLisa/Konzentration.php">Klicke hier, um mehr über Konzentration zu erfahren</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -442,6 +455,131 @@
 
 		</style>
 		    
+
+		  
+		  
+		  
+<!--neu-->
+		  
+<div id="konzentration" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Konzentration</h5>
+        <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Was schwächt die Konzentration?</h5>
+        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Was verbessert meine Konzentration?</h5>
+        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">zurück</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">vor</span>
+  </button>
+</div>
+
+
+		  
+		  
+		  
+		  
+		  
+		<!-- bootstrap Karussell -->
+<div id="konzentration" class="folie">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
+    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Konzentration</h5>
+        <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Was schwächt die Konzentration?</h5>
+        <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Was verbessert meine Konzentration?</h5>
+        <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">zurück</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">vor</span>
+  </button>
+</div>
+
+<p><a href="InfoLisa/Konzentration.php">Klicke hier, um mehr über Konzentration zu erfahren</a></p>
+
+<!-- JavaScript für Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
 		  
 	
 	
