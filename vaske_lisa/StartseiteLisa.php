@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../stylesheet.css"
+	 <link rel="stylesheet" href="CSS/lisa_vaske.css"
 	
     <title>Lernstrategien/Start by Lisa Vaske</title>
 	
@@ -29,7 +29,7 @@
 <body>
 
     <header>
-        <h1>Lernstrategien-Übersicht: die besten Strategien für die Uni!</h1>
+        <h1>EduLearn</h1>
 		
     </header>
 
@@ -101,8 +101,8 @@
 </div>
 
 
-
-	
+<div class="grid-container">
+<div class="grid-item">
 	<br>
 	<h2>Von Motivation bis hin zu Lernmethoden: diese Lernstrategien führen dich zum Erfolg.</h2></br>
 	
@@ -272,8 +272,8 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p6gINFikWhE?si=oZPWkUp1dWDWwIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
 	
 
-
-
+</div>
+</div>
 	
    
 

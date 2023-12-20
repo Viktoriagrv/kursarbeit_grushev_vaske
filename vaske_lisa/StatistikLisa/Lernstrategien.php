@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../../stylesheet.css">
-	
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
 	
 	
     <title>EduLearn</title>
@@ -34,6 +33,11 @@
 	
 	
 <body>
+	
+	<div class="grid-container">
+<div class="grid-item">
+	
+	
     <header>
         <h1>Lernstrategie</h1>
   
@@ -264,7 +268,8 @@
         </div>
     </div>
 </div>
-
+</div>
+</div>
 
 
 

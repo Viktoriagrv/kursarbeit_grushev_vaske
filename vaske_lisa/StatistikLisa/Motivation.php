@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!--CSS-->
-	 <link rel="stylesheet" href="../../stylesheet.css">
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
 	
     <title>EduLearn</title>
 	
@@ -33,6 +33,10 @@
 	
 	
 <body>
+	
+	<div class="grid-container">
+<div class="grid-item">
+	
     <header>
         <h1>Motivation</h1>
   
@@ -206,6 +210,10 @@
         <div id="chart_div_3"></div>
       </div>
     </div>
+	  
+	  
+	  </div>
+	</div>
   </body>
 </html>
 

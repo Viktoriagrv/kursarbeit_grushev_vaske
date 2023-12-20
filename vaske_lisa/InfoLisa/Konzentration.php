@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../../stylesheet.css">
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
 	
     <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
@@ -28,6 +28,13 @@
 	
 	
 <body>
+	
+	
+<div class="grid-container">
+<div class="grid-item">	
+	
+	
+	
     <header>
         <h1>Konzentration</h1>
   
@@ -154,7 +161,8 @@ Entspannung durch Meditation, Yoga oder autogenes Training</section>
 <br>Es gibt zahlreiche Möglichkeiten, unsere Konzentrationsfähigkeit zu verbessern und zu steigern!
 	Und genau darauf wollen wir nun genauer eingehen.</section></p></br>
 
-
+</div>
+</div>
 
 
 
