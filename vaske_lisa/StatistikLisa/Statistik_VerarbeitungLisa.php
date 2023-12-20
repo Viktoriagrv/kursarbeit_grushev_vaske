@@ -1,74 +1,44 @@
-   <?php
-
-// Fehlermeldung
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
-
-
-// Datenbank: meine Daten
-$servername = "localhost";
+<!DOCTYPE html>
+<html lang="de">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategie und Lernerfolg</title>
+</head> 
+<body> 
+	<?php
+	$servername = "localhost";
 $username = "m12241-32";
-$passwort = "bZlvguhrx";
+$password = "bZlvguhrx";
 $dbname = "m12241_32";
 
-// Verbindung erstellen
-$conn = new mysqli($servername, $username, $passwort, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-
-	
-	// Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
 if ($conn->connect_error) {
-    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
 }
 
-   
-  // SQL Abfrage
-  $sql = "SELECT strategie.strategie, COUNT(studierendestrategie.strategieid) as anzahl
-   FROM strategie
-   LEFT JOIN studierendestrategie ON strategie.strategieid = studierendestrategie.strategieid
-   GROUP BY strategie.strategieid";
+$sql = "SELECT studierendestrategie.strategieid,strategie.strategie,studierendestrategie.lernid
+FROM studierendestrategie WHERE strategieid = 3";
+$result = $conn->query($sql);
 
-	$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    echo "<table border='1'>";
+    echo "<tr><th>LernID</th><th>... Weitere Spaltenköpfe hier ...</th></tr>";
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . htmlspecialchars($row['lernid']) . "</td>";
+        // Hier weitere Spalten hinzufügen, entsprechend deiner Tabellenstruktur
+        echo "</tr>";
+    }
+    echo "</table>";
+} else {
+    echo "Keine Daten gefunden.";
+}
 
-// Daten aus der Abfrage in die Tabelle einfügen, dafür konvertieren
-$data=array();
-while ($row = $result->fetch_assoc()) {
-$data[]=$row;
-					
- }
-
-// Json ausgeben
-echo json_encode($data);
-
- // Schließen der Verbindung 
- $conn->close();
-
- ?>
-					
-	  
+$conn->close();
 
 
+	?>
 
-
-
-					
-
-                    
-                    
-
-
-                   
-   
 	
-	
-	
-	
-     <footer>
-        <h3>Created by Lisa Vaske</h3>
-        <p>Adresse: Wilhelmshaven</p>
-        <p>Email: lisa.vaske@student.jade-hs.de</p>
-	   <section> <p>In Koooperation mit der Jade Hochschule</p></section>
-   </footer>
-</body>
-</html>

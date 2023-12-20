@@ -157,7 +157,17 @@ mysqli_close($con1);
 				
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
-                <tr>
+                
+					
+					
+					
+					
+				<h3 class="text-center bg-light p-2">Lernstrategien</h3>
+
+<h5 class="text-center bg- p-2">Hier siehst du die letzten Einträge von Student_innen</h5>	
+					
+					
+					<tr>
                     <!-- Spaltenüberschriften -->
                     <th>Studierende/r</th>
                     <th>Nachname</th>
