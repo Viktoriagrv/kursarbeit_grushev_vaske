@@ -96,10 +96,9 @@
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
    
 				<br>
-	<!-- Links zu anderen Erfassungseiten -->
+
 				<!-- Link zu Modulerfassung -->
-<a href="lerntyp.erfassung.php" class="btn btn-secondary mb-5">Anders überlegt? Dann zurück zur Erfassungsseite!</a>
-<!-- Link zu Lerntyp -->
+<a href="../../lerntyp_erfassung.php"class="btn btn-secondary mb-5">Anders überlegt? Dann zurück zur Erfassungsseite!</a>
 
 			
 			
@@ -109,7 +108,7 @@
 </div>
 	  			
 	
-<
+
    <!-- Bootstrap Footer -->
     <footer class="fixed-bottom bg-primary text-center p-2">
       <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>

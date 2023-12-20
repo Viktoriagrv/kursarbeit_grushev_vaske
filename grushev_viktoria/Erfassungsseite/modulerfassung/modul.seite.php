@@ -12,6 +12,8 @@
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
+	     <!--Einbindung Stylesheet -->
+		    <link rel="stylesheet" href="../../css/grushev_css/grushev_css.css">
     <title> Erfassung der Lerntypen </title>
 	
 	<!-- Bootstrap-Einbindung -->
@@ -24,45 +26,55 @@
     <!-- Überschrift -->
 	<h1> Erfassung deines Lerntypen </h1>
 	  
-	  <!-- Navigationsleiste mit Bootstrap -->
+	 <!-- Navigationsleiste mit Bootstrap -->
 	  
-	  <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
+	                                          <ul class="nav nav-tabs">
+                                                  <li class="nav-item">
+													  <!--Verlinkung zur Homestartseite von mir -->
+                                                      <a class="nav-link active" aria-current="page" href="../../lerntyp_erfassung.php">Home</a>
+                                                                    </li>
 		  
-  <!-- Dropdownlink für die Informationen mit Bootstrap -->
+  <!-- Dropdownlink 1 Bootstrap: Informationen -->
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
-    <ul class="dropdown-menu">
-		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
-		  </ul>     
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen zu Lerntypen</a>
+           <ul class="dropdown-menu">
+		
+			   <!-- Verlinkung für die einzelnen Seiten -->
+      <li><a class="dropdown-item" href="../../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="../../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="../../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="../../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
+		                                                                                                                       </ul>     
 		  
-      <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Lertyp Datenerfassung</a></li>
-    </ul> 
+             <!-- Dropdownlink 2 Bootstrap: Erfassung deiner Daten-->
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
+                                             <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="../../lerntyp_erfassung.php"> Generelles Erfassungsformular </a></li>
+                                                        <li>
+												         	 <a class="dropdown-item" href="../lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
+		                                                          <li><a class="dropdown-item" href="modul.seite.php"> Neues Modul-Profil anlegen</a></li>
+                                                                     
+						                                                                </ul> 
+						  
 	  
-	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-    <ul class="dropdown-menu">
-	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="#">Statistik Lerntypen </a></li>
-                         <li><a class="dropdown-item" href="#">Statistik Modul </a></li>
-                                                                                     </ul> 
+	                 <!-- Dropdownlink 3 Bootstrap: Statistikseiten --> 
+           <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+                                        <ul class="dropdown-menu">
+										
+                       <li> <a class="dropdown-item" href="../../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+	                        <li><a class="dropdown-item" href="../../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+							  <li><a class="dropdown-item" href="../../Statistiken/generalstatistik/generalstatistik.php">Generelle statistik</a></li>
+                                                                                                                                              </ul> 
 	  
-	   <!-- Link zur Startseite -->
+	   <!-- Link zur gemeinsamen Startseite -->
 		                       <li class="nav-item">
-                                          <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
-  </li>
-</ul>
+                                          <a class="nav-link" href="../../../index.php">Zurück zur Startseite</a>
+                                               </li>
+	                                               </ul>
+                                                      </div>
+		<!-- Navigationsleiste zuende! -->
 	  
 
 </div>
@@ -77,9 +89,9 @@
             <h3> Erfasse ein neues Modul!</h3>
              <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
 <p style="color: blue; text-align: justify; font-style: italic;">Du findest in der Drop-Down Liste nicht das Modul was du lernst oder du hast ein bestimmtes Wahlpflichtfach? Kein Problem: Erzähl uns ein wenig über das Modul, füg es hinzu und du findest es rack-zack in der Modulübersicht!</p>		  
-       	<p><input name = "modulname"> Modulname</input></p>
-		<p><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
-		<p><input name = "modulbewertung"> Prüfungsart </input></p>
+       	<p class="custom-form-group"> <input name = "modulname"> Modulname</input></p>
+		<p class="custom-form-group"><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
+		<p class="custom-form-group"><input name = "modulbewertung"> Prüfungsart </input></p>
 
                 <!-- Absenden -->
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
@@ -87,7 +99,7 @@
 				<br>
 	<!-- Links zu anderen Erfassungseiten -->
 				<!-- Link zu Modulerfassung -->
-<a href="../lerntyp_erfassung.php" class="btn btn-secondary mb-5">Fertig? Dann zurück zur Erfassungsseite!</a>
+<a href="../../lerntyp_erfassung.php" class="btn btn-secondary mb-5">Fertig? Dann zurück zur Erfassungsseite!</a>
 <!-- Link zu Lerntyp -->
 
 			
