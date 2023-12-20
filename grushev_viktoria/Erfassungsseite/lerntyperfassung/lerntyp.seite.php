@@ -1,16 +1,22 @@
-<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css">
-
-		      <!-- Titel -->
-               <title> Erfassung der Lerntypen </title>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
+    <title>Lerntyp-Profil</title>
+    	
+	<!-- Bootstrap-Einbindung -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	
-	              <!-- Bootstrap-Einbindung -->
-	                   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		
-                                                                                                                   </head>
-		  
-<!--Beginn Body -->
+	
+               	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
+
+</head>
+	
 <body>
-	<!-- Header -->
+     <!-- Header -->
 	  <header>
 	     <div>
             <h1>EduLearn</h1>
@@ -20,6 +26,7 @@
                      <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
                                                                                                </div>
                                                                                                  </header>
+
 
 	                                   <!-- Navigationsleiste mit Bootstrap -->
 	  

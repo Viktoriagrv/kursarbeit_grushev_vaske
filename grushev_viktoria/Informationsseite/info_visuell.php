@@ -12,7 +12,7 @@
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	 
-	   <link rel="stylesheet" href="../../stylesheet.css"> 
+	   <link rel="stylesheet" href="../css/grushev_css/grushev_css.css"> 
     <title> Erfassung der Lerntypen </title>
 	
 	<!-- Bootstrap-Einbindung -->
@@ -72,53 +72,31 @@
 
 </div>
 	  
-	  
-  <!-- Beginn Formular-Sektion -->
-	
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center">
-                <h1 class="mb-4">Der visuell Lerntyp</h1>
-                <img src="../Bilder/Visuell.png" alt="Kommunikativer Lerntyp" class="img-fluid mb-4">
-
-                <h3 class="text-primary">Die Macht des Sehens: Warum visuelles Lernen mehr ist als nur bunte Bilder</h3>
-                <p class="lead">Stell dir vor, du sitzt in einem Ökonomie-Kurs, und der Dozent beginnt mit Angebot und Nachfrage zu jonglieren. Theorien fliegen durch den Raum, und du fragst dich, ob das überhaupt mit der Realität zu tun hat. Hier ist der Deal: Ökonomie besteht nicht nur aus abstrakten Theorien, sondern auch aus lebendigen, sich entwickelnden Prozessen. Und da kommt der visuelle Lerntyp ins Spiel.
-                    <!-- ... (rest of your content) ... -->
-                </p>
-
-                <!-- Bootstrap Accordion for Additional Information -->
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-Tipps um mit dem visuellen Lerntypen zu lernen                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Mind Maps verwenden: Erstelle Mind Maps, um Informationen visuell zu organisieren. Dies hilft dir, Beziehungen zwischen verschiedenen Konzepten zu erkennen.
-
-Farben verwenden: Verwende verschiedene Farben, um wichtige Punkte zu markieren. Farbcodierung kann dazu beitragen, Informationen zu kategorisieren und zu betonen.
-
-Diagramme und Grafiken: Nutze Diagramme, Grafiken, Infografiken und andere visuelle Hilfsmittel, um komplexe Informationen darzustellen. Dies erleichtert das Verständnis und die Merkfähigkeit.
-
-Visualisiere Geschichten: Wenn du etwas lernen möchtest, erstelle eine visuelle Geschichte oder eine Art Szenario, das die Informationen enthält. Dies kann das Verständnis fördern und das Erinnern erleichtern.
-
-Karteikarten mit Bildern: Erstelle Karteikarten mit Bildern oder Symbolen, um Konzepte zu repräsentieren. Dies fördert die Assoziation von Bildern mit Informationen.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
+<!-- Beginn von Statistik in der Mitte -->
+<div class="container-fluid">
+    <div class="mt-5 mb-5 row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+			<div id="chart_div"></div>
+			<p class="blue-form">Der visuelle Lerntyp:</p>
+			<p>
+				Visuelle Lernende bevorzugen das Sehen und Verwenden von Bildern, Grafiken und Diagrammen, um Informationen zu verstehen. Wenn du ein visueller Lerntyp bist, profitierst du besonders von farbigen Darstellungen und visuellen Hilfsmitteln.
+				Du verstehst Informationen besser, wenn sie in Form von Diagrammen, Karten oder schematischen Darstellungen präsentiert werden. Deine Stärke liegt in der Fähigkeit, Muster und Zusammenhänge durch visuelle Reize zu erkennen.
+				Um deinen Lernprozess zu optimieren, empfehlen wir, Mind Maps, Grafiken und Abbildungen in deine Lernmaterialien einzubeziehen. Achte darauf, farbige Markierungen und visuelle Elemente zu verwenden, um Schlüsselkonzepte hervorzuheben.
+			</p>
+			<img src="../Bilder/Visuell.png" alt="Visueller Lerntyp" class="img-fluid mt-3">
+			
+		</div>
+        <div class="col-md-4"></div>
     </div>
+</div>
 
-    <footer class="bg-primary text-center p-2">
-        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+	<!-- Bootstrap Footer -->
+    <footer class="fixed-bottom bg-primary text-center p-2">
+      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
 </body>
-
 </html>

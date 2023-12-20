@@ -11,7 +11,7 @@
 	  
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <link rel="stylesheet" href="../../stylesheet.css"> 
+	   <link rel="stylesheet" href="../css/grushev_css/grushev_css.css"> 
     <title> Erfassung der Lerntypen </title>
 	
 	<!-- Bootstrap-Einbindung -->
@@ -72,28 +72,24 @@
 </div>
 	  
 	  
-  <!-- Beginn Formular-Sektion -->
-	<!-- Beginn Formular-Sektion -->
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center"> <!-- Zentrierung der Überschrift -->
-                <h1 class="mb-4">Der auditive Lerntyp</h1>
-
-                <!-- Bild  -->
-                <img src="../Bilder/Auditiv.png" alt="Bildbeschreibung" class="img-fluid mb-4">
-
-                <!-- Text einfügen -->
-                <p>Hier kommt noch Text hin! Dieser Text ist super toll und einfach spannend! </p>
-				<br>
-				<p> Einfach noch spannender!</p>
-            </div>
-            <div class="col-md-4"></div>
+<!-- Beginn von Statistik in der Mitte -->
+<div class="container-fluid">
+    <div class="mt-5 mb-5 row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="chart_div"></div>
+            <p class="blue-form">Der auditive Lerntyp:</p>
+            <p>
+                Auditive Lernende bevorzugen das Hören und Verwenden von gesprochenen Informationen, Diskussionen und Erklärungen, um Inhalte zu verstehen. Wenn du ein auditiver Lerntyp bist, profitierst du besonders von verbalen Erklärungen und Hörübungen.
+                Du verstehst Informationen besser, wenn sie dir vorgelesen werden oder wenn du sie selbst aussprichst. Deine Stärke liegt in der Fähigkeit, durch das Zuhören Muster und Zusammenhänge zu erkennen.
+                Um deinen Lernprozess zu optimieren, empfehlen wir, Podcasts, Vorträge und Diskussionen in deine Lernmaterialien einzubeziehen. Achte darauf, die relevanten Informationen laut auszusprechen, um sie besser zu verinnerlichen.
+            </p>
+            <img src="../Bilder/Auditiv.png" alt="Auditiver Lerntyp" class="img-fluid mt-3">
         </div>
+        <div class="col-md-4"></div>
     </div>
+</div>
 
-
-				
    <!-- Bootstrap Footer -->
     <footer class="bg-primary text-center p-2">
         <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>

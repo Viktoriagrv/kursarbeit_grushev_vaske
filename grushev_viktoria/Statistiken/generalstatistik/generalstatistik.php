@@ -113,27 +113,6 @@
 	
 	</form>			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-  <!-- Link zur anderen Statistik -->
-<a href="modulstatistik/statistikmodul.php" class="btn btn-secondary mb-5">Willst du sehen wie es bei den Modulen aussieht, die gelernt werden? Hier entlang!</a>
-
-	  <!-- Link zur anderen Statistik -->
-<a href="../statistiklerntyp.php" class="btn btn-secondary mb-5">Willst du sehen wie es bei den Lerntypen aussieht, die gelernt werden? Hier entlang!</a>
-	  
 
 </div>
 <!-- Beginn von Statistik -->
