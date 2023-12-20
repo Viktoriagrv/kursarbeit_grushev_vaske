@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="../../stylesheet.css"> 
+	 <link rel="stylesheet" href="../css/grushev_css/grushev_css.css"> 
     <title>Statistik Lerntypen</title>
     	
 	<!-- Bootstrap-Einbindung -->
@@ -34,8 +34,8 @@
 
                     var options = {
                         'title': 'Lerntypen Verteilung',
-                        'width': 400,
-                        'height': 300
+                        'width': 600,
+                        'height': 400
                     };
 
                     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
@@ -45,69 +45,114 @@
         }
     </script>
 </head>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
+
+<!--Beginn Body -->
 <body>
+	<!-- Header -->
 	  <header>
-    <h1>EduLearn</h1>
-</header>
-    
-	 	  <!-- Navigationsleiste mit Bootstrap -->
-	  
-	  <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
-		  
-  <!-- Dropdownlink für die Informationen mit Bootstrap -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
-    <ul class="dropdown-menu">
-		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="../Informationsseite/info_motorisch.php"Informationsseite/info_motorisch.php""> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
-		  </ul>     
-		  
-      <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="../lerntyp_erfassung.php">Allgemeine Datenerfassung</a></li>
-		<li><a class="dropdown-item" href="../lerntyp_erfassung.php">Modulprofil erfassen </a></li>
-		<li><a class="dropdown-item" href="../lerntyp_erfassung.php">Lerntypprofil erfassen</a></li>
-    </ul> 
-	  
-	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-    <ul class="dropdown-menu">
-	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="statistiklerntyp.php">Statistik Lerntypen </a></li>
-		<li><a class="dropdown-item" href="modulstatistik/statistikmodul.php">Statistik Modul </a></li>
-                        
-                                                                                     </ul> 
-	  
-	   <!-- Link zur Startseite -->
-		                       <li class="nav-item">
-                                          <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
-  </li>
-</ul>
-	  
+	     <div>
+            <h1>EduLearn</h1>
+               </div>
+                   <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
+                                                                                                 </header>
 
+	                                   <!-- Navigationsleiste mit Bootstrap -->
+	  
+	                                          <ul class="nav nav-tabs">
+                                                  <li class="nav-item">
+													  <!--Verlinkung zur Homestartseite von mir -->
+                                                      <a class="nav-link active" aria-current="page" href="lerntyp.erfassung.php">Home</a>
+                                                                    </li>
+		  
+  <!-- Dropdownlink 1 Bootstrap: Informationen -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen zu Lerntypen</a>
+           <ul class="dropdown-menu">
+		
+			   <!-- Verlinkung für die einzelnen Seiten -->
+      <li><a class="dropdown-item" href="../../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="../../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="../../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="../../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
+		                                                                                                                       </ul>     
+		  
+             <!-- Dropdownlink 2 Bootstrap: Erfassung deiner Daten-->
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
+                                             <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="../../lerntyp_erfassung.php"> Generelles Erfassungsformular </a></li>
+                                                        <li>
+												         	 <a class="dropdown-item" href="lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
+		                                                          <li><a class="dropdown-item" href="../modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
+						                                                                </ul> 
+						  
+	  
+	                 <!-- Dropdownlink 3 Bootstrap: Statistikseiten --> 
+           <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+                                        <ul class="dropdown-menu">
+										
+                       <li> <a class="dropdown-item" href="../../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+	                        <li><a class="dropdown-item" href="../../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+							  <li><a class="dropdown-item" href="../../Statistiken/generalstatistik/generalstatistik.php"> Generelle Statistik </a></li>
+                                                                                                                                              </ul> 
+	  
+	                              <!-- Link zur gemeinsamen Startseite -->
+		                                <li class="nav-item">
+                                            <a class="nav-link" href="../../../index.php">Zurück zur Startseite</a>
+                                               </li>
+	                                               </ul>
+                                                      </div>
+		<!-- Navigationsleiste zuende! -->
+	 
+		  <!-- Beginn von Inhalt -->
+		    <!-- Bootstrap Grid-Layout -->
+                <div class="container-fluid">
+                      <div class="mt-5 mb-5 row">
+                        <div class="col-md-4"></div>
+                           <div class="col-md-4">
+							   
+            <!-- Formular -->
+                 <!-- Selbstgemachtes Bildeinfügen -->
+			         <img src="../../Bilder/Lerntyp.png" class="img-fluid" alt="...">
+							   <!-- Bei Post an lerntyp.erfassung.php weiterleiten -->
+                                       <form action="lerntyp.erfassung.php" method="post">
+					<!-- Überschrifft -->					   
+            <h4> Erfasse ein neues Lerntyp-Profil</h4>
+				<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+<p class="blue-text"> Natürlich probieren wir so viele Lerntypen wie möglich vorzustellen,
+				    manchmal hat man aber auch ganz bestimmte Kombinationen... Füge sie hinzu, vielleicht haben auch andere Student_innen deine Lerntyp-Kombi! </p>		
+               
+										   	<p class="blue-text"> (PS: Wenn du deinen Lerntypen später im Formular auswählst, wird dieser in unserer Statistik angezeigt!) </p>		
+										   
+       <p class="custom-form-group"><input name="lerntyp"> Dein Lerntyp</p>
+						  
+                <!-- Absenden -->
+                <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
+   
+				<br>
+
+				<!-- Link zu Modulerfassung -->
+<a href="../../lerntyp_erfassung.php"class="btn btn-secondary mb-5">Anders überlegt? Dann zurück zur Erfassungsseite!</a>
+			
+		
+</form>
+        </div>
+    </div>
 </div>
-<!-- Beginn von Statistik -->
-<div class="container-fluid">
-    <div class="mt-5 mb-5 row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-    <div id="chart_div"></div>
+	  	
 			
-
 			
-			 <!-- Bootstrap Footer -->
-     <footer class="bg-primary text-center p-2">
-        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+   <!-- Bootstrap Footer -->
+    <footer class="fixed-bottom bg-primary text-center p-2">
+      <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
+
 			
 </body>
 </html>
