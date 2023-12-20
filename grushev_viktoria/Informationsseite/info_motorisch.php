@@ -22,6 +22,10 @@
   <body>
       <header>
     <h1>EduLearn</h1>
+		  <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
 </header>
     
 	  
@@ -59,8 +63,7 @@
 	    <!-- Verlinkung Statistik -->
                 <li><a class="dropdown-item" href="../Statistiken/statistiklerntyp.php"../Statistiken/statistiklerntyp.php"">Statistik Lerntypen </a></li>
 		<li><a class="dropdown-item" href="../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
-                        
-                                                                                     </ul> 
+                                                                                                                       </ul> 
 	  
 	   <!-- Link zur Startseite -->
 		                       <li class="nav-item">
@@ -71,13 +74,15 @@
 
 </div>
 	  
-  <!-- Beginn Formular-Sektion -->
+  <!-- Beginn der Sektion -->
 	<!-- Beginn von Statistik in der Mitte -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div id="chart_div"></div>
+			
+			<!-- Text -->
             <p class="blue-form">Der motorische Lerntyp:</p>
             <p>
                 Motorische Lernende bevorzugen das aktive Erleben und die körperliche Umsetzung von Informationen, um sie zu verstehen. Wenn du ein motorischer Lerntyp bist, profitierst du besonders von praktischen Übungen, handlungsorientierten Aufgaben und Bewegung.

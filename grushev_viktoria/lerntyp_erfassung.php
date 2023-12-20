@@ -106,6 +106,7 @@
                                                       <label for="lerntyp_id">Was für ein Lerntyp bist du?</label>
                                                          <select class="form-control" id="lerntyp_id" name="lerntyp_id">
 															  <!-- PHP-Einbindung für dynamisches Dropdown-Menü -->
+															 
                                                                   <?php
                                                                      // Include-Datei von meiner PHP für den Lerntyp 
                                                                        include('grunderfassung_lerntyp.php');
@@ -113,6 +114,7 @@
                                                                                                                 </select>
                                                                                                                      </div>
 <br>
+										  
 										                              <!-- Modul -->
                                                                          <div class="custom-form-group">
                                                                            <label for="modul_id">Für welches Modul musst du was machen?</label>

@@ -22,6 +22,10 @@
   <body>
       <header>
     <h1>EduLearn</h1>
+		  <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
 </header>
     
 	  
@@ -77,7 +81,8 @@
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <div id="chart_div"></div>
+    
+			<!-- Text -->
             <p class="blue-form">Der auditive Lerntyp:</p>
             <p>
                 Auditive Lernende bevorzugen das Hören und Verwenden von gesprochenen Informationen, Diskussionen und Erklärungen, um Inhalte zu verstehen. Wenn du ein auditiver Lerntyp bist, profitierst du besonders von verbalen Erklärungen und Hörübungen.

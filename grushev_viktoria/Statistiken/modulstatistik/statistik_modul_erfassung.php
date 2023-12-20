@@ -27,7 +27,7 @@ GROUP BY modul.modul_id
 
 $result = $conn->query($sql);
 
-// Daten in ein assoziatives Array konvertieren
+// Daten in Array konvertieren
 $data = array();
 while ($row = $result->fetch_assoc()) {
     $data[] = $row;

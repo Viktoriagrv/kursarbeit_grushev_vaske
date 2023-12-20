@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
-    <title>Modulprofil</title>
-    	
-	<!-- Bootstrap-Einbindung -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	
-	
-               	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
 
-</head>
+    <html lang="de">	
+       
+		<!-- Headbereich wie immer -->
+		  <head>
+             <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	             <link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
+                    <title>Modulprofil</title>
+    	
+			  
+	        <!-- Bootstrap-Einbindung -->
+	             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+                  	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
+
+                                                                                      </head>
 	
 <body>
      <!-- Header -->
@@ -77,46 +80,55 @@
 	                                               </ul>
                                                       </div>
 		<!-- Navigationsleiste zuende! -->
-	  
+	                                                            </div>
 
-</div>
-<!-- Beginn von Formular -->
-<div class="container-fluid">
-    <div class="mt-5 mb-5 row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <!-- Formular -->
-			<img src="../../Bilder/Modul.png" class="img-fluid" alt="...">
-            <form action="modul.erfassung.php" method="post">
-            <h3> Erfasse ein neues Modul!</h3>
-             <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
-<p style="color: blue; text-align: justify; font-style: italic;">Du findest in der Drop-Down Liste nicht das Modul was du lernst oder du hast ein bestimmtes Wahlpflichtfach? Kein Problem: Erzähl uns ein wenig über das Modul, füg es hinzu und du findest es rack-zack in der Modulübersicht!</p>		  
-       	<p class="custom-form-group"> <input name = "modulname"> Modulname</input></p>
-		<p class="custom-form-group"><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
-		<p class="custom-form-group"><input name = "modulbewertung"> Prüfungsart </input></p>
+<!-- Beginn von Inhalt -->
+            <div class="container-fluid">
+                <div class="mt-5 mb-5 row">
+                   <div class="col-md-4"></div>
+                      <div class="col-md-4">
+            
+						  <!-- Bild -->
+			                    <img src="../../Bilder/Modul.png" class="img-fluid" alt="...">
+          
+						  <!-- Bei Senden "Modul-Erfassung" -->
+						  <form action="modul.erfassung.php" method="post">
+            
+							    <h3> Erfasse ein neues Modul!</h3>
+             
+							  <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+                               
+							      <p style="color: blue; text-align: justify; font-style: italic;">Du findest in der Drop-Down Liste nicht das Modul was du lernst oder du hast ein bestimmtes Wahlpflichtfach? Kein Problem: Erzähl uns ein wenig über das Modul, füg es hinzu und du findest es rack-zack in der Modulübersicht!</p>		
+							  
+							   <!-- Custom-Form-Group -->
+                              	<p class="custom-form-group"> <input name = "modulname"> Modulname</input></p>
+		                           <p class="custom-form-group"><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
+	                                	<p class="custom-form-group"><input name = "modulbewertung"> Prüfungsart </input></p>
 
-                <!-- Absenden -->
-                <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
-   <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
-<p style="color: blue; text-align: justify; font-style: italic;"> P.S: Dein Eintrag hat geklappt, wenn du nach Absenden wieder hier bist und wieder leere Felder hast. Checke deinen Eintrag gerne in der Dropdown-Liste bei der generellen Erfassung!</p>
-				<br>
-	<!-- Links zu anderen Erfassungseiten -->
-				<!-- Link zu Modulerfassung -->
+                                             <!-- Absenden -->
+                                                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
+
+                                    <!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+                                      
+                                       <p style="color: blue; text-align: justify; font-style: italic;"> P.S: Dein Eintrag hat geklappt, wenn du nach Absenden wieder hier bist und wieder leere Felder hast. Checke deinen Eintrag gerne in der Dropdown-Liste bei der generellen Erfassung!</p>
+
+<br>
+
+	<!-- Link zu Erfassungsseite -->
+
 <a href="../../lerntyp_erfassung.php" class="btn btn-secondary mb-5">Anders überlegt? Dann zurück zur Erfassungsseite!</a>
-<!-- Link zu Lerntyp -->
-
-			
 			
 			</form>
         </div>
     </div>
 </div>
 	  			
-	
+<!-- Footer -->	
 
    <footer class="bg-primary text-center p-2">
         <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>
+
 <!-- Einbindung von Bootstrap Java Script -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	 

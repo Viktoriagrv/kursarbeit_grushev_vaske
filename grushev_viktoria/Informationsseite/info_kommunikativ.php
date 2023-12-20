@@ -22,6 +22,10 @@
   <body>
       <header>
     <h1>EduLearn</h1>
+		  <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
 </header>
     
 	  
@@ -72,12 +76,14 @@
 	  
 
 </div>
-	<!-- Beginn von Statistik in der Mitte -->
+	<!-- Beginn Mitte -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <div id="chart_div"></div>
+            
+			
+			
             <p class="blue-form">Der kommunikative Lerntyp:</p>
             <p>
                 Kommunikative Lernende bevorzugen den Austausch von Informationen, Diskussionen und Zusammenarbeit, um Inhalte zu verstehen. Wenn du ein kommunikativer Lerntyp bist, profitierst du besonders von Gruppenaktivitäten, Gesprächen und sozialen Interaktionen.

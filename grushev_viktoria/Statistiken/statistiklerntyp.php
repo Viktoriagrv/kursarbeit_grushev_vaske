@@ -14,6 +14,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript">
 		
+		//Google Charts
+		
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
@@ -27,7 +29,6 @@
                     chartData.addColumn('string', 'Lerntyp');
                     chartData.addColumn('number', 'Anzahl');
 
-                    // Annahme: Deine Daten haben 'lerntyp' und 'lerntyp_id' Spalten
                     for (var i = 0; i < data.length; i++) {
                     chartData.addRow([data[i].lerntyp, parseInt(data[i].anzahl)]);
                     }
@@ -79,7 +80,7 @@
 			   <!-- Verlinkung für die einzelnen Seiten -->
       <li><a class="dropdown-item" href="../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
             <li><a class="dropdown-item" href="../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="../In> Lerntyp Motorisch </a></li>
+                 <li><a class="dropdown-item" href="../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
 		             <li><a class="dropdown-item" href="../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		                                                                                                                       </ul>     
 		  
@@ -117,6 +118,7 @@
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
+			<!-- Einbau Statistik -->
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
  <p class="blue-form"> Welcher Lerntyp wird am meisten unter Studenten hier gelernt? Hier kriegt ihr immer eine aktuelle Vorschau! </p>
@@ -125,7 +127,7 @@
 	  
 
 </div>
-<!-- Beginn von Statistik -->
+<!-- Beginn von Inhalt -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
@@ -138,8 +140,7 @@
 </div>
 	  	
 			
-			
-   <!-- Bootstrap Footer -->
+   <!-- Bootstrap Footer wie immer -->
     <footer class="fixed-bottom bg-primary text-center p-2">
       <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
     </footer>

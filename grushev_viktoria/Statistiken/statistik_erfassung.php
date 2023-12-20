@@ -1,10 +1,11 @@
 <?php
 
+// Fehleranzeige, wenn es nicht klappt
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Hier musst du deine Datenbankverbindung einrichten
+// Datenbankverbindung einrichten
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";
@@ -26,15 +27,16 @@ $sql = "SELECT lerntyp.lerntyp, COUNT(lerndaten.lerntyp_id) as anzahl
 
 $result = $conn->query($sql);
 
-// Daten in ein assoziatives Array konvertieren
+// Daten in Array machen
 $data = array();
 while ($row = $result->fetch_assoc()) {
     $data[] = $row;
 }
 
-// JSON zurückgeben
+// JSON (Java, PHP) zurückgeben
 echo json_encode($data);
 
 // Verbindung schließen
 $conn->close();
+
 ?>

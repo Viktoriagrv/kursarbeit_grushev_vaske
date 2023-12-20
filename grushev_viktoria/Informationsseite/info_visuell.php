@@ -23,61 +23,68 @@
   <body>
 	  <header>
     <h1>EduLearn</h1>
+		  <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
 </header>
     
 	  
 		  <!-- Navigationsleiste mit Bootstrap -->
 	  
-	  <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
+	        <ul class="nav nav-tabs">
+              <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
 		  
-  <!-- Dropdownlink für die Informationen mit Bootstrap -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
-    <ul class="dropdown-menu">
-		  <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
-		  </ul>     
+              <!-- Dropdownlink für die Informationen mit Bootstrap -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
+                     <ul class="dropdown-menu">
+						 
+		          <!-- Verlinkung für die einzelnen Seiten -->
+                   <li><a class="dropdown-item" href="info_visuell.php">Lerntyp Visuell </a></li>
+                      <li><a class="dropdown-item" href="info_auditiv.php"> Lerntyp Auditiv </a></li>
+                           <li><a class="dropdown-item" href="info_motorisch.php"> Lerntyp Motorisch </a></li>
+		                        <li><a class="dropdown-item" href="info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
+		                                                                                                                </ul>     
 		  
+	  
       <!-- Dropdownlink 2 für die Erfassungsseite mit der Datenbankverindung! Vielleicht kommt das auf die Startseite -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="../lerntyp_erfassung.php"Erfassungsseite/lerntyperfassung/lerntyp.erfassung.php"">Generelle Datenerfassung</a></li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner Daten</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="../Statistiken/generalstatistik/generalstatistik.php">Generelle Datenerfassung</a></li>
 		<li><a class="dropdown-item" href="../Erfassungsseite/lerntyperfassung/lerntyp.seite.php">Lerntyp-Profil Datenerfassung</a></li>
 		<li><a class="dropdown-item" href="../Erfassungsseite/modulerfassung/modul.seite.php">Modul-Profil Datenerfassung</a></li>
     </ul> 
 	  
+	  
 	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
-	  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-    <ul class="dropdown-menu">
-	    <!-- Verlinkung Statistik -->
-                <li><a class="dropdown-item" href="../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
-		<li><a class="dropdown-item" href="../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>
-                        
-                                                                                     </ul> 
+	   <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+           <ul class="dropdown-menu">
+	    
+			   <!-- Verlinkung Statistik -->
+                 <li><a class="dropdown-item" href="../Statistiken/statistiklerntyp.php">Statistik Lerntypen </a></li>
+		             <li><a class="dropdown-item" href="../Statistiken/modulstatistik/statistikmodul.php">Statistik Modul </a></li>   
+                                                                                                                                 </ul> 
 	  
-	   <!-- Link zur Startseite -->
+	                        <!-- Link zur Startseite -->
 		                       <li class="nav-item">
-                                          <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
-  </li>
-</ul>
+                                   <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
+                                                                                                      </li>
+                                                                                                          </ul>
+                                                                                                               </div>
 	  
-
-</div>
-	  
-<!-- Beginn von Statistik in der Mitte -->
-<div class="container-fluid">
-    <div class="mt-5 mb-5 row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-			<div id="chart_div"></div>
+                                        <!-- Beginn von Statistik in der Mitte -->
+                                           <div class="container-fluid">
+                                               <div class="mt-5 mb-5 row">
+                                                  <div class="col-md-4"></div>
+                                                     <div class="col-md-4">
+		                                             	
+														 
+														 <!--Text in Blue-Form CSS -->
 			<p class="blue-form">Der visuelle Lerntyp:</p>
 			<p>
 				Visuelle Lernende bevorzugen das Sehen und Verwenden von Bildern, Grafiken und Diagrammen, um Informationen zu verstehen. Wenn du ein visueller Lerntyp bist, profitierst du besonders von farbigen Darstellungen und visuellen Hilfsmitteln.

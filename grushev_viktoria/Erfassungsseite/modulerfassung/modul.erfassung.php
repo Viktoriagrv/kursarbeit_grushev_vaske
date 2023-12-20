@@ -40,4 +40,5 @@ if (isset($_POST["gesendet"])) {
     // Close the database connection
     $con->close();
 }
+
 ?>
