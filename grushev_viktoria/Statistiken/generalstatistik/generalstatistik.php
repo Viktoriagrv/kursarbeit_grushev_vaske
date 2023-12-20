@@ -87,7 +87,7 @@
  <p class="blue-form"> Wie viel Aufwand hat welches Modul? </p>
 			
 <!--Formular zum Auswählen eines Modul, nach dem gefiltert werden soll -->
-	<form action="generalstatistik_erfassung" method = "post">
+	<form action="generalstatistik_erfassung.php" method = "post">
 		
 		<!-- drop down mit Modulnamen -->	
 		<td>&nbsp;</td>
@@ -95,7 +95,7 @@
 						<h1>Aufwand pro Modul</h1>
 						<br/>
 
-						<p> Wie viel wird pro Modul jeweils Aufgewendet? Finde es heraus!</p>
+						<p> Wie viel wird pro Modul jeweils Aufgewendet? Finde es heraus, wähle ein Modul!</p>
 
                                 <select class="form-control" id="modul_id" name="modul_id">
                                  <?php
