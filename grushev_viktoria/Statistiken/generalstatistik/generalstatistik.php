@@ -109,7 +109,7 @@
 			<br/><br/>
 	
 	        <!-- Button zum Abschicken des Formulars -->
-			<p><input type="submit" name="gesendet"></p>
+			  <p class="text-center"><input type="submit" name="gesendet"></p>
 	
 	</form>			
 			
