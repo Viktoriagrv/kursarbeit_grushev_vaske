@@ -2,32 +2,32 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+	
+	<!-- auf mobilen Geräten anpassen-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--CSS-->
 	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
 	
-	
     <title>EduLearn</title>
+	
 	<!-- Definition vom Dokumententypen-->
 
 	
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
-
+	
+	
 	
   <head>
+	 
 	  
-	
-   
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	  
-	 <!-- Einbindung von Bootstrap Java Script -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-	
-	  
   </head>
-
+	
+</head>
 	
 	
 	
@@ -37,17 +37,17 @@
 	<div class="grid-container">
 <div class="grid-item">
 	
-	
     <header>
-        <h1>Lernstrategie</h1>
+        <h1>Motivation</h1>
   
     </header>
 
+	
 	 <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-   <a class="nav-link" href="../StartseiteLisa.php">Home</a></li>	
+    <a class="nav-link" href="../StartseiteLisa.php">Home</a></li>	
 		  
 		  
 		  
@@ -63,7 +63,13 @@
 		
 	  <a class="nav-link" href="../InfoLisa/Motivation.php"> Motivation</a></li>
 		
-
+	
+	
+	  
+	  
+	  
+	  
+	  
 	  </ul>     
 		  
       <!-- Dropdownlink 2 -->
@@ -81,8 +87,15 @@
 	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
 	
 	  <a class="nav-link" href="Motivation.php">Motivation</a></li>
+	
+	<a class="nav-link" href="Lernerfolg.php">Lernerfolg</a></li>
     </ul> 
 	  
+		  <!-- Link zur Startseite -->
+		   <li class="nav-item">
+	
+	
+	
 	
     <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
@@ -90,24 +103,28 @@
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
 	  	
+<!-- Einbindung von Bootstrap Java Script -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
 
-	<div>	
+<div>	
 	
 <img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
 	
 </div>
+
+
+
 	
-	
+    <main>
         <h2>Willkommen auf der Statistik-Seite</h2>
-        <!-- Hier kommt der Hauptinhalt meiner Seite -->
+        <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
 
-<!-- ---------------------------------ab hier Tabelle----------------------------------->
-      
-				
-             
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 		
       google.charts.load('current', {'packages':['corechart']});
@@ -116,47 +133,88 @@
       function drawCharts() {
 		  
 		  
-				§.ajax({      
-					url:'Statistik_VerarbeitungLisa.php',
-					dataType:'json',
-					success:function (data) {
-					//Daten erhalten, jetzt dataTable-Objekt erstellen
-        var data= new google.visualization.DataTable();
-        data.addColumn('string', 'Lernstrategie');
-        data.addColumn('number', 'Anzahl');
-		
-		//Schleife durch Daten und zu data1 hinzufügen
-						for(var i=0;i<data4.length; i++) {
-							data.addRow([data[i].strategie, data[i].anzahl]);
-						}
-		//Diagramm erstellen				
-        var options = {
-          'title':'Lernstrategien',
+		  
+        // Daten für das kognitive Diagramm
+        var data1 = new google.visualization.DataTable();
+        data1.addColumn('string', 'Topping');
+        data1.addColumn('number', 'Slices');
+        data1.addRows([
+          ['gelungen', 2],
+          ['mäßig gelungen', 2],
+          ['nicht gelungen', 1]
+        ]);
+        var options1 = {
+          'title':'Lernerfolg per kognitiver Lernstrategie',
           'width':400,
           'height':300
         };
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div_1'));
-        chart.draw(data, options);
-				
-					}
-				});
-                
-		  </script>	
-				</head>
-			<body>
-				
-				<div class="chart-container">
+        var chart1 = new google.visualization.PieChart(document.getElementById('chart_div_1'));
+        chart1.draw(data1, options1);
+
+		  
+		  
+		  
+        // Daten für das metakognitive Diagramm
+        var data2 = new google.visualization.DataTable();
+        data2.addColumn('string', 'Topping');
+        data2.addColumn('number', 'Slices');
+        data2.addRows([
+          ['gelungen', 1],
+          ['nicht gelungen', 4]
+        ]);
+        var options2 = {
+          'title':'Lernerfolg per metakognitiver Lernstrategie',
+          'width':400,
+          'height':300
+        };
+        var chart2 = new google.visualization.PieChart(document.getElementById('chart_div_2'));
+        chart2.draw(data2, options2);
+
+		  
+		  
+		  
+        // Daten für das ressourcenbezogene Diagramm
+        var data3 = new google.visualization.DataTable();
+        data3.addColumn('string', 'Topping');
+        data3.addColumn('number', 'Slices');
+        data3.addRows([
+          ['gelungen', 2],
+          ['mäßig gelungen', 1],
+          ['nicht gelungen', 1]
+        ]);
+        var options3 = {
+          'title':'Lernerfolg per ressourcenbezogener Lernstrategie',
+          'width':400,
+          'height':300
+        };
+        var chart3 = new google.visualization.PieChart(document.getElementById('chart_div_3'));
+        chart3.draw(data3, options3);
+      }
+    </script>
+
+   
+  </head>
+
+  <body>
+	  
+	  
+	  
+    <!-- Container für die Kuchendiagramme -->
+    <div class="chart-container">
       <div class="chart-item">
         <div id="chart_div_1"></div>
-		  
-		  
-			<!-- Div, in dem das Diagramm angezeigt wird-->
-			<div id="chart_div_1"></div>
-		  
-		  
-		  
-		  
-		
+      </div>
+      <div class="chart-item">
+        <div id="chart_div_2"></div>
+      </div>
+      <div class="chart-item">
+        <div id="chart_div_3"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+			
 			<!-- Hier beginnt die Tabelle 2 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
     <!-- Bootstrap Grid-System: Zentrierte Reihe -->
@@ -170,40 +228,9 @@
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
                 <tr>
-	  
-		  
-		  
-		  
-		  
-				
-			</body>	
-				
-				
-            </table>
-        </div>
-    </div>
-</div>
-</div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ </tr>
+                </thead>
 
 
 

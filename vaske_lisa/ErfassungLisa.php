@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="CSS/lisa_vaske.css"
 	
-    <title>Lernstrategien/Start by Lisa Vaske</title>
-	
-	<!-- Definition vom Dokumententypen-->
-
-	
-<!-- Definition der Sprache "de" = deutsch -->
-<html lang="de">
-
+  
   <head>
 
 	

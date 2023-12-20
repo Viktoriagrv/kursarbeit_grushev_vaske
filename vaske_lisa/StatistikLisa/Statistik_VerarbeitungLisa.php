@@ -24,22 +24,22 @@ if ($conn->connect_error) {
 
    
   // SQL Abfrage
-  $sql4 = "SELECT strategie.strategie, COUNT(studierendestrategie.strategieid) as anzahl
+  $sql = "SELECT strategie.strategie, COUNT(studierendestrategie.strategieid) as anzahl
    FROM strategie
    LEFT JOIN studierendestrategie ON strategie.strategieid = studierendestrategie.strategieid
    GROUP BY strategie.strategieid";
 
-	$result4 = $conn->query($sql4);
+	$result = $conn->query($sql);
 
 // Daten aus der Abfrage in die Tabelle einfügen, dafür konvertieren
-$data4=array();
-while ($row = $result4->fetch_assoc()) {
-$data4[]=$row;
+$data=array();
+while ($row = $result->fetch_assoc()) {
+$data[]=$row;
 					
  }
 
 // Json ausgeben
-echo json_encode($data4);
+echo json_encode($data);
 
  // Schließen der Verbindung 
  $conn->close();

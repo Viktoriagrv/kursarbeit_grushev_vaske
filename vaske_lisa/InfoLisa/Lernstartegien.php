@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
-    <title>EduLearn</title>
-	<!-- Definition vom Dokumententypen-->
-<!doctype html>
-<!-- Definition der Sprache "de" = deutsch -->
-<html lang="de">
-	
-
+ 
 	
 
   <head>

@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="CSS/lisa_vaske.css"
-	
-    <title>Lernstrategien/Start by Lisa Vaske</title>
-	
-	<!-- Definition vom Dokumententypen-->
 
-	
-<!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
-	
+	<!-- Definition der Sprache "de" = deutsch-->
 	
   <head>
 	  
@@ -74,6 +68,9 @@
 	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
 	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
+
+		<a class="nav-link" href="StatistikLisa/Lernerfolg.php">Lernerfolg</a></li>
+
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
@@ -114,7 +111,7 @@
 	<section>2. metakognitive Strategien</section>
 	<section>3. ressourcenbezogene Startegien</section>
 	
-<p> <a href="InfoLisa/Lernstartegien.php">Klicke hier, um mehr über Lernstartegien zu erfahren</a></p>
+<p> <a href="InfoLisa/Lernstartegien.php">Klicke hier, um mehr über Lernstrategien zu erfahren</a></p>
 
 <!-- Button aus bootstrap-->
 	<button type="button" class="btn">Info Lernstrategien</button>
@@ -136,55 +133,53 @@
 
 
 
-<!-- bootstrap Karussell -->
-<div id="konzentration" class="folie">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="0" class="active" aria-current="true" aria-label="folie 1"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#konzentration" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
+<!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
+<div id="carouselExampleControls" class="Karussellfolie" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="bilder/Konzentrationistock.jpg" class="d-block w-100" alt="bild1">
+      <img class="d-block w-100" src="bilder/Konzentrationistock.jpg" alt="Folie1">
       <div class="carousel-caption d-none d-md-block">
         <h5>Konzentration</h5>
         <p>Konzentration ist wichtig für erfolgreiches Lernen.</p>
       </div>
     </div>
-
     <div class="carousel-item">
-      <img src="bilder/Konzentration.jpg" class="d-block w-100" alt="bild2">
+      <img class="d-block w-100" src="bilder/Konzentration.jpg" alt="Folie2">
       <div class="carousel-caption d-none d-md-block">
         <h5>Was schwächt die Konzentration?</h5>
         <p>Diese Dinge können deinen Lernerfolg hemmen.</p>
       </div>
     </div>
-
     <div class="carousel-item">
-      <img src="bilder/Konsentration2.jpg" class="d-block w-100" alt="bild3">
+      <img class="d-block w-100" src="bilder/Konsentration2.jpg" alt="Folie3">
       <div class="carousel-caption d-none d-md-block">
         <h5>Was verbessert meine Konzentration?</h5>
         <p>Wir geben dir einen Weg zu mehr Konzentration an die Hand.</p>
       </div>
     </div>
   </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#konzentration" data-bs-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#konzentration" data-bs-slide="next">
+    <span class="sr-only">zuvor</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
+    <span class="sr-only">nächste</span>
+  </a>
 </div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
 <p><a href="InfoLisa/Konzentration.php">Klicke hier, um mehr über Konzentration zu erfahren</a></p>
 
-<!-- JavaScript für Bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -206,62 +201,60 @@
 <!-- ab hier inhaltlich Motivation-->
 <br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
 
+<!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-<!-- Bootstrap Karusell, noch anpassen!-->
-<div id="motivation" class="folie">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Folie 1"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="1" aria-label="Folie 2"></button>
-    <button type="button" data-bs-target="#motivation" data-bs-slide-to="2" aria-label="Folie 3"></button>
-  </div>
+<div id="carouselExampleControls" class="Karussellfolieb" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="bilder/motivation.jpg" class="d-block w-100" alt="bild4">
+      <img class="d-block w-100" src="bilder/motivation.jpg" alt="Folie1b">
       <div class="carousel-caption d-none d-md-block">
-		  
-
-
-		</style>
-		  
         <h5>Motivation</h5>
         <p>Motivation kann uns das Lernen massiv erleichtern und versüßen.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="bilder/motivation1.jpg" class="d-block w-100" alt="bild5">
+      <img class="d-block w-100" src="bilder/motivation1.jpg" alt="Folie2b">
       <div class="carousel-caption d-none d-md-block">
-		  
-
-
-	
-		  
-        <h5>Das Wichtigste zuerst</h5>
+        <h5>Das Wichtigste zuerst.</h5>
         <p>Was du über Motivation wissen solltest.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="bilder/motivation2.jpg" class="d-block w-100" alt="bild6">
+      <img class="d-block w-100" src="bilder/motivation2.jpg" alt="Folie3b">
       <div class="carousel-caption d-none d-md-block">
-		  
-
-
-		  
-        <h5>Fazit zur Motivation</h5>
+        <h5>Fazit zur Motivation.</h5>
         <p>Hier eine kleine Zusammenfassung.</p>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#motivation" data-bs-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">zurück</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#motivation" data-bs-slide="next">
+    <span class="sr-only">zuvor</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">vor</span>
-  </button>
+    <span class="sr-only">nächste</span>
+  </a>
 </div>
 
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
 <p> <a href="InfoLisa/Motivation.php">Klicke hier, um mehr über Motivation zu erfahren</a></p>
+
+
+
+
+
+
+
 
 
 
@@ -276,6 +269,47 @@
 </div>
 	
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
