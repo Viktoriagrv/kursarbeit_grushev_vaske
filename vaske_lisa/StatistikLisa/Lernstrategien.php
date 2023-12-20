@@ -13,9 +13,7 @@
 	
 <!-- Definition der Sprache "de" = deutsch -->
 <html lang="de">
-	
-	<!-- Meta-Daten sind im Headbereich anzutreffen-->
-	
+
 	
   <head>
 	  
@@ -24,10 +22,13 @@
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	  
+	 <!-- Einbindung von Bootstrap Java Script -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
+	  
   </head>
-	
-	
-</head>
+
 	
 	
 	
@@ -58,13 +59,7 @@
 		
 	  <a class="nav-link" href="../InfoLisa/Motivation.php"> Motivation</a></li>
 		
-	
-	
-	  
-	  
-	  
-	  
-	  
+
 	  </ul>     
 		  
       <!-- Dropdownlink 2 -->
@@ -84,11 +79,6 @@
 	  <a class="nav-link" href="Motivation.php">Motivation</a></li>
     </ul> 
 	  
-		  <!-- Link zur Startseite -->
-		   <li class="nav-item">
-	
-	
-	
 	
     <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
   </li>
@@ -96,29 +86,26 @@
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
 	  	
-<!-- Einbindung von Bootstrap Java Script -->
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-	
+
 	<div>	
 	
 <img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
 	
 </div>
 	
-	
+	<!-- ----------------------------------------------------------------------------------------->
+
     <main>
         <h2>Willkommen auf der Statistik-Seite</h2>
         <!-- Hier kommt der Hauptinhalt meiner Seite -->
     </main>
 
 
-
-
-
 <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+		
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawCharts);
 
@@ -206,16 +193,7 @@
   </body>
 </html>
 
-
-
-
-
-
-
-<!-- ab hier eigentliche Tabelle-->
-
-
-				
+			
 			<!-- Hier beginnt die Tabelle 2 - Container für mittige Ausrichtung der Tabelle -->
 <div class="container">
     <!-- Bootstrap Grid-System: Zentrierte Reihe -->
@@ -229,47 +207,57 @@
                 <!-- Tabellenkopf mit dunklem Hintergrund -->
                 <thead class="thead-dark">
                 <tr>
-                    <!-- Spaltenüberschriften -->
-                    <th>Anzahl insgesamt gelungenes Lernen</th>
-                    <th>Anzahl insgesamt mäßig gelungenes Lernen</th>
-                    <th>Anzahl insgesamt nicht gelungenes Lernen</th>
-					<th>Am häufigsten angewendete Lernstrategie</th>
-         
-                </tr>
+
+ </tr>
                 </thead>
+
+
+
+<!-- ---------------------------------ab hier eigentliche Tabelle----------------------------------->
+      
 				
-     <script>        
+             
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 		
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawCharts);
+
+      function drawCharts() {
+		  
+		  
 				§.ajax({      
 					url:'Statistik_VerarbeitungLisa.php',
 					dataType:'json',
 					success:function (data) {
 					//Daten erhalten, jetzt dataTable-Objekt erstellen
-        var data1= new google.visualization.DataTable();
-        data1.addColumn('string', 'Lernstrategie');
-        data1.addColumn('number', 'Anzahl');
+        var data4= new google.visualization.DataTable();
+        data4.addColumn('string', 'Lernstrategie');
+        data4.addColumn('number', 'Anzahl');
 		
 		//Schleife durch Daten und zu data1 hinzufügen
-						for(var i=0;1<data.length; i++) {
-							data1.addRow([data[i].strategie, data[i].anzahl]);
+						for(var i=0;i<data.length; i++) {
+							data4.addRow([data[i].strategie, data[i].anzahl]);
 						}
 		//Diagramm erstellen				
-        var options1 = {
+        var options4 = {
           'title':'Lernstrategien',
           'width':400,
           'height':300
         };
-        var chart1 = new google.visualization.PieChart(document.getElementById('chart_div_1'));
-        chart1.draw(data1, options1);
+        var chart4 = new google.visualization.PieChart(document.getElementById('chart_div_3'));
+        chart4.draw(data4, options4);
 				
 					}
 				});
                 
 		  </script>	
+				</head>
+			<body>
+			<!-- Div, in dem das Diagramm angezeigt wird-->
+			<div id="chart_div_3"></div>
 				
-				
-				
-				
+			</body>	
 				
 				
             </table>
