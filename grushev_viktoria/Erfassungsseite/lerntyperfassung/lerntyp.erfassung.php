@@ -28,8 +28,10 @@ if (isset($_POST["gesendet"])) {
     // SQL query um Daten einzufügen
     $sql = "INSERT INTO lerntyp (lerntyp) VALUES ('$lerntyp')";
 
-    if ($con->query($sql) === TRUE) {
-        echo "Neues Lerntyp-Profil erfolgreich hinzugefügt!";
+      if ($con->query($sql) === TRUE) {
+        // Erfolgreich eingefügt, weiterleiten
+        header("Location: lerntyp.seite.php");
+        exit(); 
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
@@ -38,5 +40,6 @@ if (isset($_POST["gesendet"])) {
     $con->close();
 }
 ?>
+
 
 

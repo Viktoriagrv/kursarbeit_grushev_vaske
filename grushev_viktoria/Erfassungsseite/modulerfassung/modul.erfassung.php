@@ -29,8 +29,10 @@ if (isset($_POST["gesendet"])) {
     // SQL query um Daten einzufügen
     $sql = "INSERT INTO modul (modulname, modulbeschreibung, modulbewertung) VALUES ('$modulname', '$modulbeschreibung', '$modulbewertung')";
 
-    if ($con->query($sql) === TRUE) {
-        echo "Neues Modul erfolgreich hinzugefügt!";
+     if ($con->query($sql) === TRUE) {
+        // Erfolgreich eingefügt, weiterleiten
+        header("Location: modul.seite.php");
+        exit(); 
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
@@ -39,4 +41,3 @@ if (isset($_POST["gesendet"])) {
     $con->close();
 }
 ?>
-

@@ -103,7 +103,9 @@
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
    
 				<br>
-
+										   
+<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift -->
+<p style="color: blue; text-align: justify; font-style: italic;"> P.S: Dein Eintrag hat geklappt, wenn du nach Absenden wieder hier bist und wieder leere Felder hast. Checke deinen Eintrag gerne in der Dropdown-Liste bei der generellen Erfassung!</p>
 				<!-- Link zu Modulerfassung -->
 <a href="../../lerntyp_erfassung.php"class="btn btn-secondary mb-5">Anders überlegt? Dann zurück zur Erfassungsseite!</a>
 

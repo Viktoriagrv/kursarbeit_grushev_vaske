@@ -179,7 +179,9 @@
                 <button type="submit" class="mb-5 btn btn-primary" name="gesendet">Senden</button>
    
 				                           <br>
-										 
+		<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift, CSS DATEI "blue-text" -->
+<p class="blue-text"> P.S: Dein Eintrag hat geklappt, wenn du nach dem Senden wieder hier landest und wieder leere Felder hast! Schau dir deinen Eintrag dann gerne in der Startseite an -> Nach dem refreshen findest du ihn dort! :) </p>
+										  
 	<!-- Blauer Text für neue Seite in Blocksatz und kursiver Schrift, CSS DATEI "blue-text" -->
 <p class="blue-text">Diese Seite ist noch ganz neu! Das heißt: Manche deiner Module oder Lerntypen könnten nicht in der Auswahl angezeigt werden. Unterstütze uns gerne dabei, die Auswahl zu erweitern, und füge Lerntyp-Kombinationen und Module hinzu!</p>
 								  
