@@ -11,7 +11,7 @@
 	  
 	  <!-- Anzeigeeingenschaften für Geräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <link rel="stylesheet" href="../../stylesheet.css"> 
+	   <link rel="stylesheet" href="../css/grushev_css/grushev_css.css"> 
     <title> Erfassung der Lerntypen </title>
 	
 	<!-- Bootstrap-Einbindung -->
@@ -72,25 +72,23 @@
 </div>
 	  
   <!-- Beginn Formular-Sektion -->
-	<!-- Beginn Formular-Sektion -->
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center"> <!-- Zentrierung der Überschrift -->
-                <h1 class="mb-4">Der motorische Lerntyp</h1>
-
-                <!-- Bild  -->
-                <img src="../Bilder/Motorisch.png" alt="Motorisch" class="img-fluid mb-4">
-
-                <!-- Text einfügen -->
-                <p>Hier kommt noch Text hin! Dieser Text ist super toll und einfach spannend! </p>
-				<br>
-				<p> Einfach noch spannender!</p>
-            </div>
-            <div class="col-md-4"></div>
+	<!-- Beginn von Statistik in der Mitte -->
+<div class="container-fluid">
+    <div class="mt-5 mb-5 row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="chart_div"></div>
+            <p class="blue-form">Der motorische Lerntyp:</p>
+            <p>
+                Motorische Lernende bevorzugen das aktive Erleben und die körperliche Umsetzung von Informationen, um sie zu verstehen. Wenn du ein motorischer Lerntyp bist, profitierst du besonders von praktischen Übungen, handlungsorientierten Aufgaben und Bewegung.
+                Du verstehst Informationen besser, wenn du sie physisch umsetzen kannst. Deine Stärke liegt in der Fähigkeit, durch aktive Teilnahme und Bewegung Muster und Zusammenhänge zu erkennen.
+                Um deinen Lernprozess zu optimieren, empfehlen wir, praktische Übungen, Simulationen und handlungsorientierte Projekte in deine Lernmaterialien einzubeziehen. Achte darauf, dass du aktiv anwendest, was du lernst, um es effektiv zu verinnerlichen.
+            </p>
+            <img src="../Bilder/Motorisch.png" alt="Motorischer Lerntyp" class="img-fluid mt-3">
         </div>
+        <div class="col-md-4"></div>
     </div>
-
+</div>
 
 				
     <footer class="bg-primary text-center p-2">

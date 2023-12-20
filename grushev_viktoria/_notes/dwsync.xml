@@ -1,1 +1,15 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?><dwsync><file name="lerntyp_erfassung.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="3785935296" remote="3785940780" Dst="1" /><file name="verarbeitung.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133473168888175259" remote="133473796800000000" Dst="1" /><file name="verarbeitung.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="3785689142" remote="3785940780" Dst="1" /><file name="lerntyp_erfassung.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133473744490441910" remote="133473708000000000" Dst="1" /><file name="grunderfassung_lerntyp.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="3785864054" remote="3785940780" Dst="-1" /><file name="grunderfassung_modul.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="3785864054" remote="3785940780" Dst="-1" /></dwsync>
+=======
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="lerntyp_erfassung.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="133475565494903922" remote="133475697000000000" Dst="1" />
+<file name="verarbeitung.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133473168888175259" remote="133473870000000000" Dst="1" />
+<file name="verarbeitung.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="133473168888175259" remote="133475697000000000" Dst="1" />
+<file name="lerntyp_erfassung.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133475565494903922" remote="133475533800000000" Dst="1" />
+<file name="grunderfassung_modul.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="133474823677228552" remote="133475697000000000" Dst="1" />
+<file name="grunderfassung_modul.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133474823677228552" remote="133474800000000000" Dst="1" />
+<file name="grunderfassung_lerntyp.php" server="m12242-14.kurs.jade-hs.de//public_html/" local="133474837264773809" remote="133474806000000000" Dst="1" />
+<file name="grunderfassung_lerntyp.php" server="m12241-09.kurs.jade-hs.de//public_html/" local="133474837264773809" remote="133475697000000000" Dst="1" />
+</dwsync>
+>>>>>>> 5d117b0811e485f3fcc5a3293d230092fd72e9c9

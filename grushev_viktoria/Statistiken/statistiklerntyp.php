@@ -68,7 +68,7 @@
 	                                          <ul class="nav nav-tabs">
                                                   <li class="nav-item">
 													  <!--Verlinkung zur Homestartseite von mir -->
-                                                      <a class="nav-link active" aria-current="page" href="../../lerntyp_erfassung.php">Home</a>
+                                                      <a class="nav-link active" aria-current="page" href="../lerntyp_erfassung.php">Home</a>
                                                                     </li>
 		  
   <!-- Dropdownlink 1 Bootstrap: Informationen -->
@@ -77,20 +77,20 @@
            <ul class="dropdown-menu">
 		
 			   <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="../../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="../../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="../../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="../../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
+      <li><a class="dropdown-item" href="../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
+            <li><a class="dropdown-item" href="../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
+                 <li><a class="dropdown-item" href="../In> Lerntyp Motorisch </a></li>
+		             <li><a class="dropdown-item" href="../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
 		                                                                                                                       </ul>     
 		  
              <!-- Dropdownlink 2 Bootstrap: Erfassung deiner Daten-->
                             <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
                                              <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="../../grunderfassung_lerntyp.php"> Generelles Erfassungsformular </a></li>
+											  <li><a class="dropdown-item" href="../lerntyp_erfassung.php"> Generelles Erfassungsformular </a></li>
                                                         <li>
-												         	 <a class="dropdown-item" href="../../Erfassungsseite/lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
-		                                                          <li><a class="dropdown-item" href="../../Erfassungsseite/modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
+												         	 <a class="dropdown-item" href="../Erfassungsseite/lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
+		                                                          <li><a class="dropdown-item" href="../Erfassungsseite/modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
 						                                                                </ul> 
 						  
 	  
@@ -99,14 +99,14 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
                                         <ul class="dropdown-menu">
 										
-                       <li> <a class="dropdown-item" href="../statistiklerntyp.php">Statistik Lerntypen </a></li>
-	                        <li><a class="dropdown-item" href="statistikmodul.php">Statistik Modul </a></li>
-							  <li><a class="dropdown-item" href="../generalstatistik/generalstatistik.php"> Generelle Statistik </a></li>
+                       <li> <a class="dropdown-item" href="statistiklerntyp.php">Statistik Lerntypen </a></li>
+	                        <li><a class="dropdown-item" href="modulstatistik/statistikmodul.php">Statistik Modul </a></li>
+							  <li><a class="dropdown-item" href="generalstatistik/generalstatistik.php"> Generelle Statistik </a></li>
                                                                                                                                               </ul> 
 	  
 	                              <!-- Link zur gemeinsamen Startseite -->
 		                                <li class="nav-item">
-                                            <a class="nav-link" href="../../../index.php">Zurück zur Startseite</a>
+                                            <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
                                                </li>
 	                                               </ul>
                                                       </div>

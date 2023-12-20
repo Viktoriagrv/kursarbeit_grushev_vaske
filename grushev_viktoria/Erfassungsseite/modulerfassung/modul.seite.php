@@ -1,30 +1,32 @@
-<!-- Definition vom Dokumententypen-->
-<!doctype html>
-<!-- Definition der Sprache "de" = deutsch -->
+<!DOCTYPE html>
 <html lang="de">
-	
-	<!-- Meta-Daten sind im Headbereich anzutreffen-->
-  <head>
-	  
-	  <!-- Zeichensatz UTF-8 -->
-    <meta charset="utf-8">
-	  
-	  <!-- Anzeigeeingenschaften für Geräte -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
-	     <!--Einbindung Stylesheet -->
-		    <link rel="stylesheet" href="../../css/grushev_css/grushev_css.css">
-    <title> Erfassung der Lerntypen </title>
-	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
+    <title>Modulprofil</title>
+    	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-
 	
-  <body>
+	
+               	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
 
-    <!-- Überschrift -->
-	<h1> Erfassung deines Lerntypen </h1>
+</head>
+	
+<body>
+     <!-- Header -->
+	  <header>
+	     <div>
+            <h1>EduLearn</h1>
+               </div>
+                   <div>
+					   <!-- Verlinkung Bild -->
+                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+                                                                                               </div>
+                                                                                                 </header>
+
 	  
 	 <!-- Navigationsleiste mit Bootstrap -->
 	  
