@@ -118,9 +118,10 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
 			<div id="chart_div"></div>
-			<p class="blue-form"> Welches Modul wird am meisten unter Studenten hier gelernt? Hier kriegt ihr immer eine aktuelle Vorschau! </p>
+			<p class="blue-form"> </p>
+ <p class="blue-form"> Welcher Lerntyp wird am meisten unter Studenten hier gelernt? Hier kriegt ihr immer eine aktuelle Vorschau! </p>
   <!-- Link zur anderen Statistik -->
-<a href="class="btn btn-secondary mb-5">Willst du sehen wie es bei den Lerntypen aussieht, die gelernt werden? Hier entlang!</a>
+<a href="modulstatistik/statistikmodul.php" class="btn btn-secondary mb-5">Willst du sehen wie es bei den Modulen aussieht, die gelernt werden? Hier entlang!</a>
 	  
 
 </div>
