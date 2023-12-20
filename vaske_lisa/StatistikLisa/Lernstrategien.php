@@ -106,86 +106,18 @@
 <!-- ---------------------------------ab hier Tabelle----------------------------------->
       
 				
-             
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-		
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawCharts);
-
-      function drawCharts() {
-		  
-		  
-				§.ajax({      
-					url:'Statistik_VerarbeitungLisa.php',
-					dataType:'json',
-					success:function (data) {
-					//Daten erhalten, jetzt dataTable-Objekt erstellen
-        var data= new google.visualization.DataTable();
-        data.addColumn('string', 'Lernstrategie');
-        data.addColumn('number', 'Anzahl');
-		
-		//Schleife durch Daten und zu data1 hinzufügen
-						for(var i=0;i<data4.length; i++) {
-							data.addRow([data[i].strategie, data[i].anzahl]);
-						}
-		//Diagramm erstellen				
-        var options = {
-          'title':'Lernstrategien',
-          'width':400,
-          'height':300
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div_1'));
-        chart.draw(data, options);
-				
-					}
-				});
-                
-		  </script>	
-				</head>
-			<body>
-				
-				<div class="chart-container">
-      <div class="chart-item">
-        <div id="chart_div_1"></div>
-		  
-		  
-			<!-- Div, in dem das Diagramm angezeigt wird-->
-			<div id="chart_div_1"></div>
-		  
-		  
-		  
-		  
-		
-			<!-- Hier beginnt die Tabelle 2 - Container für mittige Ausrichtung der Tabelle -->
-<div class="container">
-    <!-- Bootstrap Grid-System: Zentrierte Reihe -->
-    <div class="row justify-content-center mt-5">
-        <!-- Bootstrap Grid-System: Mittlere Spalte mit einer Breite von 8/12 -->
-        <div class="col-md-8">
-			
-            <!-- Bootstrap-Tabelle -->
-            <table class="table">
-				
-                <!-- Tabellenkopf mit dunklem Hintergrund -->
-                <thead class="thead-dark">
-                <tr>
-	  
-		  
-		  
-		  
-		  
-				
-			</body>	
-				
-				
-            </table>
-        </div>
+    <form action="Statistik_VerarbeitungLisa.php" method="post"> 
+    <h1>Strategie im Zusammenhang mit Lernerfolg</h1>
+    <div class="form-group">
+        <label for="strategieid">Was ist deine Strategie?</label>
+        <select class="form-control" id="strategieid" name="strategieid">
+            <option value='1'>kognitiv</option>
+            <option value='2'>metakognitiv</option>
+            <option value='3'>ressourcenbezogen</option>
+        </select>
     </div>
-</div>
-</div>
-</div>
-
+    <p><input type="submit" name="gesendet" value="Absenden"></p>
+</form>
 
 
 
