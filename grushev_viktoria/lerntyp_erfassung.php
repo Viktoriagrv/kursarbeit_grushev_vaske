@@ -143,7 +143,7 @@
 <br>
 			                                                                  <!-- Aufwand -->
                                                                             <div class="custom-form-group">
-                                                                             <label for="aufwand_id">Wie viel machst du aktuell für dieses Modul?</label>
+                                                                             <label for="aufwand_id">Wie viel machst du aktuell für dieses Modul am Tag?</label>
                                                                              <select class="form-control" id="aufwand_id" name="aufwand_id">
                                                                              <option value='1'>weniger als 1 Stunde</option>
                                                                              <option value='2'>1 - 2 Stunden</option>
