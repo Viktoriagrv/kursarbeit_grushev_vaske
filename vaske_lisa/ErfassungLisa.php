@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../stylesheet.css">
+	 <link rel="stylesheet" href="CSS/lisa_vaske.css"
 	
     <title>Lernstrategien/Start by Lisa Vaske</title>
 	
@@ -27,7 +27,11 @@
 	 
 </head>
 <body>
-
+	
+	
+<div class="grid-container">
+<div class="grid-item">
+	
     <header>
         <h1>EduLearn</h1>
 		
@@ -194,7 +198,8 @@
 	<div class="col-md-4"></div>
 	</div>
 	</div>
-	
+	</div>
+	</div>
 	
 	
 	

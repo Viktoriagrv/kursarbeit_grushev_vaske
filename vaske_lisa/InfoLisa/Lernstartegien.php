@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../../stylesheet.css"
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
     <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
 <!doctype html>
@@ -30,6 +30,11 @@
 	
 	
 <body>
+	
+	<div class="grid-container">
+<div class="grid-item">
+	
+	
     <header>
         <h1>Lernstartegie</h1>
   
@@ -182,7 +187,8 @@ Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei is
 <img src="../bilder/ressourcenbezogen.jpg" height="564" width="564" alt="Ressourcenbezogene Lernstartegie">
 
 
-
+</div>
+</div>
 
 	
 	

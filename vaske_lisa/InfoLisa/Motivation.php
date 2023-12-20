@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../../stylesheet.css">
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
 	
     <title>EduLearn</title>
 	<!-- Definition vom Dokumententypen-->
@@ -29,6 +29,10 @@
 	
 	
 <body>
+	
+	<div class="grid-container">
+<div class="grid-item">
+	
     <header>
         <h1>Motivation</h1>
   
@@ -143,8 +147,8 @@ Feste Zeiten für grundlegende Dinge wie Duschen, Essen und Lernen können helfe
 <section>Studium bedeutet nicht immer durchgehende Motivation. Aber mit Zwischenzielen, einer strukturierten Routine und einem Blick auf das große Ziel – den erfolgreichen Abschluss – stehen die Chancen gut, die Motivation zu erhalten.</section></p>
 
 
-
-
+</div>
+</div>
 
 
 	
