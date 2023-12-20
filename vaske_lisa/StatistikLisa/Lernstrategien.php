@@ -238,65 +238,40 @@
                 </tr>
                 </thead>
 				
-                <!-- Tabellenkörper für Daten -->
+     <script>        
+		
+				§.ajax({      
+					url:'Statistik_VerarbeitungLisa.php',
+					dataType:'json',
+					success:function (data) {
+					//Daten erhalten, jetzt dataTable-Objekt erstellen
+        var data1= new google.visualization.DataTable();
+        data1.addColumn('string', 'Lernstrategie');
+        data1.addColumn('number', 'Anzahl');
+		
+		//Schleife durch Daten und zu data1 hinzufügen
+						for(var i=0;1<data.length; i++) {
+							data1.addRow([data[i].strategie, data[i].anzahl]);
+						}
+		//Diagramm erstellen				
+        var options1 = {
+          'title':'Lernstrategien',
+          'width':400,
+          'height':300
+        };
+        var chart1 = new google.visualization.PieChart(document.getElementById('chart_div_1'));
+        chart1.draw(data1, options1);
 				
-                <tbody>
-					
-					
-					 <!-- Hier PHP-Datenbank Verbindung 2 -->
-                     <!-- Hier PHP-Datenbank Verbindung 2 -->
-                    <?php
-
-                    // Verbindungsparameter definieren für die zweite Datenbank
-                    $servername2 = "localhost";
-                    $username2 = "m12241-32";
-                    $passwort2 = "bZlvguhrx";
-                    $dbname2 = "m12241_32";
-
-                    // Verbindung zur zweiten Datenbank herstellen
-                    $con2 = new mysqli($servername2, $username2, $passwort2, $dbname2);
-
-                    // Überprüfen, ob die Verbindung erfolgreich hergestellt wurde, sonst Fehlercode
-                    if ($con2->connect_error) {
-                        die("Verbindung fehlgeschlagen: " . $con2->connect_error);
-                    }
-
-                    // Abfrage für die Daten für die zweite Datenbank
-                    $query = "SELECT vorname, nachname, lernerfolg, startegie, semester FROM studierendestrategie ORDER BY studierendestrategie.id DESC LIMIT 10";
-
-                    // SQL für die zweite Datenbank
-                    $sql2 = "SELECT vorname, nachname, lernerfolg.lernerfolg AS lernerfolg, strategie.strategie AS strategie, semester.semester AS semester
-                            FROM studierendestrategie
-                            JOIN lernerfolg ON studierendestrategie.lernid = lernerfolg.lernid
-                            JOIN strategie ON studierendestrategie.strategieid = strategie.strategieid
-                            JOIN semester ON studierendestrategie.semesterid = semester.semesterid
-                            ORDER BY studierendestrategie.id DESC
-                            LIMIT 10";
-
-                    $result2 = mysqli_query($con2, $sql2);
-
-                    // Daten aus der Abfrage in die Tabelle einfügen für die zweite Datenbank
-                    while ($row = mysqli_fetch_assoc($result2)) {
-
-                        echo "<tr>";
-                        echo "<td>{$row['vorname']}</td>";
-                        echo "<td>{$row['nachname']}</td>";
-                        echo "<td>{$row['lernerfolg']}</td>";
-                        echo "<td>{$row['strategie']}</td>";
-                        echo "<td>{$row['semester']}</td>";
-                        echo "</tr>";
-                    }
-
-                    // Freigeben des Ergebnisses für die zweite Datenbank
-                    mysqli_free_result($result2);
-
-                    // Schließen der Verbindung zur zweiten Datenbank
-                    mysqli_close($con2);
-                    ?>
-					
-					
-					
-                </tbody>
+					}
+				});
+                
+		  </script>	
+				
+				
+				
+				
+				
+				
             </table>
         </div>
     </div>
