@@ -84,7 +84,7 @@
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
 			
- <p class="blue-form"> Wie viel Lernerfolg hat ausgewählte Statistik? </p>
+ <p class="blue-form"> Welche Lernstrategie wird in welchem Semester vermehrt angewendet? </p>
 
 <?php
     ini_set('display_errors', 1);

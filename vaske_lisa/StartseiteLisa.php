@@ -23,16 +23,22 @@
 <body>
 
     <header>
-        <h1>EduLearn</h1>
+        <h1>EduLearn</h1> 
+		 <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+		
+        
+                                                                                       </div>
 		
     </header>
-
+<!-- Verlinkung Bild -->
+                     	
 	
 	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
 	  <ul class="nav nav-tabs">
   <li class="nav-item">
-		  
+		
+	  
 	<a class="nav-link" href="StartseiteLisa.php">Home</a></li>	  
 		  
 		  
@@ -93,7 +99,7 @@
 
 	<div>	
 	
-<img id="logo" src="bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
+  
 	
 </div>
 
@@ -314,12 +320,10 @@
 
 
 	
-   <footer>
-        <h3>Created by Lisa Vaske</h3>
-        <p>Adresse: Wilhelmshaven</p>
-        <p>Email: lisa.vaske@student.jade-hs.de</p>
-	   <section> <p>In Koooperation mit der Jade Hochschule</p></section>
-   </footer>	
+   <!-- Bootstrap Footer -->
+  <footer class="bg-primary text-center p-2">
+        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+    </footer>
 	
 	</body>
 	

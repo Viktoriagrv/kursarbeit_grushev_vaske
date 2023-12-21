@@ -38,7 +38,7 @@
 <div class="grid-item">
 	
     <header>
-        <h1>Motivation</h1>
+        <h1>EduLearn</h1>
   
     </header>
 
@@ -128,12 +128,9 @@
 	
 	
 	
-	
-    <footer>
-        <h3>Created by Lisa Vaske</h3>
-        <p>Adresse: Wilhelmshaven</p>
-        <p>Email: lisa.vaske@student.jade-hs.de</p>
-	   <section> <p>In Koooperation mit der Jade Hochschule</p></section>
-   </footer>
+<!-- Bootstrap Footer -->
+  <footer class="bg-primary text-center p-2">
+        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
+    </footer>
 </body>
 </html>

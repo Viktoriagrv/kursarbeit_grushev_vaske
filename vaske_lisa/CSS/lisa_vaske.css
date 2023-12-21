@@ -1,69 +1,68 @@
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding as needed */
-}
-
-.logo {
-    max-width: 100px; /* Adjust the maximum width as needed */
-}
-
-/* Reset für die Standardeinstellungen der Seite */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Globale Stile für die Seite */
-body {
-    font-family: Arial, sans-serif; /* Wähle eine geeignete Schriftart */
-}
-
-/* Header-Stile */
-header {
     background-color: #0077cc; /* Blaue Hintergrundfarbe */
     color: #fff; /* Weiße Textfarbe */
-    text-align: center; /* Text zentrieren */
-    padding: 20px; /* Innenabstand für den Header */
+    padding: 10px 20px; 
+
 }
 
 header h1 {
-    font-size: 36px; /* Schriftgröße für den Titel "EduLearn" */
-	text-align: center
+    font-size: 36px; /* Schriftgröße für EduLearn */
+    text-align: center; /* Schriftgröße zentrieren */
 }
 
+/* Blauer Text */
 
+.blue-text {
+    color: blue;
+    text-align: justify;
+    font-style: italic;
+}
 
-/* Footer-Stile */
+/* Footer */
+
 footer {
     background-color: #0077cc; /* Blaue Hintergrundfarbe */
     color: #fff; /* Weiße Textfarbe */
     text-align: center; /* Text zentrieren */
     padding: 10px; /* Innenabstand für den Footer */
+    z-index: 1000;
 }
+
 
 footer p {
     font-style: italic; /* Kursiver Text für den Footer */
 }
 
-/*<<<<<<< HEAD*/
+/* Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-/* Z-Index des Footers, um sicherzustellen, dass er über anderen Elementen liegt */
-footer {
-    z-index: 1000;
+body {
+    font-family: Arial, sans-serif; /* Schriftart */
 }
 
 
-    /* CSS-Styling für das Logo */
-    #logo {
-      position: absolute;
-      top: 1px; 
-      right: 10px; 
-    }
 
-/*Standarteinstellungen bis hier*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Andere Stildefinitionen für deine Navigationsleiste */
+}
 
+.logo {
+    width: 100px; /* Passe die Breite des Logos an deine Anforderungen an *//* Andere Stildefinitionen für dein Logo */
+	position:absolute;
+	right:10px;
+	top:10px;
+	z-index: 100;
+}
 
 
 
@@ -72,20 +71,20 @@ footer {
 	.farbiger-textblock1 {
   background-color: #DBFAFF; 
   color: black; 
-  padding: 20px; 
+  padding: 40px; 
 }
 		
 	.textblock2 {
   background-color: #FFFCBA; 
   color: black; 
-  padding: 20px; 
+  padding: 40px; 
 		
 }
 
     .textblock1 {
   background-color: #FADEFC; 
   color: black; 
-  padding: 20px; 
+  padding: 40px; 
 		
 }
 
@@ -94,6 +93,7 @@ footer {
 	
 .carousel-caption {
     background-color: #352525; 
+	padding: 60px;
 }
 
 	
@@ -107,21 +107,32 @@ margin-right: 20px;
 }
 
 
-.grid-container {
-	display:grid;
-	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-	gap: 20px;/*Abstand zwischen den Elementen*/
-	justify-content: center;/*Zentrierung horizontal*/
-	align-items:center;/*Zentierung vertikal*/
-	padding:20px;/*Abstand vom Container-Rand*/
+
+grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit); 
+	max-width:100px;
+    gap: 20px;/*Abstand zwischen den Elementen*/
+    justify-content:center;
+    align-items:center;
+    padding: 60px;/*Abstand vom Container-Rand*/
 }
+
 
 
 .grid-item{
-	text-align:center;
+	text-align:inherit;
+	padding: 40px;
+
+	
 }
 
+
 .grid-item img{
-	max-width: 100%;
+	max-width: 90%;
 	height:auto;
+	padding: 40px;
+	
 }
+
+
