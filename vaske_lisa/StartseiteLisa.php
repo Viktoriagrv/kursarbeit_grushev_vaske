@@ -69,7 +69,7 @@
 	
 	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
 
-		<a class="nav-link" href="StatistikLisa/Lernerfolg.php">Lernerfolg</a></li>
+		<a class="nav-link" href="StatistikLisa/Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
 
     </ul> 
 	  

@@ -100,7 +100,7 @@
                                
 							      <p style="color: blue; text-align: justify; font-style: italic;">Du findest in der Drop-Down Liste nicht das Modul was du lernst oder du hast ein bestimmtes Wahlpflichtfach? Kein Problem: Erzähl uns ein wenig über das Modul, füg es hinzu und du findest es rack-zack in der Modulübersicht!</p>		
 							  
-							   <!-- Custom-Form-Group -->
+							   <!-- Custom-Form-Group CSS -->
                               	<p class="custom-form-group"> <input name = "modulname"> Modulname</input></p>
 		                           <p class="custom-form-group"><input name = "modulbeschreibung"> Modulbeschreibung  </input></p>
 	                                	<p class="custom-form-group"><input name = "modulbewertung"> Prüfungsart </input></p>

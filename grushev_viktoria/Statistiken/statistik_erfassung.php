@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Datenbankverbindung einrichten
+// Datenbankverbindung 
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";

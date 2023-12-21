@@ -75,7 +75,7 @@
 </div>
 	  
   <!-- Beginn der Sektion -->
-	<!-- Beginn von Statistik in der Mitte -->
+	<!-- Beginn Mitte -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
@@ -95,6 +95,7 @@
     </div>
 </div>
 
+	<!-- Footer wie immer! -->
 				
     <footer class="bg-primary text-center p-2">
         <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>

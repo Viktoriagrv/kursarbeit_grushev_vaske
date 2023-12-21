@@ -1,10 +1,11 @@
 <?php
 
 // Fehlermeldung
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-// Verbindung zur Datenbank herstellen mit meinen Daten
+// Verbindung zur Datenbank herstellen
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";
@@ -18,27 +19,29 @@ if ($con->connect_error) {
     die("Verbindung fehlgeschlagen: " . $con->connect_error);
 }
 
-// Fetch modul data from the database
+// Daten einholen
 $query = "SELECT modul_id, modulname FROM modul";
 $result = $con->query($query);
 
-// Check if the query was successful
+// Erfolgreich?
 if ($result) {
-    // Fetch associative array
+    
+	// ModulID und Modulnamen kriegen
+	
     while ($row = $result->fetch_assoc()) {
         $modul_id = $row['modul_id'];
         $modulname = $row['modulname'];
-        // Output option tag for each modul
+        // Ausgabe "Echo"
         echo "<option value='$modul_id'>$modulname</option>";
     }
 
-    // Free result set
+    // Ergebnis
     $result->free();
 } else {
     echo "Error retrieving modul data: " . $con->error;
 }
 
-// Close the database connection
+// Schließen
 $con->close();
 
 ?>

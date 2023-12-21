@@ -108,7 +108,7 @@
 															  <!-- PHP-Einbindung für dynamisches Dropdown-Menü -->
 															 
                                                                   <?php
-                                                                     // Include-Datei von meiner PHP für den Lerntyp 
+                                                                     // Include-Datei von meiner PHP für den Lerntyp damit dynanmisch ist
                                                                        include('grunderfassung_lerntyp.php');
                                                                                                              ?>
                                                                                                                 </select>

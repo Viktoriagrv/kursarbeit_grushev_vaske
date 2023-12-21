@@ -1,56 +1,20 @@
 <!DOCTYPE html>
-
-<!-- Alles wie immer und wie bei dem anderen Kreisdiagramm! -->
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
-    <title>Statistik Modul</title>
+	<link rel="stylesheet" href=> 
+    <title>Statistik Lerntyp</title>
     	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	
-	<!-- Java Script -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="text/javascript">
-		
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-			
-            // Daten vom Server mit AJAX abrufen
-            $.ajax({
-                url: 'statistik_modul_erfassung.php', // Verlinkung PHP Datei
-                dataType: 'json',
-                success: function (data) {
-                    var chartData = new google.visualization.DataTable();
-                    chartData.addColumn('string', 'Modul');
-                    chartData.addColumn('number', 'Anzahl');
-                    for (var i = 0; i < data.length; i++) {
-                    chartData.addRow([data[i].modulname, parseInt(data[i].anzahl)]);
-                    }
- 
-					// Größeneinstellung 
-                    var options = {
-                        'title': 'Modul Verteilung',
-                        'width': 600,
-                        'height': 400
-                    };
-
-                    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-                    chart.draw(chartData, options);
-                }
-            });
-        }
-    </script>
 	
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
+               	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-fXxu7mz9ATKxIepV6+rnNS3EKlkNw0dbV4N+s3VNA6Z/rU6w+Yvdy4ZI6A0CnC5u" crossorigin="anonymous"></script>
 
 </head>
+	
 <body>
      <!-- Header -->
 	  <header>
@@ -88,7 +52,7 @@
                             <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
                                              <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="../../lerntyp_erfassung.php"> Generelles Erfassungsformular </a></li>
+                                                  <li><a class="dropdown-item" href="../../grunderfassung_lerntyp.php"> Generelles Erfassungsformular </a></li>
                                                         <li>
 												         	 <a class="dropdown-item" href="../../Erfassungsseite/lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
 		                                                          <li><a class="dropdown-item" href="../../Erfassungsseite/modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
@@ -111,7 +75,7 @@
                                                </li>
 	                                               </ul>
                                                       </div>
-		<!-- Navigationsleiste zuende! -->
+		                                                    <!-- Navigationsleiste zuende! -->
 	  
 <!-- Beginn von Statistik in der Mitte -->
 <div class="container-fluid">
@@ -119,19 +83,38 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
 			<div id="chart_div"></div>
-			<p class="blue-form"> Welches Modul wird am meisten unter Studenten hier gelernt? Hier kriegt ihr immer eine aktuelle Vorschau! </p>
+			<p class="blue-form"> </p>
+ <p class="blue-form"> Wie stehen Lernefolg und Strategie zusammen? </p>
 			
-  <!-- Link zur anderen Statistik -->
-<a href="../statistiklerntyp.php"class="btn btn-secondary mb-5">Willst du sehen wie es bei den Lerntypen aussieht, die gelernt werden? Hier entlang!</a>
-	  
+<!--Formular zum Auswählen eines Modul, nach dem gefiltert werden soll -->
+	<form action="erfassung.php" method = "post">
+		
+		<!-- drop down mit Modulnamen -->	
+		<td>&nbsp;</td>
+					<td>
+						<h1>Aufwand pro Modul</h1>
+						<br/>
+
+						<p> Wie viel wird pro Modul jeweils Aufgewendet? Finde es heraus, wähle ein Modul!</p>
+
+                                  <select class="form-control" id="strategieid" name="strategieid">
+                        <option value='1'>kognitiv</option>
+                        <option value='2'>metakognitiv</option>
+                        <option value='3'>ressourcenbezogen</option>
+                                                                                                 </select>
+                                                                                                      </div>
+					
+					</td>
+			<br/><br/>
+	
+	        <!-- Button zum Abschicken des Formulars -->
+			  <p class="text-center"><input type="submit" name="gesendet"></p>
+	
+	</form>			
+			
 
 </div>
-<!-- Beginn von Statistik -->
-<div class="container-fluid">
-    <div class="mt-5 mb-5 row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-    <div id="chart_div"></div>
+
 			
 </form>
         </div>
@@ -149,4 +132,3 @@
 	
 </body>
 </html>
-

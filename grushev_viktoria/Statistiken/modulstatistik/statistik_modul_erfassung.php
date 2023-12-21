@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Hier musst du deine Datenbankverbindung einrichten
+// Datenbank und Fehlercode wie immer!
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";

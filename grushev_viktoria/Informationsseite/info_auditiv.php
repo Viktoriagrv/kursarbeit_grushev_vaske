@@ -76,7 +76,7 @@
 </div>
 	  
 	  
-<!-- Beginn von Statistik in der Mitte -->
+<!-- Beginn Mitte -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>

@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-// Verbindung zur Datenbank herstellen mit meinen Daten
+// Verbindung zur Datenbank 
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";
@@ -30,7 +30,8 @@ if (isset($_POST["gesendet"])) {
     $sql = "INSERT INTO modul (modulname, modulbeschreibung, modulbewertung) VALUES ('$modulname', '$modulbeschreibung', '$modulbewertung')";
 
      if ($con->query($sql) === TRUE) {
-        // Erfolgreich eingefügt, weiterleiten
+		 
+        // Erfolgreich eingefügt, weiterleiten aud modul.seite.php
         header("Location: modul.seite.php");
         exit(); 
     } else {

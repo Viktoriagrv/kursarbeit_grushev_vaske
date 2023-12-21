@@ -60,7 +60,7 @@
     </ul> 
 	  
 	  
-	  <!-- Dropdown Link 3 für die Statistikseiten. Geplant: 2 --> 
+	  <!-- Dropdown Link 3 für die Statistikseiten.  --> 
 	   <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
            <ul class="dropdown-menu">
@@ -77,7 +77,7 @@
                                                                                                           </ul>
                                                                                                                </div>
 	  
-                                        <!-- Beginn von Statistik in der Mitte -->
+                                        <!-- Beginn von Mitte -->
                                            <div class="container-fluid">
                                                <div class="mt-5 mb-5 row">
                                                   <div class="col-md-4"></div>

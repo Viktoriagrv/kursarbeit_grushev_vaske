@@ -1,10 +1,10 @@
 <?php
 
-// Fehlermeldung, falls was schief läuft
+// Fehlermeldung, 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-// Verbindung zur Datenbank herstellen mit meinen eigenen Daten
+// Verbindung zur Datenbank 
 $servername = "localhost";
 $username = "m12241-09";
 $password = "l97tJZA8W";
