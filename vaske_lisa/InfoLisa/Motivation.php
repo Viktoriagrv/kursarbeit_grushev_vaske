@@ -3,19 +3,9 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css">
 	
-  
-
-
-<html lang="de">
-	
-<!-- Definition der Sprache "de" = deutsch -->	
-
-  <head>
-	  
-	
-	</head>
+ 
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,17 +19,21 @@
 	
 <body>
 	
-	<div class="grid-container">
-<div class="grid-item">
-	
-    <header>
-        <h1>EduLearn</h1>
+	   
+	  <header>
+		  
+    <h1>EduLearn</h1>
+		  <div>
+					  
+   <img src="../bilder/Logo_rund1.png" alt="Logo" class="logo">
+		  </div>
+</header>
 		
-		<div>
-		<img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
-                                                                                               </div>
   
-    </header>
+
+<div class="grid-container">
+<div class="grid-item">
+
 
  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
@@ -72,7 +66,7 @@
       <!-- Dropdownlink 2 -->
   <li class="nav-item dropdown">
    
-  <a class="nav-link" href="vaske_lisa/ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+  <a class="nav-link" href="../ErfassungLisa.php">Erfassung deiner Daten</a></li>
 	  
 	  <!-- Dropdown Link 3 --> 
 	  <li class="nav-item dropdown">
@@ -105,7 +99,7 @@
 	
 	
     <main>
-        <h2>Willkommen auf der Info-Seite</h2>
+        <h2>Alle Infos rund um Motivation</h2>
 	
 		   
         <!-- Hier kommt der Hauptinhalt deiner Seite -->

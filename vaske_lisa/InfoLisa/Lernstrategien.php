@@ -9,8 +9,6 @@
 
   <head>
 	  
-	 
-	  
 
 	
 	<!-- Bootstrap-Einbindung -->
@@ -71,9 +69,11 @@
     
 		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="../StatistikLisa/Lernerfolg.php">Lernerfolg</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
-	 
+	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
+	
+	<a class="nav-link" href="StatistikLisa/Lernerfolg.php">Lernerfolg</a></li>
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
@@ -95,7 +95,7 @@
 	
 <div>	
 	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="logo" class="logo">	
+<img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
 	
 </div>
 
@@ -116,9 +116,9 @@
   <p>
 	  
 	<h3>Kognitive Lernstartegien</h3>
-	<br><p>Kognitive Lernstrategien umfassen die essenziellen Prozesse des Lernens: das Begreifen, das Auswendiglernen, das Üben, das Erinnern und das Anwenden des Gelernten. In manchen Fächern ist reines Auswendiglernen unumgänglich, während in anderen die Anwendung des Gelernten von größerer Bedeutung ist. Alles kann mithilfe passender Methoden erlernt werden. Hier sind einige der bedeutendsten kognitiven Lernstrategien:</br>
+	<p><br>Kognitive Lernstrategien umfassen die essenziellen Prozesse des Lernens: das Begreifen, das Auswendiglernen, das Üben, das Erinnern und das Anwenden des Gelernten. In manchen Fächern ist reines Auswendiglernen unumgänglich, während in anderen die Anwendung des Gelernten von größerer Bedeutung ist. Alles kann mithilfe passender Methoden erlernt werden. Hier sind einige der bedeutendsten kognitiven Lernstrategien:</br>
 
-	<br><b>Auswendig lernen:</b></brn>
+	<br><b>Auswendig lernen:</b></br>
 
 <br>Bestimmte Informationen müssen einfach auswendig gelernt werden. Das betrifft beispielsweise Vokabeln oder spezifische Begriffe, deren Benennung erlernt werden muss. Städtenamen, medizinische Termini, Paragraphen – die Palette ist vielfältig. Wiederholen, lautes Wiederholen und das Leitner-System mit Karteikarten sind effektive Methoden, um Informationen zu memorisieren.</br>
 
@@ -126,15 +126,16 @@
 
 <br>Die Herausforderung liegt im Verstehen. Je abstrakter eine Theorie ist, desto komplizierter kann es sein, sie zu begreifen. Hier helfen Lernstrategien wie Mindmaps, das Zusammenfassen von Texten, visuelle Darstellungen und der Vergleich mit ähnlichen Themenbereichen. Aktive Teilnahme am Unterricht, das Stellen von Fragen und der Austausch mit Mitschülern oder Kommilitonen können das Verständnis fördern.</br>
 
-<br><b>Anwendung:</b></br>
+<br><b>Anwendung:</b><br>
 
-<br>Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei ist Übung der Schlüssel zum Erfolg. Wer die Begriffe kennt und das Thema verstanden hat, muss intensiv üben – am besten mit einer Vielzahl unterschiedlicher Beispiele.</p></br>
-	</div>
-	<img src="../bilder/kognitiv.jpg"  alt="kognitive Lernstrategie">
+<br>Das Hauptziel des Lernens ist die praktische Anwendung des Gelernten. Hierbei ist Übung der Schlüssel zum Erfolg. Wer die Begriffe kennt und das Thema verstanden hat, muss intensiv üben – am besten mit einer Vielzahl unterschiedlicher Beispiele.</br></p>
+	
 	
 	</p>
+</div>
 
-
+<img src="../bilder/kognitiv.jpg" alt="kognitive Lernstrategie">
+	
 
 <div class="textblock2">
   <p>
@@ -163,7 +164,7 @@
 
 <p>
 
-	<p><b><h5>Ressourcenbezogene Lernstrategien</h5></b></p>
+<p><b>Ressourcenbezogene Lernstrategien</b></p>
 <br>Ressourcenbezogene Lernstrategien zielen darauf ab, das Lernen angenehmer zu gestalten. Dies steigert die Motivation, was sich wiederum positiv auf die Ergebnisse auswirkt. Allerdings erfordern diese Strategien oft Ressourcen wie Geld oder Zeit.</br>
 
 <br><b>Ästhetische Materialien und ein angenehmer Lernplatz:</b></br>

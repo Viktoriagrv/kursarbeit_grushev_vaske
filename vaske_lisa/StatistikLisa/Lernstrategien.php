@@ -3,21 +3,8 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
-	
-	
-    <title>EduLearn</title>
-	<!-- Definition vom Dokumententypen-->
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css">
 
-	
-<!-- Definition der Sprache "de" = deutsch -->
-<html lang="de">
-
-	
-  <head>
-	  
-	
-   
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -31,17 +18,22 @@
 	
 	
 	
-	
 <body>
 	
-	<div class="grid-container">
-<div class="grid-item">
-	
-	
-    <header>
-        <h1>EduLearn</h1>
+
+	  <header>
+		  
+    <h1>EduLearn</h1>
+		  <div>
+					  
+   <img src="../bilder/Logo_rund1.png" alt="Logo" class="logo">
+		  </div>
+</header>
+		
   
-    </header>
+
+<div class="grid-container">
+<div class="grid-item">
 
 	 <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
@@ -81,25 +73,19 @@
 		  <a class="nav-link" href="Lernstrategien.php">Lernstrategien</a></li>
 	
 		
-		<a class="nav-link" href="Lernerfolg.php">Lernerfolg</a></li>
+		<a class="nav-link" href="Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
     </ul> 
 	  
 	
-    <a class="nav-link" href="../../index.php">Zurück zur Startseite</a>
-  </li>
+    <a class="nav-link" href="../../index.php">Zurück zur Startseite</a></li>
  
 </ul>
   <!-- Hier ist die Navigationsleiste zuende -->
 	  	
 
-	<div>	
-	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="logo" class="logo">	
-	
-</div>
 	
 	
-        <h2>Willkommen auf der Statistik-Seite</h2>
+        <h2>Willkommen auf einer unserer Statistik-Seiten</h2>
         <!-- Hier kommt der Hauptinhalt meiner Seite -->
     </main>
 
@@ -203,20 +189,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
 	
 	
    <!-- Bootstrap Footer -->

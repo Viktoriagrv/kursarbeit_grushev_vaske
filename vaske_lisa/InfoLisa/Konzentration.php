@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="../CSS/lisa_vaske.css"
-	
-	
-	
-  <head>
+	 <link rel="stylesheet" href="../CSS/lisa_vaske.css">
+
 	 
 	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-
-	
-</head>
+	</head>
 	
 	
 	
 	
 <body>
 	
-	
-<div class="grid-container">
-<div class="grid-item">	
-	
-	
-	
-    <header>
-        <h1>EduLearn</h1>
+   
+	  <header>
+		  
+    <h1>EduLearn</h1>
+		  <div>
+					  
+   <img src="../bilder/Logo_rund1.png" alt="Logo" class="logo">
+		  </div>
+</header>
+		
   
-    </header>
+
+<div class="grid-container">
+<div class="grid-item">
+
 
 	 <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
@@ -75,9 +74,9 @@
     
 		  <a class="nav-link" href="../StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="../StatistikLisa/Konzentration.php">Konzentration</a></li>
+	  <a class="nav-link" href="../StatistikLisa/Lernerfolg.php">Lernerfolg</a></li>
 	
-	  <a class="nav-link" href="../StatistikLisa/Motivation.php">Motivation</a></li>
+	  
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
@@ -95,20 +94,10 @@
 <!-- Einbindung von Bootstrap Java Script -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	
-	
-<div>	
-	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="logo" >	
-	
-</div>
 
 
 
 
-
-
-
-	
 	
     <main>
         <h2>Hier erfährst du alles rund um Konzentration</h2>

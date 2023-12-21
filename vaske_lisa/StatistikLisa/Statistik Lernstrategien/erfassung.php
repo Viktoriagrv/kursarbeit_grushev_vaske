@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../css/grushev_css/grushev_css.css"> 
-    <title>Statistik Lerntyp</title>
+	<link rel="stylesheet" href="../../CSS/lisa_vaske.css">
+ 
     	
 	<!-- Bootstrap-Einbindung -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -17,15 +17,17 @@
 	
 <body>
      <!-- Header -->
-	  <header>
-	     <div>
-            <h1>EduLearn</h1>
-               </div>
-                   <div>
-					   <!-- Verlinkung Bild -->
-                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
-                                                                                               </div>
-                                                                                                 </header>
+  <header>
+ <div>
+<h1>EduLearn</h1>
+ </div>
+   <div>
+					   
+    <img src="../../bilder/Logo_rund1.png" alt="Logo" class="logo">
+	   
+	   
+    </div>
+ </header>
 
 	  
 	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
@@ -67,7 +69,7 @@
 		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
 	
-		<a class="nav-link" href="StatistikLisa/Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
+		<a class="nav-link" href="lernstrategiestatistik.php">Lernerfolg</a></li>
 
     </ul> 
 	  

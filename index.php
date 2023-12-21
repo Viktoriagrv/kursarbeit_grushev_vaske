@@ -242,10 +242,7 @@ mysqli_close($con1);
     </div>
 </div>
 
-   <!-- Bootstrap Footer -->
-  <footer class="bg-primary text-center p-2">
-        <p class="text-light mb-0">IT2 Kursarbeit von Viktoria Grushev und Lisa Vaske</p>
-    </footer>
+  
 			
 <!-- Einbindung von Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
