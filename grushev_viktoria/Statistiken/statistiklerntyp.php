@@ -26,6 +26,8 @@
                 dataType: 'json',
                 success: function (data) {
                     var chartData = new google.visualization.DataTable();
+					
+					//Collums mit Eigenschaft 
                     chartData.addColumn('string', 'Lerntyp');
                     chartData.addColumn('number', 'Anzahl');
 
@@ -122,7 +124,8 @@
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
  <p class="blue-form"> Welcher Lerntyp wird am meisten unter Studenten hier gelernt? Hier kriegt ihr immer eine aktuelle Vorschau! </p>
-  <!-- Link zur anderen Statistik -->
+
+			<!-- Link zur anderen Statistik -->
 <a href="modulstatistik/statistikmodul.php" class="btn btn-secondary mb-5">Willst du sehen wie es bei den Modulen aussieht, die gelernt werden? Hier entlang!</a>
 	  
 

@@ -83,6 +83,7 @@
         <div class="col-md-4">
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
+			
  <p class="blue-form"> Wie viel Aufwand hat dein ausgewähltes Modul? </p>
 
 <?php
@@ -107,7 +108,7 @@
     if (isset($_POST['modul_id']) && is_numeric($_POST['modul_id'])) {
         $modul_id = $_POST['modul_id'];
 
-        // Definieren und Initialisieren von $aufwand_id
+        // Definition $aufwand_id
         $aufwand_id = 1; 
 
         // SQL-Abfrage, um den Aufwand für das ausgewählte Modul abzurufen
@@ -117,7 +118,7 @@
                 INNER JOIN aufwand ON lerndaten.aufwand_id = aufwand.aufwand_id 
                 WHERE lerndaten.modul_id = ?";
 
-        // Prepared Statement verwenden, um SQL Injection zu verhindern
+        // Prepared Statement verwenden, um SQL Injection zu verhindern (Das sind Sicherheitslücken)
         $stmt = $conn->prepare($sql);
 
         // Fehlerbehandlung für das Prepared Statement
@@ -133,6 +134,7 @@
             $result = $stmt->get_result();
 
             if ($result->num_rows > 0) {
+				
                 // Daten aus der Datenbank ausgeben
                 while ($row = $result->fetch_assoc()) {
                     // Bootstrap-Tabelle

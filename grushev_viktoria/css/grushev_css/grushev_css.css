@@ -1,4 +1,3 @@
-/* Der Style für den Header */
 
 header {
     display: flex;
@@ -13,7 +12,7 @@ header {
     max-width: 100px; /* LOGO */
 }
 
-/* CSS-Styling für das Logo */
+/* Wieder Logo */
 #logo {
     position: absolute;
     top: 1px;
@@ -21,7 +20,7 @@ header {
 }
 
 header h1 {
-    font-size: 36px; /* Schriftgröße für den Titel "EduLearn" */
+    font-size: 36px; /* Schriftgröße für EduLearn */
     text-align: center; /* Schriftgröße zentrieren */
 }
 
@@ -33,7 +32,7 @@ header h1 {
     font-style: italic;
 }
 
-/* Footer-Stile */
+/* Footer */
 
 footer {
     background-color: #0077cc; /* Blaue Hintergrundfarbe */
@@ -58,8 +57,8 @@ body {
     font-family: Arial, sans-serif; /* Schriftart */
 }
 
-/* Formular-Stile */
-/* Blauer Text-Stil */
+/* Benutze ich für Formular */
+/* Blauer Text  */
 
 .blue-text {
     color: blue;
@@ -68,7 +67,7 @@ body {
 }
 
 /* Formular */
-/* Blauer Text-Stil */
+/* Blauer Text  */
 
 .custom-form-group {
     margin-bottom: 15px;
@@ -84,10 +83,12 @@ body {
 .custom-form-group select,
 .custom-form-group textarea {
     width: 100%;
-    padding: 8px; /* Innenabstand für Select und Textarea */
+    padding: 8px; /* Innenabstand */
     margin-top: 8px;
     color: grey; /* Blaue Farbe für die Schrift  Select */
 }
+
+/* will noch schatten bei custom-form-group */
 
 .custom-form-group select:focus,
 .custom-form-group textarea:focus {
