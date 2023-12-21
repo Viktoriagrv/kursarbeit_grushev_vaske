@@ -98,7 +98,7 @@
 	
 <div>	
 	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
+<img id="logo" src="../bilder/Logo_rund1.png" alt="logo" >	
 	
 </div>
 
@@ -111,14 +111,14 @@
 	
 	
     <main>
-        <h2>Konzentration</h2>
+        <h2>Hier erfährst du alles rund um Konzentration</h2>
    
         <!-- Hier kommt der Hauptinhalt deiner Seite -->
     </main>
 
 
 
-<img src="../bilder/Konzentrationistock.jpg" height="500" width="800" alt="konzentration">
+<img src="../bilder/Konzentrationistock.jpg" alt="konzentration">
 	
 <p><b>In einer Zeit, die immer schneller wird und in der wir von einer Flut an Informationen überschwemmt werden, klagen immer mehr Leute über Schwierigkeiten, sich zu konzentrieren. Kennst du nicht auch dieses befriedigende Gefühl, wenn du nicht nur ein Buch liest, sondern es auch verstehst? Das gelingt nur durch Konzentration. Allein das Wort "Konzentration" macht vielen Menschen Unbehagen. Vielleicht hast auch du während deiner Studienzeit Erfahrungen mit Schwierigkeiten beim Konzentrieren gemacht. Wir möchten dir zeigen, wie du effektiver lernen und deine Konzentration verbessern kannst.</b>
 
@@ -159,16 +159,6 @@ Entspannung durch Meditation, Yoga oder autogenes Training</section>
 
 
 
-
-
-
-
-
-
-
-
-
-	
 	
 	
 	

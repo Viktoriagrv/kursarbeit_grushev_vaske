@@ -17,95 +17,111 @@
 	
 <body>
      <!-- Header -->
-	  <header>
-	     <div>
-            <h1>EduLearn</h1>
-               </div>
-                   <div>
-					   <!-- Verlinkung Bild -->
-                     <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
-                                                                                               </div>
-                                                                                                 </header>
+<header>
+  <div>
+ <h1>EduLearn</h1>
+ </div>
+ <div>
+   <!-- Verlinkung Bild -->
+<img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+     </div>
+     </header>
 
+
+	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
-		   <!-- Navigationsleiste mit Bootstrap -->
-	  
-	                                          <ul class="nav nav-tabs">
-                                                  <li class="nav-item">
-													  <!--Verlinkung zur Homestartseite von mir -->
-                                                      <a class="nav-link active" aria-current="page" href="../../lerntyp_erfassung.php">Home</a>
-                                                                    </li>
-		  
-  <!-- Dropdownlink 1 Bootstrap: Informationen -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen zu Lerntypen</a>
-           <ul class="dropdown-menu">
+	  <ul class="nav nav-tabs">
+  <li class="nav-item">
 		
-			   <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="../../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="../../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="../../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="../../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
-		                                                                                                                       </ul>     
+	  
+	<a class="nav-link" href="StartseiteLisa.php">Home</a></li>	  
 		  
-             <!-- Dropdownlink 2 Bootstrap: Erfassung deiner Daten-->
-                            <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
-                                             <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="../../grunderfassung_lerntyp.php"> Generelles Erfassungsformular </a></li>
-                                                        <li>
-												         	 <a class="dropdown-item" href="../../Erfassungsseite/lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
-		                                                          <li><a class="dropdown-item" href="../../Erfassungsseite/modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
-						                                                                </ul> 
-						  
+		  
+		  
+  <!-- Dropdownlink 1 -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
+    <ul class="dropdown-menu">
+     
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
+		
+	
 	  
-	                 <!-- Dropdownlink 3 Bootstrap: Statistikseiten --> 
-           <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-                                        <ul class="dropdown-menu">
-										
-                       <li> <a class="dropdown-item" href="../statistiklerntyp.php">Statistik Lerntypen </a></li>
-	                        <li><a class="dropdown-item" href="statistikmodul.php">Statistik Modul </a></li>
-							  <li><a class="dropdown-item" href="../generalstatistik/generalstatistik.php"> Generelle Statistik </a></li>
-                                                                                                                                              </ul> 
 	  
-	                              <!-- Link zur gemeinsamen Startseite -->
-		                                <li class="nav-item">
-                                            <a class="nav-link" href="../../../index.php">Zurück zur Startseite</a>
-                                               </li>
-	                                               </ul>
-                                                      </div>
-		                                                    <!-- Navigationsleiste zuende! -->
+	  </ul>     
+		  
+      <!-- Dropdownlink 2 -->
+  <li class="nav-item dropdown">
+   
+  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
 	  
-<!-- Beginn von Statistik in der Mitte -->
+	  <!-- Dropdown Link 3 --> 
+	  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+    <ul class="dropdown-menu">
+    
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		
+	
+		<a class="nav-link" href="StatistikLisa/Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
+
+    </ul> 
+	  
+		  <!-- Link zur Startseite -->
+		   <li class="nav-item">
+	
+	
+	
+	
+    <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+  </li>
+ 
+</ul>
+  <!-- Hier ist die Navigationsleiste zuende -->
+	  
+
+
+
+
+
+
+
+<!-- Beginn von Statistik -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
- <p class="blue-form"> Wie stehen Lernefolg und Strategie zusammen? </p>
 			
-<!--Formular zum Auswählen eines Modul, nach dem gefiltert werden soll -->
+ <p class="blue-form"> Welche Strategie wird in welchem Semester vermehrt angewendet? </p>
+			
+			
+			
+<!--Formular Wahl einer Strategie -->
 	<form action="erfassung.php" method = "post">
 		
-		<!-- drop down mit Modulnamen -->	
+		
 		<td>&nbsp;</td>
 					<td>
-						<h1>Aufwand pro Modul</h1>
+						<h1>Angewendete Strategien je Semester</h1>
 						<br/>
 
-						<p> Wie viel wird pro Modul jeweils Aufgewendet? Finde es heraus, wähle ein Modul!</p>
+						<p> Welche der drei Strategien Student_innen in welchem Semester vermehrt benutzen, kannst du ganz leicht checken. Einfach eine Strategie auswählen und go!</p>
 
                                   <select class="form-control" id="strategieid" name="strategieid">
                         <option value='1'>kognitiv</option>
                         <option value='2'>metakognitiv</option>
                         <option value='3'>ressourcenbezogen</option>
-                                                                                                 </select>
-                                                                                                      </div>
+    </select>
+		</div>
 					
-					</td>
-			<br/><br/>
+</td>
+<br/><br/>
 	
 	        <!-- Button zum Abschicken des Formulars -->
 			  <p class="text-center"><input type="submit" name="gesendet"></p>

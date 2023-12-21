@@ -28,54 +28,63 @@
                                                                                                  </header>
 
 	  
-		   <!-- Navigationsleiste mit Bootstrap -->
+	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
 	  
-	                                          <ul class="nav nav-tabs">
-                                                  <li class="nav-item">
-													  <!--Verlinkung zur Homestartseite von mir -->
-                                                      <a class="nav-link active" aria-current="page" href="../../lerntyp_erfassung.php">Home</a>
-                                                                    </li>
-		  
-  <!-- Dropdownlink 1 Bootstrap: Informationen -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen zu Lerntypen</a>
-           <ul class="dropdown-menu">
+	  <ul class="nav nav-tabs">
+  <li class="nav-item">
 		
-			   <!-- Verlinkung für die einzelnen Seiten -->
-      <li><a class="dropdown-item" href="../../Informationsseite/info_visuell.php">Lerntyp Visuell </a></li>
-            <li><a class="dropdown-item" href="../../Informationsseite/info_auditiv.php"> Lerntyp Auditiv </a></li>
-                 <li><a class="dropdown-item" href="../../Informationsseite/info_motorisch.php"> Lerntyp Motorisch </a></li>
-		             <li><a class="dropdown-item" href="../../Informationsseite/info_kommunikativ.php"> Lerntyp Kommunikativ</a></li>
-		                                                                                                                       </ul>     
+	  
+	<a class="nav-link" href="StartseiteLisa.php">Home</a></li>	  
 		  
-             <!-- Dropdownlink 2 Bootstrap: Erfassung deiner Daten-->
-                            <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Erfassung deiner  Daten</a>
-                                             <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="../../lerntyp_erfassung.php"../../grunderfassung_lerntyp.php""> Generelles Erfassungsformular </a></li>
-                                                        <li>
-												         	 <a class="dropdown-item" href="../../Erfassungsseite/lerntyperfassung/lerntyp.seite.php"> Neues Lerntyp-Profil anlegen</a> </li>
-		                                                          <li><a class="dropdown-item" href="../../Erfassungsseite/modulerfassung/modul.seite.php"> Neues Modul-Profil anlegen</a></li>
-						                                                                </ul> 
-						  
+		  
+		  
+  <!-- Dropdownlink 1 -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informationen</a>
+    <ul class="dropdown-menu">
+     
+	  <a class="nav-link" href="InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Konzentration.php">Konzentration</a></li>
+		
+	  <a class="nav-link" href="InfoLisa/Motivation.php"> Motivation</a></li>
+		
+	
 	  
-	                 <!-- Dropdownlink 3 Bootstrap: Statistikseiten --> 
-           <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
-                                        <ul class="dropdown-menu">
-										
-                       <li> <a class="dropdown-item" href="../statistiklerntyp.php">Statistik Lerntypen </a></li>
-	                        <li><a class="dropdown-item" href="../modulstatistik/statistikmodul.php">Statistik Modul </a></li>
-							  <li><a class="dropdown-item" href="generalstatistik.php"> Generelle Statistik </a></li>
-                                                                                                                                              </ul> 
 	  
-	                              <!-- Link zur gemeinsamen Startseite -->
-		                                <li class="nav-item">
-                                            <a class="nav-link" href="../../../index.php">Zurück zur Startseite</a>
-                                               </li>
-	                                               </ul>
-                                                      </div>
-		                                                    <!-- Navigationsleiste zuende! -->
+	  </ul>     
+		  
+      <!-- Dropdownlink 2 -->
+  <li class="nav-item dropdown">
+   
+  <a class="nav-link" href="ErfassungLisa.php"> Erfassung deiner Daten</a></li>
+	  
+	  <!-- Dropdown Link 3 --> 
+	  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Statistiken</a>
+    <ul class="dropdown-menu">
+    
+		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
+		
+	
+		<a class="nav-link" href="StatistikLisa/Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
+
+    </ul> 
+	  
+		  <!-- Link zur Startseite -->
+		   <li class="nav-item">
+	
+	
+	
+	
+    <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
+  </li>
+ 
+</ul>
+  <!-- Hier ist die Navigationsleiste zuende -->
+	  
+
+
 	<!-- Beginn von Statistik in der Mitte -->
 <div class="container-fluid">
     <div class="mt-5 mb-5 row">
@@ -83,6 +92,9 @@
         <div class="col-md-4">
 			<div id="chart_div"></div>
 			<p class="blue-form"> </p>
+			
+			
+			
 			
  <p class="blue-form"> Welche Lernstrategie wird in welchem Semester vermehrt angewendet? </p>
 
@@ -120,10 +132,10 @@ $dbname = "m12241_32";
 
 
 
-        // Prepared Statement verwenden, um SQL Injection zu verhindern (Das sind Sicherheitslücken)
+        // Verwendung Prepared Statement, SQL Injection zu verhindern (Sicherheitslücken)
         $stmt = $conn->prepare($sql);
 
-        // Fehlerbehandlung für das Prepared Statement
+        // Fehlerbehandlung Prepared Statement
         if (!$stmt) {
             die("Error in statement preparation: " . $conn->error);
         }
@@ -137,7 +149,7 @@ $dbname = "m12241_32";
 
             if ($result->num_rows > 0) {
 				
-                // Daten aus der Datenbank ausgeben
+                // Ausgabe Daten aus der Datenbank 
                 while ($row = $result->fetch_assoc()) {
                     // Bootstrap-Tabelle
                     echo '<table class="table table-bordered table-hover">';

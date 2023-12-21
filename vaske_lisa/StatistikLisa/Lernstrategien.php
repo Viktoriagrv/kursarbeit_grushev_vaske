@@ -58,10 +58,12 @@
     <ul class="dropdown-menu">
      
 	  <a class="nav-link" href="../InfoLisa/Lernstartegien.php">Lernstrategien</a></li>
-		
+			
 	  <a class="nav-link" href="../InfoLisa/Konzentration.php">Konzentration</a></li>
-		
-	  <a class="nav-link" href="../InfoLisa/Motivation.php"> Motivation</a></li>
+	
+	  <a class="nav-link" href="../InfoLisa/Motivation.php">Motivation</a></li>
+	 
+	  
 		
 
 	  </ul>     
@@ -77,10 +79,9 @@
     <ul class="dropdown-menu">
     
 		  <a class="nav-link" href="Lernstrategien.php">Lernstrategien</a></li>
-		
-	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
 	
-	  <a class="nav-link" href="Motivation.php">Motivation</a></li>
+		
+		<a class="nav-link" href="Lernerfolg.php">Lernerfolg</a></li>
     </ul> 
 	  
 	
@@ -93,7 +94,7 @@
 
 	<div>	
 	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
+<img id="logo" src="../bilder/Logo_rund1.png" alt="logo" class="logo">	
 	
 </div>
 	

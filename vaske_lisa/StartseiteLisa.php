@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="CSS/lisa_vaske.css"
 
-<html lang="de">
-	<!-- Definition der Sprache "de" = deutsch-->
 	
   <head>
 	  
@@ -24,13 +22,14 @@
 
     <header>
         <h1>EduLearn</h1> 
-		 <img src="../../../vaske_lisa/bilder/Logo_rund1.png" alt="Logo" class="logo">
+		 
+		<img src="bilder/Logo_rund1.png" alt="Logo" class="logo">
 		
         
-                                                                                       </div>
+		</div>
 		
     </header>
-<!-- Verlinkung Bild -->
+
                      	
 	
 	  <!-- Das ist meine Navigationsleiste mit Bootstrap -->
@@ -71,19 +70,13 @@
     
 		  <a class="nav-link" href="StatistikLisa/Lernstrategien.php">Lernstrategien</a></li>
 		
-	  <a class="nav-link" href="StatistikLisa/Konzentration.php">Konzentration</a></li>
 	
-	  <a class="nav-link" href="StatistikLisa/Motivation.php">Motivation</a></li>
-
 		<a class="nav-link" href="StatistikLisa/Statistik Lernstrategien/lernstrategiestatistik.php">Lernerfolg</a></li>
 
     </ul> 
 	  
 		  <!-- Link zur Startseite -->
 		   <li class="nav-item">
-	
-	
-	
 	
     <a class="nav-link" href="../index.php">Zurück zur Startseite</a>
   </li>
@@ -97,15 +90,12 @@
 	 
 
 
-	<div>	
-	
-  
-	
-</div>
-
-
-<div class="grid-container">
+	<!--CSS-->
+	<div class="grid-container">
 <div class="grid-item">
+  
+	<!--Text-->
+
 	<br>
 	<h2>Von Motivation bis hin zu Lernmethoden: diese Lernstrategien führen dich zum Erfolg.</h2></br>
 	
@@ -127,19 +117,13 @@
 
 
 
-
-
-
-
-
-
 <!--ab hier inhaltlich Konzentration-->
 <br><p> Auch deine Konzentration ist nicht unwichtig. Lernst du zu lange an einem Stück, schwindet deine Konzentration. Lernst du zu kurz, dann bist du vielleicht nur wenig erfolgreich. </br>
 	<section>Alle wichtigen Tipps und Tricks hier auf einem Blick:</section>
 
 
 
-<!-- Bootstrap CSS -->
+<!-- Bootstrap -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -192,22 +176,10 @@
 
 
 
-
-
-
-
-			
-
-
-
-
-
-
-
 <!-- ab hier inhaltlich Motivation-->
 <br>Den meisten Menschen fehlt die Motivation für das Lernen. Ist auch kein Wunder bei dem drögen Auswendiglernen. Wenn die Inhalte nicht motivieren, wende folgende Hacks an und du findest dennoch nötige Motivation:</br>
 
-<!-- Bootstrap CSS -->
+<!-- Bootstrap  -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -262,8 +234,6 @@
 
 
 
-
-
 <br>
 <p>Noch nicht genug? Dann schau dir das Video von <i>The Simple Club</i> an:</p>
 </br>
@@ -274,49 +244,6 @@
 </div>
 </div>
 	
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	

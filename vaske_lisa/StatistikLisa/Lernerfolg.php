@@ -39,7 +39,8 @@
 	
     <header>
         <h1>EduLearn</h1>
-  
+  <img id="logo" src="../bilder/Logo_rund1.png" alt="logo" class="logo">	
+		
     </header>
 
 	
@@ -83,10 +84,6 @@
     <ul class="dropdown-menu">
     
 		  <a class="nav-link" href="Lernstrategien.php">Lernstrategien</a></li>
-		
-	  <a class="nav-link" href="Konzentration.php">Konzentration</a></li>
-	
-	  <a class="nav-link" href="Motivation.php">Motivation</a></li>
 	
 	<a class="nav-link" href="Lernerfolg.php">Lernerfolg</a></li>
     </ul> 
@@ -109,7 +106,7 @@
 
 <div>	
 	
-<img id="logo" src="../bilder/Logo_rund1.png" alt="UnserLogo" width="100" height="100">	
+
 	
 </div>
 

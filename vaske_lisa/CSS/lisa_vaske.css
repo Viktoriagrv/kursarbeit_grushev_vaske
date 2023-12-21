@@ -1,12 +1,22 @@
 
-header {
+hheader {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #0077cc; /* Blaue Hintergrundfarbe */
     color: #fff; /* Weiße Textfarbe */
     padding: 10px 20px; 
+}
 
+.logo {
+    max-width: 100px; /* LOGO */
+}
+
+/* Wieder Logo */
+#logo {
+    position: absolute;
+    top: 1px;
+    right: 10px;
 }
 
 header h1 {
@@ -56,15 +66,16 @@ body {
     /* Andere Stildefinitionen für deine Navigationsleiste */
 }
 
-.logo {
-    width: 100px; /* Passe die Breite des Logos an deine Anforderungen an *//* Andere Stildefinitionen für dein Logo */
-	position:absolute;
-	right:10px;
-	top:10px;
-	z-index: 100;
-}
 
 
+
+
+/*Standarteinstellungen*/
+
+
+
+
+/*Lernstrategie Infoseite*/
 
 /*farbige Blöcke*/
 	
@@ -89,14 +100,24 @@ body {
 }
 
 
+
+
+
+/*Hier Startseite ich*/
 /*Hier Block farbig Karussell*/	
 	
 .carousel-caption {
-    background-color: #352525; 
-	padding: 60px;
+	position:absolute;
+    background-color: #352525;
+	align-items: center;
+
 }
 
 	
+
+
+
+/*Statistikseite*/
 /*CSS-Styling für die Kuchendiagramme, Abstände */
 .chart-container {
 display:flex;
@@ -104,8 +125,9 @@ display:flex;
 .chart-item {
 margin-right: 20px; 
 	
-}
 
+
+}
 
 
 grid-container {
